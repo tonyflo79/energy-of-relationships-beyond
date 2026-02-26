@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Energy of Relationships — Watch This Short Video | Dr. Barry Morguelan</title>
-<meta name="description" content="Harvard's 87-year study proved it: relationships predict wealth, health, and happiness better than IQ, genes, or social class. Dr. Barry Morguelan — former Head of Gastroenterology, advisor to Tony Robbins and Jay Abraham — reveals the 4-module energy system that transforms every relationship in your life: business, family, friendships, and partnerships.">
+<meta name="description" content="Harvard's 87-year study proved it: relationships predict wealth, health, and happiness better than IQ, genes, or social class. Dr. Barry Morguelan — former Head of Gastroenterology, advisor to Tony Robbins and Jay Abraham — reveals the 7-module energy system that transforms every relationship in your life: business, family, friendships, and partnerships.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Pinyon+Script&family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,700;1,800;1,900&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
@@ -721,46 +721,80 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   border-bottom: none; padding-top: 20px; font-size: 20px;
 }
 .value-row.total .v-price { font-size: 20px; color: var(--color-dark); }
+.pricing-grid {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 28px;
+  max-width: 900px; margin: 0 auto;
+}
 .pricing-card {
-  max-width: 540px; margin: 0 auto; border-radius: var(--radius-xl);
+  border-radius: var(--radius-xl);
   box-shadow: var(--shadow-xl); background: #fff; overflow: hidden;
+  position: relative;
+}
+.pricing-card.featured {
+  border: 3px solid var(--color-primary);
+  transform: scale(1.04);
+}
+.pricing-badge {
+  position: absolute; top: -1px; left: 50%; transform: translateX(-50%);
+  background: var(--gradient-primary); color: #fff;
+  font-family: "Inter", sans-serif; font-weight: 700; font-size: 11px;
+  text-transform: uppercase; letter-spacing: 2px;
+  padding: 6px 20px; border-radius: 0 0 8px 8px;
+  z-index: 2;
 }
 .pricing-top {
   background: var(--gradient-dark); padding: 36px 28px; text-align: center; color: #fff;
 }
+.pricing-card.featured .pricing-top {
+  background: var(--gradient-primary);
+}
+.pricing-top .pt-tier {
+  font-family: "Inter", sans-serif; font-weight: 700; font-size: 11px;
+  text-transform: uppercase; letter-spacing: 3px; color: rgba(255,255,255,0.6);
+  margin-bottom: 4px;
+}
 .pricing-top .pt-title {
-  font-family: "Playfair Display", serif; font-weight: 700; font-size: 24px;
+  font-family: "Playfair Display", serif; font-weight: 700; font-size: 22px;
+}
+.pricing-top .pt-price-row { display: flex; align-items: baseline; justify-content: center; gap: 12px; margin: 8px 0; }
+.pricing-top .pt-was {
+  font-family: "Inter", sans-serif; font-size: 22px; font-weight: 600;
+  text-decoration: line-through; color: rgba(255,255,255,0.4);
 }
 .pricing-top .pt-price {
-  font-family: "Playfair Display", serif; font-weight: 900; font-size: 72px; line-height: 1.1;
-  margin: 8px 0;
+  font-family: "Playfair Display", serif; font-weight: 900; font-size: 64px; line-height: 1.1;
 }
-.pricing-top .pt-price .dollar { font-size: 36px; vertical-align: super; }
+.pricing-top .pt-price .dollar { font-size: 32px; vertical-align: super; }
 .pricing-top .pt-sub {
-  font-family: "Inter", sans-serif; font-weight: 600; font-size: 13px;
+  font-family: "Inter", sans-serif; font-weight: 600; font-size: 12px;
   letter-spacing: 2px; text-transform: uppercase; color: rgba(255,255,255,0.5);
 }
-.pricing-top .pt-daily {
-  font-family: "Source Serif 4", serif; font-style: italic; font-size: 15px;
-  color: var(--color-glow); margin-top: 8px;
+.pricing-top .pt-save {
+  display: inline-block; margin-top: 10px;
+  background: rgba(255,255,255,0.15); color: #fff;
+  font-family: "Inter", sans-serif; font-weight: 700; font-size: 12px;
+  padding: 4px 14px; border-radius: 100px; letter-spacing: 1px;
 }
-.pricing-bottom { padding: 32px; }
+.pricing-bottom { padding: 28px; }
 .pricing-bottom .pb-title {
-  font-family: "Inter", sans-serif; font-weight: 700; font-size: 14px;
+  font-family: "Inter", sans-serif; font-weight: 700; font-size: 13px;
   text-transform: uppercase; text-align: center; color: var(--color-dark);
-  letter-spacing: 1px; margin-bottom: 20px;
+  letter-spacing: 1px; margin-bottom: 16px;
 }
-.feature-list { margin-bottom: 28px; }
+.feature-list { margin-bottom: 24px; }
 .feature-list li {
-  display: flex; gap: 12px; align-items: flex-start; padding: 10px 0;
-  font-size: 16px; color: var(--color-body);
+  display: flex; gap: 10px; align-items: flex-start; padding: 8px 0;
+  font-size: 15px; color: var(--color-body);
 }
-.feature-list .f-check { color: var(--color-primary); font-size: 18px; flex-shrink: 0; margin-top: 2px; }
+.feature-list .f-check { color: var(--color-primary); font-size: 16px; flex-shrink: 0; margin-top: 2px; }
 .feature-list .f-val {
-  font-family: "Inter", sans-serif; font-weight: 500; font-size: 12px; color: var(--color-muted);
+  font-family: "Inter", sans-serif; font-weight: 500; font-size: 11px; color: var(--color-muted);
+}
+.feature-list .elite-only {
+  color: var(--color-primary); font-weight: 600;
 }
 .pricing-compare {
-  max-width: 540px; margin: 28px auto 0; text-align: center; font-size: 15px; color: var(--color-body);
+  max-width: 900px; margin: 28px auto 0; text-align: center; font-size: 15px; color: var(--color-body);
 }
 .pricing-compare strong { color: var(--color-dark); }
 
@@ -951,6 +985,8 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   .modules-header { padding: 28px 20px 0; }
   .cta-banner .cta-heading { font-size: 32px; }
   .cta-banner .subtitle { font-size: 16px; }
+  .pricing-grid { grid-template-columns: 1fr; max-width: 480px; }
+  .pricing-card.featured { transform: none; }
   .pricing-top .pt-price { font-size: 56px; }
   .faq-item { flex-direction: column; gap: 12px; position: relative; padding-right: 36px; }
   .faq-question { width: 100%; }
@@ -1026,14 +1062,13 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
     </div>
     <h1>Watch This Short Video to Discover<br>the <span class="accent">#1 Factor Behind Wealth, Health &amp; Happiness</span></h1>
     <div class="hero-sub">It wasn't IQ. It wasn't genes. It was the <span class="script">Energy</span> of your relationships.</div>
-    <p class="hero-desc">An 87-year Harvard study tracking 1,700+ lives proved that relationship quality predicts your health at 80 better than your cholesterol at 50 &mdash; and your income by <strong>$141,000 a year</strong>. <strong>DR. BARRY MORGUELAN</strong>, former Head of Gastroenterology at multiple leading hospitals in Los Angeles, advisor to <strong>Tony Robbins</strong> and <strong>Jay Abraham</strong>, reveals the <strong>4-module energy system</strong> that transforms every relationship in your life &mdash; business, family, friendships, and partnerships &mdash; so they actually <strong>build</strong> you instead of drain you.</p>
 
     <div class="hero-image-wrap">
       <div style="padding:56.25% 0 0 0;position:relative;border-radius:var(--radius-md);overflow:hidden;z-index:1">
         <iframe src="https://player.vimeo.com/video/[VSL_VIDEO_ID]?badge=0&autopause=0&player_id=0&app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Energy of Relationships — Dr. Barry Morguelan" loading="eager"></iframe>
       </div>
     </div>
-    <p class="hero-desc" style="margin-top:32px">Harvard's 87-year study proved that relationship quality predicts your health at 80 better than your cholesterol at 50 &mdash; and your income by <strong>$141,000 a year</strong>. Watch the video above to discover how Dr. Barry's 4-module energy system transforms every relationship in your life.</p>
+    <p class="hero-desc" style="margin-top:32px">Harvard's 87-year study proved that relationship quality predicts your health at 80 better than your cholesterol at 50 &mdash; and your income by <strong>$141,000 a year</strong>. Watch the video above to discover how Dr. Barry's 7-module energy system transforms every relationship in your life.</p>
 
     <div class="hero-cta-wrap">
       <a href="#pricing" class="btn-primary">Transform My Relationships Now <span class="arrow">&rarr;</span></a>
@@ -1381,12 +1416,15 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
     <div class="modules-header text-center">
       <p class="section-label">What's Inside</p>
       <h2 class="section-heading" style="font-size:40px">Here's <span style="color:var(--color-primary)">Everything</span> You Get</h2>
-      <p class="mod-subtitle">4 modules covering business, family, friendships, and partnerships. RTVTs. Assessment tools. Workbook. Created by Dr. Barry Morguelan. Available immediately.</p>
+      <p class="mod-subtitle">7 modules covering business, family, friendships, and partnerships. RTVTs. Assessment tools. Workbook. Live group call with Dr. Barry. Created by Dr. Barry Morguelan. Available immediately.</p>
       <div class="module-tabs" role="tablist">
         <button class="module-tab active" data-tab="0" role="tab" aria-selected="true">Module 1</button>
         <button class="module-tab" data-tab="1" role="tab" aria-selected="false">Module 2</button>
         <button class="module-tab" data-tab="2" role="tab" aria-selected="false">Module 3</button>
         <button class="module-tab" data-tab="3" role="tab" aria-selected="false">Module 4</button>
+        <button class="module-tab" data-tab="4" role="tab" aria-selected="false">Module 5</button>
+        <button class="module-tab" data-tab="5" role="tab" aria-selected="false">Module 6</button>
+        <button class="module-tab" data-tab="6" role="tab" aria-selected="false" style="color:var(--color-primary);font-weight:700">Module 7 &#x2605;</button>
       </div>
     </div>
     <div class="module-panels">
@@ -1462,6 +1500,60 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
           <div class="module-bullet"><span class="check">&#x2726;</span> Category 1 maintenance &mdash; sensors as a lifelong navigation system</div>
         </div>
       </div>
+      <!-- Module 5 -->
+      <div class="module-panel" data-panel="4" role="tabpanel">
+        <div class="module-jumbotron">
+          <div class="mod-icon"><svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="32" cy="32" r="24" stroke="#7C3AED" stroke-width="3" fill="none"/><path d="M22 32l6 6 14-14" stroke="#7C3AED" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <div>
+            <p class="mod-num">Module 5</p>
+            <h3 class="mod-title">Relationship Repair &amp; Recovery</h3>
+            <p class="mod-desc">What happens when sensors reactivate and you see your existing relationships clearly &mdash; sometimes for the first time? This module covers the repair protocols: how to elevate strained business relationships, restore family bonds that have degraded, and recover friendships you've neglected. Not all relationships survive clarity &mdash; this module teaches you which ones are worth the energy and which ones aren't.</p>
+          </div>
+        </div>
+        <div class="module-bullets">
+          <div class="module-bullet"><span class="check">&#x2726;</span> The Energy Audit conversation &mdash; how to address draining dynamics directly</div>
+          <div class="module-bullet"><span class="check">&#x2726;</span> Repair vs. release &mdash; the sensor-based decision framework</div>
+          <div class="module-bullet"><span class="check">&#x2726;</span> Business relationship triage &mdash; partnerships, clients, team members</div>
+          <div class="module-bullet"><span class="check">&#x2726;</span> Family recovery protocol &mdash; working with inherited energy patterns</div>
+          <div class="module-bullet"><span class="check">&#x2726;</span> The clean exit &mdash; ending relationships without creating enemies</div>
+        </div>
+      </div>
+      <!-- Module 6 -->
+      <div class="module-panel" data-panel="5" role="tabpanel">
+        <div class="module-jumbotron">
+          <div class="mod-icon"><svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M32 8l7.5 15.2 16.8 2.4-12.1 11.8 2.9 16.6L32 46l-15.1 8 2.9-16.6L7.7 25.6l16.8-2.4z" stroke="#7C3AED" stroke-width="3" fill="none" stroke-linejoin="round"/></svg></div>
+          <div>
+            <p class="mod-num">Module 6</p>
+            <h3 class="mod-title">Attraction &amp; Magnetism &mdash; Becoming Category 1</h3>
+            <p class="mod-desc">The final Core module flips the lens: instead of reading others, you become the person that Category 1 people are drawn to. This module covers the energetic broadcast &mdash; what you're putting out into every room, every meeting, every family dinner. When your broadcast is strong, the right people find YOU. Business opportunities, deep friendships, and true partnerships start coming to you instead of you chasing them.</p>
+          </div>
+        </div>
+        <div class="module-bullets">
+          <div class="module-bullet"><span class="check">&#x2726;</span> The broadcast shift &mdash; what changes when you become Category 1</div>
+          <div class="module-bullet"><span class="check">&#x2726;</span> Energetic magnetism in business &mdash; attracting the right deals, clients, and collaborators</div>
+          <div class="module-bullet"><span class="check">&#x2726;</span> Social magnetism &mdash; becoming the person people want in their inner circle</div>
+          <div class="module-bullet"><span class="check">&#x2726;</span> Family leadership &mdash; elevating the energy of your entire household</div>
+          <div class="module-bullet"><span class="check">&#x2726;</span> The compounding effect &mdash; how Category 1 relationships multiply</div>
+        </div>
+      </div>
+      <!-- Module 7 — ELITE ONLY -->
+      <div class="module-panel" data-panel="6" role="tabpanel">
+        <div class="module-jumbotron" style="border:2px solid var(--color-primary)">
+          <div class="mod-icon"><svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M32 4l4 12h12.6l-10.2 7.4 3.9 12-10.3-7.5L21.7 35.4l3.9-12L15.4 16H28z" fill="#7C3AED"/><circle cx="32" cy="44" r="12" stroke="#7C3AED" stroke-width="3" fill="none"/><path d="M27 44l3 3 5-5" stroke="#7C3AED" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <div>
+            <p class="mod-num" style="color:var(--color-primary)">Module 7 &mdash; Elite Only</p>
+            <h3 class="mod-title">Advanced In-Depth Module + Live Group Call with Dr. Barry</h3>
+            <p class="mod-desc">The advanced module goes deeper than the Core program &mdash; advanced sensor techniques, complex relationship dynamics, and the nuances that separate good from exceptional results. Plus: an exclusive small-group live call directly with Dr. Barry that includes live Q&amp;A and a real-time energy transmission. This is the closest you can get to working with Dr. Barry personally at a fraction of the private session cost.</p>
+          </div>
+        </div>
+        <div class="module-bullets">
+          <div class="module-bullet"><span class="check">&#x2726;</span> Advanced sensor integration &mdash; techniques beyond the Core program</div>
+          <div class="module-bullet"><span class="check">&#x2726;</span> Complex dynamics &mdash; multi-person environments, high-stakes situations</div>
+          <div class="module-bullet"><span class="check">&#x2726;</span> <strong>Live small-group call with Dr. Barry</strong> &mdash; ask your questions directly</div>
+          <div class="module-bullet"><span class="check">&#x2726;</span> <strong>Live energy transmission</strong> &mdash; experience Dr. Barry's energy work in real time</div>
+          <div class="module-bullet"><span class="check">&#x2726;</span> Advanced Category 1 mastery &mdash; sustaining the highest level long-term</div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -1473,7 +1565,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   <div class="container bonuses-content">
     <div class="text-center">
       <p class="section-label">Special Bonuses</p>
-      <h2 class="section-heading text-center" style="font-size:40px">Plus You Get Two Bonuses Worth $98, <span style="color:var(--color-primary)">FREE</span></h2>
+      <h2 class="section-heading text-center" style="font-size:40px">Both Tiers Include These Bonuses, <span style="color:var(--color-primary)">FREE</span></h2>
     </div>
     <div class="bonus-grid">
       <div class="bonus-card">
@@ -1501,58 +1593,76 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
      ============================================ -->
 <section class="pricing-section" id="pricing">
   <div class="container text-center">
-    <p class="section-label">Investment</p>
+    <p class="section-label">Launch Special &mdash; 50% Off</p>
     <h2 class="section-heading text-center" style="font-size:40px">One of The Most Valuable Programs I've Ever Released</h2>
+    <p style="font-size:17px;color:var(--color-primary);font-weight:600;margin-bottom:40px;font-family:'Inter',sans-serif">Launch pricing expires when the timer hits zero. After that, full price applies.</p>
 
-    <div class="value-stack">
-      <div class="value-row">
-        <span class="v-name">4-Module Core Program</span>
-        <span class="v-price">$397</span>
+    <div class="pricing-grid">
+      <!-- CORE — $97 -->
+      <div class="pricing-card">
+        <div class="pricing-top">
+          <p class="pt-tier">Core</p>
+          <p class="pt-title">Energy of Relationships</p>
+          <div class="pt-price-row">
+            <span class="pt-was">$194</span>
+            <p class="pt-price"><span class="dollar">$</span>97</p>
+          </div>
+          <p class="pt-sub">One-Time Investment</p>
+          <span class="pt-save">Save 50% at Launch</span>
+        </div>
+        <div class="pricing-bottom">
+          <p class="pb-title">What's Included:</p>
+          <ul class="feature-list">
+            <li><span class="f-check">&#x2726;</span> Modules 1&ndash;6: Complete Core Program</li>
+            <li><span class="f-check">&#x2726;</span> RTVT Sensor Calibration Audios</li>
+            <li><span class="f-check">&#x2726;</span> Energy of Relationships Workbook</li>
+            <li><span class="f-check">&#x2726;</span> Sensor Assessment Toolkit</li>
+            <li><span class="f-check">&#x2726;</span> Quadruple-A Real-Time Method</li>
+            <li><span class="f-check">&#x2726;</span> Category Classification System</li>
+            <li><span class="f-check">&#x2726;</span> Instant Digital Access</li>
+          </ul>
+          <a href="[CHECKOUT_URL_CORE]" class="btn-primary" style="margin:0 auto;border-radius:12px">Get Core Access <span class="arrow">&rarr;</span></a>
+          <p class="btn-subtext">Backed by the 30-Day Guarantee</p>
+        </div>
       </div>
-      <div class="value-row">
-        <span class="v-name">RTVTs (Sensor Calibration Audios)</span>
-        <span class="v-price">$97</span>
-      </div>
-      <div class="value-row">
-        <span class="v-name">Relationships Workbook</span>
-        <span class="v-price">$49</span>
-      </div>
-      <div class="value-row">
-        <span class="v-name">Sensor Assessment Toolkit</span>
-        <span class="v-price">$49</span>
-      </div>
-      <div class="value-row total">
-        <span class="v-name">Total Value</span>
-        <span class="v-price">$592</span>
-      </div>
-    </div>
 
-    <div class="pricing-card">
-      <div class="pricing-top">
-        <p class="pt-title">Energy of Relationships</p>
-        <p class="pt-price"><span class="dollar">$</span>197</p>
-        <p class="pt-sub">One-Time Investment</p>
-        <p class="pt-daily">That's just $6.57 per day for 30 days</p>
-      </div>
-      <div class="pricing-bottom">
-        <p class="pb-title">Everything Included:</p>
-        <ul class="feature-list">
-          <li><span class="f-check">&#x2726;</span> Complete 4-Module Core Program <span class="f-val">&mdash; $397 value</span></li>
-          <li><span class="f-check">&#x2726;</span> RTVT Sensor Calibration Audios <span class="f-val">&mdash; $97 value</span></li>
-          <li><span class="f-check">&#x2726;</span> Energy of Relationships Workbook <span class="f-val">&mdash; $49 value</span></li>
-          <li><span class="f-check">&#x2726;</span> Sensor Assessment Toolkit <span class="f-val">&mdash; $49 value</span></li>
-          <li><span class="f-check">&#x2726;</span> Quadruple-A Real-Time Method</li>
-          <li><span class="f-check">&#x2726;</span> Category Classification System</li>
-          <li><span class="f-check">&#x2726;</span> Instant Digital Access</li>
-        </ul>
-        <a href="[CHECKOUT_URL]" class="btn-primary" style="margin:0 auto;border-radius:12px">Transform My Relationships Now <span class="arrow">&rarr;</span></a>
-        <p class="btn-subtext">Backed by the 30-Day Guarantee</p>
+      <!-- ELITE — $197 -->
+      <div class="pricing-card featured">
+        <div class="pricing-badge">Most Popular</div>
+        <div class="pricing-top">
+          <p class="pt-tier">Elite</p>
+          <p class="pt-title">Energy of Relationships</p>
+          <div class="pt-price-row">
+            <span class="pt-was">$394</span>
+            <p class="pt-price"><span class="dollar">$</span>197</p>
+          </div>
+          <p class="pt-sub">One-Time Investment</p>
+          <span class="pt-save">Save 50% at Launch</span>
+        </div>
+        <div class="pricing-bottom">
+          <p class="pb-title">Everything in Core, Plus:</p>
+          <ul class="feature-list">
+            <li><span class="f-check">&#x2726;</span> Modules 1&ndash;6: Complete Core Program</li>
+            <li><span class="f-check">&#x2726;</span> RTVT Sensor Calibration Audios</li>
+            <li><span class="f-check">&#x2726;</span> Energy of Relationships Workbook</li>
+            <li><span class="f-check">&#x2726;</span> Sensor Assessment Toolkit</li>
+            <li><span class="f-check">&#x2726;</span> Quadruple-A Real-Time Method</li>
+            <li><span class="f-check">&#x2726;</span> Category Classification System</li>
+            <li><span class="f-check">&#x2726;</span> Instant Digital Access</li>
+            <li style="padding-top:14px;border-top:1px solid var(--color-border)"><span class="f-check" style="color:var(--color-gold)">&#x2605;</span> <span class="elite-only">Advanced In-Depth Module 7</span></li>
+            <li><span class="f-check" style="color:var(--color-gold)">&#x2605;</span> <span class="elite-only">Exclusive Small Live Group Call with Dr. Barry</span></li>
+            <li><span class="f-check" style="color:var(--color-gold)">&#x2605;</span> <span class="elite-only">Live Q&amp;A &mdash; Ask Dr. Barry Directly</span></li>
+            <li><span class="f-check" style="color:var(--color-gold)">&#x2605;</span> <span class="elite-only">Live Energy Transmission</span></li>
+          </ul>
+          <a href="[CHECKOUT_URL_ELITE]" class="btn-primary" style="margin:0 auto;border-radius:12px">Get Elite Access <span class="arrow">&rarr;</span></a>
+          <p class="btn-subtext">Backed by the 30-Day Guarantee</p>
+        </div>
       </div>
     </div>
 
     <div class="pricing-compare">
-      <p style="margin-top:24px">Executive coaching averages <strong>$300&ndash;$500 per session</strong>. Relationship therapy averages <strong>$200&ndash;$300</strong>. A single bad business partnership can cost you <strong>everything</strong>.</p>
-      <p>This system: <strong>$197</strong> &mdash; less than one coaching session, covering every relationship in your life.</p>
+      <p style="margin-top:24px">Executive coaching averages <strong>$300&ndash;$500 per session</strong>. A single private session with Dr. Barry costs <strong>$2,500+</strong>. A single bad business partnership can cost you <strong>everything</strong>.</p>
+      <p>Core: <strong>$97</strong> &mdash; less than one coaching session. Elite: <strong>$197</strong> &mdash; includes live access to Dr. Barry that would cost 10x privately.</p>
     </div>
   </div>
 </section>
@@ -1618,7 +1728,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   <div class="container-text">
     <h2 class="section-heading">What Happens When the <span class="script">Energy</span> Shifts&hellip;</h2>
     <div class="future-copy">
-      <p>Start Module 1 tonight. Within the first session, you'll know your Category across every domain &mdash; business, family, friendships, partnership. Most people are surprised &mdash; not by the answer, but by how much it explains.</p>
+      <p>Start Module 1 tonight. Within the first session, you'll know your Category across every domain &mdash; business, family, friendships, partnership. Most people are surprised &mdash; not by the answer, but by how much it explains. Choose Core ($97) or Elite ($197) &mdash; both at 50% off for launch.</p>
 
       <p>Within the first week of the activation practices, you'll feel it. A warmth in your hands during the exercises. A clarity in your gut that wasn't there before. A quiet confidence that changes how people respond to you.</p>
 
