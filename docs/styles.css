@@ -1460,8 +1460,14 @@ body::before {
 .final-cta .cta-heading {
   font-family: var(--f-display); font-weight: 700;
   font-size: clamp(40px, 5vw, 72px); line-height: 1.05; letter-spacing: 0;
-  text-transform: uppercase; color: var(--ink); margin-bottom: 32px; text-wrap: balance;
+  text-transform: uppercase; color: var(--ink-rev); margin-bottom: 32px; text-wrap: balance;
   position: relative; z-index: 2;
+}
+.final-cta .cta-heading .accent {
+  background: linear-gradient(180deg,#E6C36C 0%,#A38347 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 .final-cta .cta-heading .accent {
   font-family: var(--f-italic); font-style: italic; font-weight: 600;
@@ -1543,3 +1549,112 @@ body::before {
 /* ---------- Body padding for sticky timer ---------- */
 body { padding-top: 73px; }
 @media (max-width: 720px) { body { padding-top: 65px; } }
+
+/* ============================================================
+   READABILITY PASS — bigger, brighter type for older eyes
+   Audience skews 40s-70s; many fine-print elements were too small
+   ============================================================ */
+
+/* --- Hero masthead: brighter + larger --- */
+.hero-masthead .hero-logo span { font-size: 14px; color: var(--ink-rev); opacity: .95; }
+.hero-meta { font-size: 13px !important; color: var(--ink-rev) !important; opacity: .85; }
+.hero-meta strong { color: var(--gold-bright-on-dark) !important; }
+
+/* --- Promote .el-presents to be the LARGE, BOLD, BRIGHT centerpiece of the BEYOND lockup --- */
+.el-left { padding: 36px 32px; gap: 0; align-items: center; justify-content: center; }
+.el-presents {
+  font-family: var(--f-display) !important;
+  font-weight: 700 !important;
+  font-size: clamp(22px, 2.6vw, 34px) !important;
+  letter-spacing: 0 !important;
+  text-transform: none !important;
+  color: var(--ink-rev) !important;
+  line-height: 1.2;
+  text-align: center;
+  text-wrap: balance;
+}
+.el-presents em {
+  font-family: var(--f-italic);
+  font-style: italic;
+  font-weight: 700;
+  font-variation-settings: "opsz" 144, "SOFT" 80, "WONK" 1;
+  background: linear-gradient(180deg,#E6C36C 0%,#A38347 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  letter-spacing: -.01em;
+  font-size: 1.08em;
+}
+
+/* --- Eyebrows / mono labels: bump from 11px → 12px+ everywhere --- */
+.eyebrow { font-size: 12px; letter-spacing: .28em; }
+.section-header .eyebrow { font-size: 12.5px; }
+
+/* --- Trust row (Tony Robbins Advisor / Jay Abraham Advisor): bigger + brighter --- */
+.trust-row { font-size: 12px; letter-spacing: .22em; color: var(--ink-soft-rev); }
+.hero .trust-row { color: rgba(245,235,208,.85); }
+
+/* --- Btn-subtext (Secure Checkout · BEYOND Price · 30-Day): bigger + brighter --- */
+.btn-subtext { font-size: 12px; letter-spacing: .22em; }
+.hero .btn-subtext, .section-dark .btn-subtext { color: rgba(245,235,208,.85); }
+.cta-banner .btn-subtext, .final-cta .btn-subtext { color: rgba(245,235,208,.85) !important; }
+
+/* --- Fail-card body (Five Approaches dark cards): brighter cream + larger body --- */
+.nothing-worked .fail-card p { color: var(--ink-rev); font-size: 16px; line-height: 1.7; }
+.nothing-worked .fail-card h4 { font-size: 18px; letter-spacing: .12em; }
+.nothing-worked .fail-card p strong { color: var(--gold-bright-on-dark); }
+.nothing-worked .fail-card p em { color: var(--gold-bright-on-dark); }
+
+/* --- Final CTA subhead and pricing strip: bigger so older eyes can read --- */
+.final-cta .cta-sub { font-size: clamp(20px, 1.9vw, 26px); color: var(--ink-rev); }
+.final-cta .btn-subtext { font-size: 13px; }
+
+/* --- Enrollment badge (small mono pill at very bottom): bump --- */
+.enrollment-badge { font-size: 12px; letter-spacing: .25em; }
+
+/* --- Asprey attribution under the quote: brighter --- */
+.asprey-attrib { font-size: 12px !important; }
+.asprey-attrib strong { color: var(--gold-bright-on-dark); }
+
+/* ============================================================
+   MOBILE READABILITY (≤880px) — more aggressive bumps
+   ============================================================ */
+@media (max-width: 880px) {
+  /* Body & lead */
+  .body-copy { font-size: 18px; line-height: 1.72; }
+  .lead { font-size: 18px; line-height: 1.55; }
+
+  /* Hero masthead — even larger on mobile so it can breathe */
+  .hero-masthead .hero-logo span { font-size: 15px; }
+  .hero-meta { font-size: 14px !important; }
+
+  /* BEYOND lockup centerpiece */
+  .el-presents { font-size: 24px !important; }
+  .el-left { padding: 32px 24px; }
+
+  /* Eyebrows */
+  .eyebrow { font-size: 13px; letter-spacing: .25em; }
+  .section-header .eyebrow { font-size: 13px; }
+
+  /* Trust row + button subtext */
+  .trust-row { font-size: 13px; gap: 18px; }
+  .btn-subtext { font-size: 13px; gap: 14px; }
+
+  /* Fail-card mobile */
+  .nothing-worked .fail-card p { font-size: 17px; }
+  .nothing-worked .fail-card h4 { font-size: 19px; }
+
+  /* Module copy */
+  .mod-num { font-size: 12px; }
+  .mod-desc { font-size: 17px; line-height: 1.65; }
+  .module-bullet { font-size: 16px; }
+
+  /* Final CTA mobile */
+  .final-cta .cta-sub { font-size: 20px; }
+  .final-cta .btn-subtext { font-size: 13px; }
+  .enrollment-badge { font-size: 12px; }
+
+  /* Asprey lockup attribution */
+  .asprey-attrib { font-size: 13px !important; }
+  .asprey-q-text { font-size: 18px !important; line-height: 1.5 !important; }
+}
