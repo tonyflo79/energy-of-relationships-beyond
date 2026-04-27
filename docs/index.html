@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,400..700,30..100,0..1;1,9..144,400..700,30..100,0..1&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=6">
+<link rel="stylesheet" href="styles.css?v=7">
 </head>
 <body>
 
@@ -66,12 +66,7 @@
     <div class="eyebrow-lockup-divider"></div>
     <div class="el-right">
       <div class="asprey-portrait">
-        <span class="silhouette" aria-hidden="true">
-          <svg viewBox="0 0 100 110" xmlns="http://www.w3.org/2000/svg">
-            <ellipse cx="50" cy="38" rx="22" ry="26" fill="#000"/>
-            <path d="M10 110 C 10 75, 30 65, 50 65 C 70 65, 90 75, 90 110 Z" fill="#000"/>
-          </svg>
-        </span>
+        <img src="images/asprey-headshot.png" alt="Dave Asprey">
       </div>
       <div class="asprey-q">
         <span class="asprey-q-mark">"</span>
@@ -337,7 +332,7 @@
 
     <div class="million-box">
       <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
-      <div class="equation">$141K<br><small>Per Year</small></div>
+      <div class="equation">Income<br><small>Per Year</small></div>
       <div class="explain">That's the income gap between people with the warmest relationships and everyone else. Not from IQ. Not from education. Not from social class. From <strong>relationship quality.</strong> When your sensors are active and calibrated, relationship decisions stop being guesswork. They become <strong>recognition.</strong> And that changes everything — who you partner with in business, who you trust with your family, who you build your life around.</div>
     </div>
   </div>
@@ -470,20 +465,6 @@
       </article>
     </div>
 
-    <div class="research-grid">
-      <div class="rr">
-        <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
-        <div class="stat">$141K</div>
-        <p>More per year for people with the warmest relationships — financial success predicted by relationships, not IQ.</p>
-        <div class="source">Harvard Study of Adult Development · 87 yrs</div>
-      </div>
-      <div class="rr">
-        <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
-        <div class="stat">7×</div>
-        <p>More engaged at work when you have a best friend there — the single most powerful predictor of team performance.</p>
-        <div class="source">Gallup Q12 · Millions Surveyed</div>
-      </div>
-    </div>
   </div>
 </section>
 
@@ -508,7 +489,7 @@
 
     <div class="module-panels">
       <!-- MODULE 1 -->
-      <div class="module-panel active" data-panel="1">
+      <div class="module-panel active" data-panel="1" id="module-1">
         <div class="module-jumbotron">
           <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
           <div class="mod-icon">
@@ -529,7 +510,7 @@
       </div>
 
       <!-- MODULE 2 -->
-      <div class="module-panel" data-panel="2">
+      <div class="module-panel" data-panel="2" id="module-2">
         <div class="module-jumbotron">
           <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
           <div class="mod-icon">
@@ -552,7 +533,7 @@
       </div>
 
       <!-- MODULE 3 -->
-      <div class="module-panel" data-panel="3">
+      <div class="module-panel" data-panel="3" id="module-3">
         <div class="module-jumbotron">
           <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
           <div class="mod-icon">
@@ -573,7 +554,7 @@
       </div>
 
       <!-- MODULE 4 -->
-      <div class="module-panel" data-panel="4">
+      <div class="module-panel" data-panel="4" id="module-4">
         <div class="module-jumbotron">
           <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
           <div class="mod-icon">
@@ -596,7 +577,7 @@
       </div>
 
       <!-- MODULE 5 -->
-      <div class="module-panel" data-panel="5">
+      <div class="module-panel" data-panel="5" id="module-5">
         <div class="module-jumbotron">
           <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
           <div class="mod-icon">
@@ -618,7 +599,7 @@
       </div>
 
       <!-- MODULE 6 -->
-      <div class="module-panel" data-panel="6">
+      <div class="module-panel" data-panel="6" id="module-6">
         <div class="module-jumbotron">
           <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
           <div class="mod-icon">
@@ -640,7 +621,7 @@
       </div>
 
       <!-- MODULE 7 — ELITE -->
-      <div class="module-panel" data-panel="7">
+      <div class="module-panel" data-panel="7" id="module-7">
         <div class="module-jumbotron elite">
           <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
           <div class="mod-icon">
@@ -1003,15 +984,20 @@
 </footer>
 
 <script>
-  /* MODULE TABS */
+  /* MODULE TABS — all panels visible; tab click highlights + scrolls */
   document.querySelectorAll('.module-tab').forEach(function(tab) {
     tab.addEventListener('click', function() {
       var id = tab.getAttribute('data-tab');
       document.querySelectorAll('.module-tab').forEach(function(t){ t.classList.remove('active'); });
       document.querySelectorAll('.module-panel').forEach(function(p){ p.classList.remove('active'); });
       tab.classList.add('active');
-      var panel = document.querySelector('.module-panel[data-panel="' + id + '"]');
-      if (panel) panel.classList.add('active');
+      var panel = document.getElementById('module-' + id);
+      if (panel) {
+        panel.classList.add('active');
+        var rect = panel.getBoundingClientRect();
+        var tabsHeight = (document.querySelector('.module-tabs') || {}).offsetHeight || 0;
+        window.scrollTo({ top: window.scrollY + rect.top - tabsHeight - 16, behavior: 'smooth' });
+      }
     });
   });
 
