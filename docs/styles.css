@@ -6,7 +6,7 @@
 /* ---------- Reset ---------- */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
-body { font-family: "IBM Plex Sans", "Helvetica Neue", Arial, sans-serif; font-weight: 400; font-size: 17px; line-height: 1.65; color: var(--ink); background: var(--paper); overflow-x: hidden; -webkit-font-smoothing: antialiased; }
+body { font-family: "IBM Plex Sans", "Helvetica Neue", Arial, sans-serif; font-weight: 400; font-size: 19px; line-height: 1.65; color: var(--ink); background: var(--paper); overflow-x: hidden; -webkit-font-smoothing: antialiased; }
 img { max-width: 100%; height: auto; display: block; }
 a { color: inherit; text-decoration: none; }
 ul, ol { list-style: none; }
@@ -100,7 +100,7 @@ body::before {
 .display {
   font-family: var(--f-display);
   font-weight: 700;
-  font-size: clamp(40px, 5.4vw, 78px);
+  font-size: clamp(42px, 5.4vw, 80px);
   line-height: 1.04;
   letter-spacing: 0;
   text-transform: uppercase;
@@ -128,7 +128,7 @@ body::before {
 
 .h2 {
   font-family: var(--f-display); font-weight: 700;
-  font-size: clamp(34px, 4vw, 56px);
+  font-size: clamp(36px, 4vw, 58px);
   line-height: 1.08; letter-spacing: 0; text-transform: uppercase;
   color: var(--ink); text-wrap: balance;
 }
@@ -142,25 +142,25 @@ body::before {
 
 .h3 {
   font-family: var(--f-display); font-weight: 600;
-  font-size: clamp(22px, 1.8vw, 28px);
+  font-size: clamp(24px, 1.8vw, 30px);
   line-height: 1.2; letter-spacing: .01em; text-transform: uppercase;
   color: var(--ink);
 }
 
 /* Body text */
-.body-copy { font-size: 18px; line-height: 1.75; color: var(--ink-soft); }
+.body-copy { font-size: 20px; line-height: 1.75; color: var(--ink-soft); }
 .body-copy p { margin-bottom: 1.2em; }
 .body-copy strong { color: var(--ink); font-weight: 700; }
 .body-copy em { font-family: var(--f-italic); font-style: italic; font-weight: 500; color: var(--gold); font-size: 1.04em; }
 
 .lead { font-family: var(--f-italic); font-style: italic; font-weight: 400;
   font-variation-settings: "opsz" 144, "SOFT" 50;
-  font-size: clamp(22px, 2vw, 30px); line-height: 1.4; color: var(--ink-soft); letter-spacing: -.005em; }
+  font-size: clamp(24px, 2vw, 32px); line-height: 1.4; color: var(--ink-soft); letter-spacing: -.005em; }
 .lead em { color: var(--gold); }
 
 /* Eyebrow / section label */
 .eyebrow {
-  font-family: var(--f-mono); font-weight: 400; font-size: 11px;
+  font-family: var(--f-mono); font-weight: 400; font-size: 13px;
   letter-spacing: .32em; text-transform: uppercase; color: var(--gold);
   margin-bottom: 24px; display: inline-flex; align-items: center; gap: 12px;
 }
@@ -187,7 +187,7 @@ body::before {
 }
 .timer-label {
   display: flex; align-items: center; gap: 10px;
-  font-family: var(--f-mono); font-weight: 400; font-size: 11px;
+  font-family: var(--f-mono); font-weight: 400; font-size: 13px;
   letter-spacing: .3em; text-transform: uppercase; color: var(--gold-bright);
 }
 .timer-label .pulse {
@@ -204,15 +204,15 @@ body::before {
 .timer-box .digit {
   font-family: var(--f-italic); font-style: italic; font-weight: 600;
   font-variation-settings: "opsz" 144, "SOFT" 50;
-  font-size: 22px; color: var(--gold-bright); line-height: 1;
+  font-size: 24px; color: var(--gold-bright); line-height: 1;
 }
 .timer-box .label {
-  font-family: var(--f-mono); font-weight: 400; font-size: 8px;
+  font-family: var(--f-mono); font-weight: 400; font-size: 10px;
   text-transform: uppercase; color: var(--muted); letter-spacing: .2em; margin-top: 2px;
 }
-.timer-colon { font-family: var(--f-italic); font-style: italic; font-weight: 600; font-size: 18px; color: var(--gold); }
+.timer-colon { font-family: var(--f-italic); font-style: italic; font-weight: 600; font-size: 20px; color: var(--gold); }
 .timer-cta {
-  font-family: var(--f-mono); font-weight: 500; font-size: 10.5px;
+  font-family: var(--f-mono); font-weight: 500; font-size: 12.5px;
   text-transform: uppercase; letter-spacing: .3em; color: var(--night);
   background: linear-gradient(135deg, var(--gold-bright) 0%, var(--gold-deep) 100%);
   padding: 10px 22px; border: 1px solid var(--gold);
@@ -222,9 +222,9 @@ body::before {
 
 @media (max-width: 720px) {
   .timer-inner { gap: 12px; padding: 8px 16px; }
-  .timer-label { font-size: 10px; }
+  .timer-label { font-size: 12px; }
   .timer-box { width: 40px; height: 42px; }
-  .timer-box .digit { font-size: 18px; }
+  .timer-box .digit { font-size: 20px; }
   .timer-cta { display: none; }
 }
 
@@ -236,7 +236,7 @@ body::before {
   padding: 22px 44px;
   background: linear-gradient(135deg, #C9A24B 0%, #6B5420 100%);
   color: #FFF;
-  font-family: var(--f-sans); font-weight: 600; font-size: 12px;
+  font-family: var(--f-sans); font-weight: 600; font-size: 14px;
   letter-spacing: .32em; text-transform: uppercase;
   border: none; cursor: pointer;
   position: relative; isolation: isolate;
@@ -252,13 +252,13 @@ body::before {
 .btn .arr {
   font-family: var(--f-italic); font-style: italic; font-weight: 600;
   font-variation-settings: "opsz" 144, "SOFT" 80, "WONK" 1;
-  font-size: 22px; letter-spacing: 0; text-transform: none;
+  font-size: 24px; letter-spacing: 0; text-transform: none;
   transition: transform .3s ease;
 }
 .btn:hover .arr { transform: translateX(6px); }
 
 .btn-subtext {
-  font-family: var(--f-mono); font-size: 10.5px;
+  font-family: var(--f-mono); font-size: 12.5px;
   letter-spacing: .28em; text-transform: uppercase; color: var(--ink-mute);
   margin-top: 16px; display: flex; gap: 18px; align-items: center; justify-content: center; flex-wrap: wrap;
 }
@@ -360,7 +360,7 @@ body::before {
 }
 .hero-logo {
   display: flex; align-items: center; gap: 14px;
-  font-family: var(--f-sans); font-weight: 600; font-size: 13px;
+  font-family: var(--f-sans); font-weight: 600; font-size: 15px;
   letter-spacing: .28em; text-transform: uppercase; color: var(--ink);
 }
 .hero-logo .mark {
@@ -372,10 +372,10 @@ body::before {
 .hero-logo .italic-tag {
   font-family: var(--f-italic); font-style: italic; font-weight: 500;
   font-variation-settings: "opsz" 144, "SOFT" 50;
-  text-transform: none; font-size: 16px; color: var(--gold-bright); letter-spacing: 0;
+  text-transform: none; font-size: 18px; color: var(--gold-bright); letter-spacing: 0;
 }
 .hero-meta {
-  font-family: var(--f-mono); font-size: 10.5px;
+  font-family: var(--f-mono); font-size: 12.5px;
   letter-spacing: .3em; text-transform: uppercase; color: var(--muted);
 }
 .hero-meta strong { color: var(--gold); font-weight: 400; }
@@ -395,7 +395,7 @@ body::before {
 }
 
 .el-left { padding: 24px 28px; display: flex; flex-direction: column; justify-content: center; gap: 10px; }
-.el-presents { font-family: var(--f-mono); font-weight: 400; font-size: 9.5px; letter-spacing: .4em; text-transform: uppercase; color: var(--muted); }
+.el-presents { font-family: var(--f-mono); font-weight: 400; font-size: 11.5px; letter-spacing: .4em; text-transform: uppercase; color: var(--muted); }
 .el-logo { display: flex; align-items: center; gap: 14px; }
 .el-logo .mark {
   width: 38px; height: 38px; border: 1px solid var(--gold); border-radius: 50%;
@@ -404,11 +404,11 @@ body::before {
 .el-logo .mark::before { content:""; position: absolute; inset: 4px; border: 1px solid rgba(201,162,75,.5); border-radius: 50%; }
 .el-logo .mark::after  { content:""; position: absolute; inset: 9px; background: var(--gold); border-radius: 50%; opacity: .85; }
 .el-logo .name { display: flex; flex-direction: column; gap: 2px; line-height: 1; }
-.el-logo .name .word { font-family: var(--f-sans); font-weight: 700; font-size: 18px; letter-spacing: .32em; text-transform: uppercase; color: var(--ink); }
+.el-logo .name .word { font-family: var(--f-sans); font-weight: 700; font-size: 20px; letter-spacing: .32em; text-transform: uppercase; color: var(--ink); }
 .el-logo .name .sub  { font-family: var(--f-italic); font-style: italic; font-weight: 400;
   font-variation-settings: "opsz" 144, "SOFT" 50;
-  font-size: 14px; color: var(--gold-bright); letter-spacing: .02em; margin-top: 4px; }
-.el-edition { font-family: var(--f-mono); font-weight: 400; font-size: 9.5px; letter-spacing: .32em; text-transform: uppercase; color: var(--muted); margin-top: 6px; }
+  font-size: 16px; color: var(--gold-bright); letter-spacing: .02em; margin-top: 4px; }
+.el-edition { font-family: var(--f-mono); font-weight: 400; font-size: 11.5px; letter-spacing: .32em; text-transform: uppercase; color: var(--muted); margin-top: 6px; }
 .el-edition strong { color: var(--gold); font-weight: 500; }
 
 .el-right { padding: 24px 28px; display: flex; align-items: center; gap: 20px; }
@@ -431,13 +431,13 @@ body::before {
 .asprey-q-mark {
   font-family: var(--f-italic); font-style: italic; font-weight: 600;
   font-variation-settings: "opsz" 144, "SOFT" 100, "WONK" 1;
-  font-size: 36px; line-height: .4; color: var(--gold);
+  font-size: 38px; line-height: .4; color: var(--gold);
   display: block; margin-bottom: -10px;
 }
 .asprey-q-text {
   font-family: var(--f-italic); font-style: italic; font-weight: 400;
   font-variation-settings: "opsz" 36, "SOFT" 50;
-  font-size: 15px; line-height: 1.4; color: var(--ink-soft);
+  font-size: 17px; line-height: 1.4; color: var(--ink-soft);
   letter-spacing: -.005em; margin-bottom: 8px;
 }
 .asprey-q-text .energy-mark {
@@ -445,7 +445,7 @@ body::before {
   color: var(--gold-bright); font-size: 1.04em;
 }
 .asprey-attrib {
-  font-family: var(--f-mono); font-weight: 400; font-size: 9.5px;
+  font-family: var(--f-mono); font-weight: 400; font-size: 11.5px;
   letter-spacing: .28em; text-transform: uppercase; color: var(--muted);
   display: flex; align-items: center; gap: 10px;
 }
@@ -457,7 +457,7 @@ body::before {
 .hero h1 { margin: 0 auto 40px; max-width: 1080px; }
 .hero-deck { font-family: var(--f-italic); font-style: italic; font-weight: 400;
   font-variation-settings: "opsz" 144, "SOFT" 50;
-  font-size: clamp(22px, 2.2vw, 32px); line-height: 1.4; color: var(--ink-soft);
+  font-size: clamp(24px, 2.2vw, 34px); line-height: 1.4; color: var(--ink-soft);
   max-width: 800px; margin: 0 auto 48px; letter-spacing: -.005em;
 }
 .hero-deck .energy {
@@ -471,7 +471,7 @@ body::before {
   font-size: .58em; letter-spacing: .25em; vertical-align: .2em;
 }
 .hero-desc {
-  font-family: var(--f-sans); font-weight: 400; font-size: 17px; line-height: 1.7;
+  font-family: var(--f-sans); font-weight: 400; font-size: 19px; line-height: 1.7;
   color: var(--ink-soft); max-width: 720px; margin: 0 auto 56px;
 }
 .hero-desc strong { color: var(--ink); font-weight: 600; }
@@ -488,7 +488,7 @@ body::before {
   position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
   font-family: var(--f-italic); font-style: italic; font-weight: 600;
   font-variation-settings: "opsz" 144, "SOFT" 80, "WONK" 1;
-  font-size: 104px; line-height: 1; color: var(--gold-bright); letter-spacing: -.04em;
+  font-size: 106px; line-height: 1; color: var(--gold-bright); letter-spacing: -.04em;
 }
 
 .cta-pair { display: flex; flex-direction: column; align-items: center; gap: 24px; }
@@ -496,7 +496,7 @@ body::before {
 /* Trust row */
 .trust-row {
   display: flex; gap: 28px; justify-content: center; flex-wrap: wrap;
-  margin-top: 32px; font-family: var(--f-mono); font-size: 10.5px;
+  margin-top: 32px; font-family: var(--f-mono); font-size: 12.5px;
   letter-spacing: .28em; text-transform: uppercase; color: var(--muted);
 }
 .trust-row .ti { display: flex; align-items: center; gap: 8px; }
@@ -518,7 +518,7 @@ body::before {
   position: relative;
 }
 .social-proof .label {
-  font-family: var(--f-mono); font-weight: 400; font-size: 10.5px;
+  font-family: var(--f-mono); font-weight: 400; font-size: 12.5px;
   letter-spacing: .35em; text-transform: uppercase; color: var(--gold);
   text-align: center; margin-bottom: 32px;
 }
@@ -528,7 +528,7 @@ body::before {
 .logo-row .item {
   font-family: var(--f-italic); font-style: italic; font-weight: 500;
   font-variation-settings: "opsz" 144, "SOFT" 50;
-  font-size: 22px; color: var(--ink-soft); opacity: .75; letter-spacing: -.005em;
+  font-size: 24px; color: var(--ink-soft); opacity: .75; letter-spacing: -.005em;
   transition: opacity .3s ease, color .3s ease;
 }
 .logo-row .item:hover { opacity: 1; color: var(--gold-bright); }
@@ -545,15 +545,15 @@ body::before {
 .stat-callout .num {
   font-family: var(--f-italic); font-style: italic; font-weight: 600;
   font-variation-settings: "opsz" 144, "SOFT" 80;
-  font-size: 64px; line-height: 1; color: var(--gold-bright);
+  font-size: 66px; line-height: 1; color: var(--gold-bright);
   letter-spacing: -.03em; display: block; margin-bottom: 12px;
 }
 .stat-callout .text {
-  font-family: var(--f-sans); font-size: 19px; line-height: 1.55; color: var(--ink);
+  font-family: var(--f-sans); font-size: 21px; line-height: 1.55; color: var(--ink);
 }
 .stat-callout .num { color: var(--gold); }
 .stat-callout .source {
-  font-family: var(--f-mono); font-size: 10.5px; letter-spacing: .25em;
+  font-family: var(--f-mono); font-size: 12.5px; letter-spacing: .25em;
   text-transform: uppercase; color: var(--muted); margin-top: 20px;
   padding-top: 16px; border-top: 1px solid var(--rule-soft);
 }
@@ -565,17 +565,17 @@ body::before {
 .quote-block .big-quote {
   position: absolute; top: -10px; left: -8px; font-family: var(--f-italic);
   font-style: italic; font-weight: 600; font-variation-settings: "opsz" 144, "SOFT" 100, "WONK" 1;
-  font-size: 80px; line-height: 1; color: var(--gold);
+  font-size: 82px; line-height: 1; color: var(--gold);
 }
 .quote-block .quote-text {
   font-family: var(--f-italic); font-style: italic; font-weight: 400;
   font-variation-settings: "opsz" 144, "SOFT" 50;
-  font-size: clamp(20px, 1.8vw, 26px); line-height: 1.5; color: var(--ink);
+  font-size: clamp(22px, 1.8vw, 28px); line-height: 1.5; color: var(--ink);
 }
 .quote-attrib strong { color: var(--gold); font-weight: 600; }
 .emphasis-line { color: var(--gold); }
 .quote-attrib {
-  font-family: var(--f-mono); font-size: 11px; letter-spacing: .25em;
+  font-family: var(--f-mono); font-size: 13px; letter-spacing: .25em;
   text-transform: uppercase; color: var(--muted); text-align: right;
   margin: -8px 0 32px;
 }
@@ -584,7 +584,7 @@ body::before {
 .emphasis-line {
   font-family: var(--f-italic); font-style: italic; font-weight: 500;
   font-variation-settings: "opsz" 144, "SOFT" 80, "WONK" 1;
-  font-size: clamp(20px, 1.8vw, 26px); line-height: 1.4; color: var(--gold-bright);
+  font-size: clamp(22px, 1.8vw, 28px); line-height: 1.4; color: var(--gold-bright);
   margin: 24px 0 !important;
 }
 
@@ -596,7 +596,7 @@ body::before {
   border-top: 1px solid rgba(201,162,75,.25); border-bottom: 1px solid rgba(201,162,75,.25);
   color: var(--ink-rev); position: relative;
 }
-.bridge-section .reveal-line { color: var(--ink-rev) !important; font-family: var(--f-sans) !important; font-weight: 500 !important; font-size: clamp(26px, 2.4vw, 36px) !important; letter-spacing: 0 !important; text-transform: none !important; border-top-color: rgba(201,162,75,.25) !important; border-bottom-color: rgba(201,162,75,.25) !important; line-height: 1.4; }
+.bridge-section .reveal-line { color: var(--ink-rev) !important; font-family: var(--f-sans) !important; font-weight: 500 !important; font-size: clamp(28px, 2.4vw, 38px) !important; letter-spacing: 0 !important; text-transform: none !important; border-top-color: rgba(201,162,75,.25) !important; border-bottom-color: rgba(201,162,75,.25) !important; line-height: 1.4; }
 .bridge-section .reveal-line em { color: var(--gold-bright-on-dark) !important; background: linear-gradient(180deg,#E6C36C 0%,#A38347 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; font-family: var(--f-italic) !important; font-style: italic; font-weight: 600; font-variation-settings: "opsz" 144, "SOFT" 80, "WONK" 1; }
 .bridge-section .reveal-line::before, .bridge-section .reveal-line::after { background: var(--night); border-color: var(--gold-on-dark); }
 .bridge-section .body-copy { color: var(--ink-rev); }
@@ -605,7 +605,7 @@ body::before {
 .bridge-section .body-copy .emphasis-line { color: var(--gold-bright-on-dark); }
 .reveal-line {
   font-family: var(--f-display); font-weight: 700;
-  font-size: clamp(28px, 2.6vw, 38px); line-height: 1.15; letter-spacing: 0;
+  font-size: clamp(30px, 2.6vw, 40px); line-height: 1.15; letter-spacing: 0;
   text-transform: uppercase; color: var(--ink);
   text-align: center; padding: 32px 0 !important; margin: 24px 0 !important;
   border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule);
@@ -649,10 +649,10 @@ body::before {
 .sensor-card .label .num {
   font-family: var(--f-italic); font-style: italic; font-weight: 600;
   font-variation-settings: "opsz" 144, "SOFT" 80;
-  font-size: 28px; color: var(--gold-bright); line-height: 1;
+  font-size: 30px; color: var(--gold-bright); line-height: 1;
 }
 .sensor-card .label .name {
-  font-family: var(--f-sans); font-weight: 600; font-size: 13px;
+  font-family: var(--f-sans); font-weight: 600; font-size: 15px;
   letter-spacing: .3em; text-transform: uppercase; color: var(--ink);
 }
 .callout-box {
@@ -663,7 +663,7 @@ body::before {
 .callout-box p {
   font-family: var(--f-italic); font-style: italic; font-weight: 500;
   font-variation-settings: "opsz" 144, "SOFT" 50;
-  font-size: 19px; line-height: 1.55; color: var(--ink); margin: 0;
+  font-size: 21px; line-height: 1.55; color: var(--ink); margin: 0;
 }
 
 @media (max-width: 880px) {
@@ -722,7 +722,7 @@ body::before {
   position: relative; z-index: 1;
   display: flex; align-items: center; gap: 18px;
   font-family: var(--f-italic); font-style: italic; font-weight: 400;
-  font-size: 64px; color: var(--gold-bright-on-dark);
+  font-size: 66px; color: var(--gold-bright-on-dark);
   font-variation-settings: "opsz" 144, "SOFT" 80, "WONK" 1;
   letter-spacing: -0.02em;
 }
@@ -732,14 +732,14 @@ body::before {
 .fail-card .icon-wrap .glyph::after {
   content: ""; width: 60px; height: 1px; background: var(--gold-on-dark);
 }
-.fail-card.span-2 .icon-wrap .glyph { font-size: 96px; }
+.fail-card.span-2 .icon-wrap .glyph { font-size: 98px; }
 .fail-card h4 {
-  font-family: var(--f-sans); font-weight: 600; font-size: 17px;
+  font-family: var(--f-sans); font-weight: 600; font-size: 19px;
   letter-spacing: .15em; text-transform: uppercase; color: var(--ink);
   margin-bottom: 14px;
 }
 .fail-card p {
-  font-family: var(--f-sans); font-size: 15px; line-height: 1.65; color: var(--ink-soft);
+  font-family: var(--f-sans); font-size: 17px; line-height: 1.65; color: var(--ink-soft);
 }
 .fail-card p strong { color: var(--gold); font-weight: 600; }
 .fail-card p em { font-family: var(--f-italic); font-style: italic; color: var(--gold); }
@@ -750,13 +750,13 @@ body::before {
 .revelation p {
   font-family: var(--f-italic); font-style: italic; font-weight: 400;
   font-variation-settings: "opsz" 144, "SOFT" 50;
-  font-size: 22px; line-height: 1.5; color: var(--ink-soft); margin-bottom: 24px;
+  font-size: 24px; line-height: 1.5; color: var(--ink-soft); margin-bottom: 24px;
 }
 .big-reveal {
   display: block; padding: 32px 24px; border: 1px solid var(--gold);
   background: rgba(139,111,46,.08); position: relative;
   font-family: var(--f-display); font-weight: 700;
-  font-size: clamp(24px, 2.4vw, 36px); line-height: 1.2; letter-spacing: 0;
+  font-size: clamp(26px, 2.4vw, 38px); line-height: 1.2; letter-spacing: 0;
   text-transform: uppercase; color: var(--ink);
 }
 .big-reveal .gold {
@@ -792,20 +792,20 @@ body::before {
 .research-card .roman {
   font-family: var(--f-italic); font-style: italic; font-weight: 500;
   font-variation-settings: "opsz" 144, "SOFT" 50;
-  color: var(--gold); font-size: 18px;
+  color: var(--gold); font-size: 20px;
 }
 .research-card .stat {
   font-family: var(--f-italic); font-style: italic; font-weight: 600;
   font-variation-settings: "opsz" 144, "SOFT" 80, "WONK" 1;
-  font-size: 36px; color: var(--gold-bright); letter-spacing: -.03em; line-height: 1;
+  font-size: 38px; color: var(--gold-bright); letter-spacing: -.03em; line-height: 1;
 }
 .research-card p {
-  font-family: var(--f-sans); font-size: 16px; line-height: 1.6; color: var(--ink-soft);
+  font-family: var(--f-sans); font-size: 18px; line-height: 1.6; color: var(--ink-soft);
 }
 .research-card p strong { color: var(--ink); font-weight: 700; }
 .research-card .stat { color: var(--gold); }
 .research-card .source {
-  font-family: var(--f-mono); font-size: 10px; letter-spacing: .25em;
+  font-family: var(--f-mono); font-size: 12px; letter-spacing: .25em;
   text-transform: uppercase; color: var(--muted); margin-top: 16px;
   padding-top: 12px; border-top: 1px solid var(--rule-soft);
 }
@@ -820,7 +820,7 @@ body::before {
 .million-box .equation {
   font-family: var(--f-italic); font-style: italic; font-weight: 600;
   font-variation-settings: "opsz" 144, "SOFT" 80, "WONK" 1;
-  font-size: clamp(56px, 6.8vw, 96px); color: var(--gold-bright);
+  font-size: clamp(58px, 6.8vw, 98px); color: var(--gold-bright);
   letter-spacing: -.04em; line-height: .85; text-align: center;
 }
 .million-box .equation small {
@@ -829,7 +829,7 @@ body::before {
   font-family: var(--f-mono);
 }
 .million-box .explain {
-  font-family: var(--f-sans); font-size: 17px; line-height: 1.6; color: var(--ink-soft);
+  font-family: var(--f-sans); font-size: 19px; line-height: 1.6; color: var(--ink-soft);
 }
 .million-box .explain strong { color: var(--gold-bright); font-weight: 600; }
 
@@ -863,12 +863,12 @@ body::before {
 }
 .bio-content { padding: 56px 48px; }
 .bio-credential {
-  font-family: var(--f-mono); font-size: 10.5px; letter-spacing: .28em;
+  font-family: var(--f-mono); font-size: 12.5px; letter-spacing: .28em;
   text-transform: uppercase; color: var(--gold); margin-bottom: 16px;
 }
 .bio-name {
   font-family: var(--f-display); font-weight: 700;
-  font-size: clamp(36px, 3.6vw, 52px); line-height: 1.05; letter-spacing: 0;
+  font-size: clamp(38px, 3.6vw, 54px); line-height: 1.05; letter-spacing: 0;
   text-transform: uppercase; color: var(--ink); margin-bottom: 28px;
 }
 .bio-banner {
@@ -884,11 +884,11 @@ body::before {
 .stat-item .num {
   font-family: var(--f-italic); font-style: italic; font-weight: 600;
   font-variation-settings: "opsz" 144, "SOFT" 80;
-  font-size: 44px; line-height: 1; color: var(--gold-bright); letter-spacing: -.03em;
+  font-size: 46px; line-height: 1; color: var(--gold-bright); letter-spacing: -.03em;
   margin-bottom: 6px;
 }
 .stat-item .lbl {
-  font-family: var(--f-mono); font-size: 9.5px; letter-spacing: .28em;
+  font-family: var(--f-mono); font-size: 11.5px; letter-spacing: .28em;
   text-transform: uppercase; color: var(--muted);
 }
 
@@ -916,18 +916,18 @@ body::before {
 .cat-card:hover { border-color: var(--gold); background: rgba(139,111,46,.05); }
 .cat-card.highlight { border-color: var(--gold); background: rgba(139,111,46,.10); }
 .cat-num {
-  font-family: var(--f-mono); font-size: 10.5px; letter-spacing: .35em;
+  font-family: var(--f-mono); font-size: 12.5px; letter-spacing: .35em;
   text-transform: uppercase; color: var(--gold); margin-bottom: 16px;
   display: flex; align-items: center; gap: 12px;
 }
 .cat-num::before { content: ""; width: 24px; height: 1px; background: var(--gold); }
 .cat-title {
-  font-family: var(--f-display); font-weight: 700; font-size: 28px;
+  font-family: var(--f-display); font-weight: 700; font-size: 30px;
   line-height: 1.1; letter-spacing: 0; text-transform: uppercase; color: var(--ink);
   margin-bottom: 16px;
 }
 .cat-card p:last-child {
-  font-family: var(--f-sans); font-size: 15.5px; line-height: 1.65; color: var(--ink-soft);
+  font-family: var(--f-sans); font-size: 17.5px; line-height: 1.65; color: var(--ink-soft);
 }
 .cat-card p strong { color: var(--gold); font-weight: 600; }
 
@@ -955,12 +955,12 @@ body::before {
 .cta-banner::before { top: 0; }
 .cta-banner::after  { bottom: 0; }
 .cta-banner .subtitle {
-  font-family: var(--f-mono); font-size: 11px; letter-spacing: .35em;
+  font-family: var(--f-mono); font-size: 13px; letter-spacing: .35em;
   text-transform: uppercase; color: var(--gold); margin-bottom: 24px;
 }
 .cta-banner .cta-heading {
   font-family: var(--f-display); font-weight: 700;
-  font-size: clamp(34px, 3.6vw, 52px); line-height: 1.08; letter-spacing: 0;
+  font-size: clamp(36px, 3.6vw, 54px); line-height: 1.08; letter-spacing: 0;
   text-transform: none; color: var(--ink-rev); margin-bottom: 40px; text-wrap: balance;
 }
 .cta-banner .cta-heading .accent {
@@ -988,16 +988,16 @@ body::before {
 }
 .story-card .corner { background: var(--paper-2); }
 .story-card .label {
-  font-family: var(--f-mono); font-size: 10px; letter-spacing: .32em;
+  font-family: var(--f-mono); font-size: 12px; letter-spacing: .32em;
   text-transform: uppercase; color: var(--gold); margin-bottom: 20px;
   padding-bottom: 14px; border-bottom: 1px solid var(--rule-soft);
 }
 .story-card .quote {
   font-family: var(--f-sans); font-style: normal; font-weight: 400;
-  font-size: 17px; line-height: 1.65; color: var(--ink); margin-bottom: 20px;
+  font-size: 19px; line-height: 1.65; color: var(--ink); margin-bottom: 20px;
 }
 .story-card .attr {
-  font-family: var(--f-mono); font-size: 10px; letter-spacing: .25em;
+  font-family: var(--f-mono); font-size: 12px; letter-spacing: .25em;
   text-transform: uppercase; color: var(--muted);
 }
 
@@ -1013,15 +1013,15 @@ body::before {
 .rr .stat {
   font-family: var(--f-italic); font-style: italic; font-weight: 600;
   font-variation-settings: "opsz" 144, "SOFT" 80, "WONK" 1;
-  font-size: clamp(56px, 6vw, 88px); color: var(--gold-bright);
+  font-size: clamp(58px, 6vw, 90px); color: var(--gold-bright);
   letter-spacing: -.04em; line-height: .85; margin-bottom: 16px;
 }
 .rr p {
-  font-family: var(--f-sans); font-size: 16px; line-height: 1.55; color: var(--ink-soft);
+  font-family: var(--f-sans); font-size: 18px; line-height: 1.55; color: var(--ink-soft);
   max-width: 380px; margin: 0 auto;
 }
 .rr .source {
-  font-family: var(--f-mono); font-size: 10px; letter-spacing: .25em;
+  font-family: var(--f-mono); font-size: 12px; letter-spacing: .25em;
   text-transform: uppercase; color: var(--muted); margin-top: 16px;
 }
 
@@ -1037,7 +1037,7 @@ body::before {
 .modules-header { text-align: center; max-width: 920px; margin: 0 auto 56px; }
 .mod-subtitle { font-family: var(--f-italic); font-style: italic; font-weight: 400;
   font-variation-settings: "opsz" 144, "SOFT" 50;
-  font-size: 19px; line-height: 1.5; color: var(--ink-soft); margin: 24px auto 40px; max-width: 760px; }
+  font-size: 21px; line-height: 1.5; color: var(--ink-soft); margin: 24px auto 40px; max-width: 760px; }
 
 .module-tabs {
   display: flex; flex-wrap: wrap; gap: 0; justify-content: center;
@@ -1046,7 +1046,7 @@ body::before {
 .module-tab {
   flex: 1; min-width: 100px;
   padding: 16px 20px; background: transparent;
-  font-family: var(--f-mono); font-weight: 400; font-size: 11px;
+  font-family: var(--f-mono); font-weight: 400; font-size: 13px;
   letter-spacing: .28em; text-transform: uppercase; color: var(--muted);
   border-right: 1px solid var(--rule-soft);
   transition: all .3s ease;
@@ -1082,28 +1082,28 @@ body::before {
 .mod-icon::before { content: ""; position: absolute; inset: 8px; border: 1px solid rgba(201,162,75,.4); border-radius: 50%; }
 .mod-icon svg { width: 56px; height: 56px; color: var(--gold-bright); }
 .mod-num {
-  font-family: var(--f-mono); font-size: 11px; letter-spacing: .35em;
+  font-family: var(--f-mono); font-size: 13px; letter-spacing: .35em;
   text-transform: uppercase; color: var(--gold); margin-bottom: 12px;
 }
 .mod-title {
   font-family: var(--f-display); font-weight: 700;
-  font-size: clamp(22px, 2vw, 30px); line-height: 1.2; letter-spacing: 0;
+  font-size: clamp(24px, 2vw, 32px); line-height: 1.2; letter-spacing: 0;
   text-transform: uppercase; color: var(--ink); margin-bottom: 16px;
 }
 .mod-desc {
-  font-family: var(--f-sans); font-size: 16px; line-height: 1.7; color: var(--ink);
+  font-family: var(--f-sans); font-size: 18px; line-height: 1.7; color: var(--ink);
 }
 .module-bullets {
   margin-top: 32px; display: grid; grid-template-columns: 1fr 1fr; gap: 14px 32px;
 }
 .module-bullet {
   display: flex; align-items: flex-start; gap: 14px;
-  font-family: var(--f-sans); font-size: 15px; line-height: 1.5; color: var(--ink-soft);
+  font-family: var(--f-sans); font-size: 17px; line-height: 1.5; color: var(--ink-soft);
   padding: 12px 0; border-bottom: 1px solid var(--rule-soft);
 }
 .module-bullet .check {
   font-family: var(--f-italic); font-style: italic; color: var(--gold);
-  font-size: 18px; line-height: 1; margin-top: 2px; flex-shrink: 0;
+  font-size: 20px; line-height: 1; margin-top: 2px; flex-shrink: 0;
 }
 .module-bullet strong { color: var(--gold); font-weight: 600; }
 
@@ -1111,7 +1111,7 @@ body::before {
   .module-jumbotron { grid-template-columns: 1fr; gap: 24px; padding: 32px; text-align: center; }
   .mod-icon { margin: 0 auto; }
   .module-bullets { grid-template-columns: 1fr; }
-  .module-tab { font-size: 10px; letter-spacing: .2em; padding: 12px 14px; min-width: 80px; }
+  .module-tab { font-size: 12px; letter-spacing: .2em; padding: 12px 14px; min-width: 80px; }
 }
 
 /* ============================================================
@@ -1131,31 +1131,31 @@ body::before {
 .bonus-card .icon-wrap {
   width: 64px; height: 64px; border: 1px solid var(--gold); border-radius: 50%;
   display: flex; align-items: center; justify-content: center;
-  font-size: 28px; color: var(--gold-bright); margin-bottom: 24px;
+  font-size: 30px; color: var(--gold-bright); margin-bottom: 24px;
 }
 .b-label {
-  font-family: var(--f-mono); font-size: 10.5px; letter-spacing: .32em;
+  font-family: var(--f-mono); font-size: 12.5px; letter-spacing: .32em;
   text-transform: uppercase; color: var(--gold); margin-bottom: 12px;
 }
 .b-title {
-  font-family: var(--f-display); font-weight: 700; font-size: 22px;
+  font-family: var(--f-display); font-weight: 700; font-size: 24px;
   line-height: 1.15; letter-spacing: 0; text-transform: uppercase; color: var(--ink);
   margin-bottom: 16px;
 }
 .b-desc {
-  font-family: var(--f-sans); font-size: 15.5px; line-height: 1.6; color: var(--ink-soft);
+  font-family: var(--f-sans); font-size: 17.5px; line-height: 1.6; color: var(--ink-soft);
 }
 .b-price {
   margin-top: 24px; padding-top: 20px; border-top: 1px solid var(--rule-soft);
   display: flex; justify-content: space-between; align-items: center;
-  font-family: var(--f-mono); font-size: 11px; letter-spacing: .28em;
+  font-family: var(--f-mono); font-size: 13px; letter-spacing: .28em;
   text-transform: uppercase; color: var(--muted);
 }
 .b-price .strike { text-decoration: line-through; }
 .free-badge {
   font-family: var(--f-italic); font-style: italic; font-weight: 600;
   font-variation-settings: "opsz" 144, "SOFT" 80, "WONK" 1;
-  font-size: 22px; color: var(--gold-bright); letter-spacing: 0;
+  font-size: 24px; color: var(--gold-bright); letter-spacing: 0;
 }
 
 @media (max-width: 720px) { .bonus-grid { grid-template-columns: 1fr; } }
@@ -1181,13 +1181,13 @@ body::before {
 .spec-price-sub { color: var(--ink-mute); }
 .spec-item-num { color: var(--gold); }
 .spec-meta-line {
-  font-family: var(--f-mono); font-size: 10.5px; letter-spacing: .3em;
+  font-family: var(--f-mono); font-size: 12.5px; letter-spacing: .3em;
   text-transform: uppercase; color: var(--muted); margin-bottom: 8px;
 }
 .spec-title {
   font-family: var(--f-italic); font-style: italic; font-weight: 500;
   font-variation-settings: "opsz" 144, "SOFT" 50;
-  font-size: 32px; color: var(--gold-bright); letter-spacing: -.01em; line-height: 1;
+  font-size: 34px; color: var(--gold-bright); letter-spacing: -.01em; line-height: 1;
 }
 .spec-cert {
   display: flex; align-items: center; gap: 16px;
@@ -1197,11 +1197,11 @@ body::before {
   display: flex; align-items: center; justify-content: center;
   font-family: var(--f-italic); font-style: italic; font-weight: 600;
   font-variation-settings: "opsz" 144, "SOFT" 80, "WONK" 1;
-  font-size: 28px; color: var(--gold-bright); position: relative;
+  font-size: 30px; color: var(--gold-bright); position: relative;
 }
 .spec-cert-mark::before { content: ""; position: absolute; inset: 4px; border: 1px solid rgba(201,162,75,.5); border-radius: 50%; }
 .spec-cert-label {
-  font-family: var(--f-mono); font-size: 9.5px; letter-spacing: .28em;
+  font-family: var(--f-mono); font-size: 11.5px; letter-spacing: .28em;
   text-transform: uppercase; color: var(--muted); line-height: 1.4;
 }
 
@@ -1211,22 +1211,22 @@ body::before {
 }
 .spec-divider { width: 1px; height: 100%; background: linear-gradient(180deg, transparent 0%, var(--gold) 50%, transparent 100%); }
 .spec-price-label {
-  font-family: var(--f-mono); font-size: 10px; letter-spacing: .35em;
+  font-family: var(--f-mono); font-size: 12px; letter-spacing: .35em;
   text-transform: uppercase; color: var(--muted); margin-bottom: 8px;
 }
 .spec-price {
   font-family: var(--f-italic); font-style: italic; font-weight: 600;
   font-variation-settings: "opsz" 144, "SOFT" 80, "WONK" 1;
-  font-size: clamp(64px, 8vw, 104px); color: var(--gold-bright);
+  font-size: clamp(66px, 8vw, 106px); color: var(--gold-bright);
   letter-spacing: -.04em; line-height: .9; display: flex; align-items: flex-start; gap: 4px;
 }
 .spec-price .dollar { font-size: .5em; margin-top: .15em; }
 .spec-price-sub {
-  font-family: var(--f-mono); font-size: 11px; letter-spacing: .25em;
+  font-family: var(--f-mono); font-size: 13px; letter-spacing: .25em;
   text-transform: uppercase; color: var(--muted); margin-top: 8px;
 }
 .spec-compare {
-  font-family: var(--f-sans); font-size: 14px; line-height: 1.7; color: var(--ink-soft);
+  font-family: var(--f-sans); font-size: 16px; line-height: 1.7; color: var(--ink-soft);
   text-align: right;
 }
 .spec-compare strong { color: var(--gold-bright); font-weight: 600; }
@@ -1236,7 +1236,7 @@ body::before {
 .spec-group { margin-bottom: 32px; }
 .spec-group-head {
   display: flex; align-items: center; gap: 16px;
-  font-family: var(--f-sans); font-weight: 600; font-size: 12px;
+  font-family: var(--f-sans); font-weight: 600; font-size: 14px;
   letter-spacing: .35em; text-transform: uppercase; color: var(--gold);
   margin-bottom: 24px;
 }
@@ -1252,15 +1252,15 @@ body::before {
 .spec-item-num {
   font-family: var(--f-italic); font-style: italic; font-weight: 500;
   font-variation-settings: "opsz" 144, "SOFT" 50;
-  font-size: 22px; color: var(--gold); line-height: 1; flex-shrink: 0;
+  font-size: 24px; color: var(--gold); line-height: 1; flex-shrink: 0;
 }
 .spec-item-label {
-  font-family: var(--f-sans); font-weight: 600; font-size: 13px;
+  font-family: var(--f-sans); font-weight: 600; font-size: 15px;
   letter-spacing: .12em; text-transform: uppercase; color: var(--ink);
   margin-bottom: 4px;
 }
 .spec-item-sub {
-  font-family: var(--f-sans); font-size: 12px; line-height: 1.4; color: var(--muted);
+  font-family: var(--f-sans); font-size: 14px; line-height: 1.4; color: var(--muted);
 }
 
 .spec-footer {
@@ -1283,10 +1283,10 @@ body::before {
 .spec-seal-num {
   font-family: var(--f-italic); font-style: italic; font-weight: 600;
   font-variation-settings: "opsz" 144, "SOFT" 80;
-  font-size: 32px; color: var(--gold-bright); line-height: 1;
+  font-size: 34px; color: var(--gold-bright); line-height: 1;
 }
 .spec-seal-label {
-  font-family: var(--f-mono); font-size: 8px; letter-spacing: .25em;
+  font-family: var(--f-mono); font-size: 10px; letter-spacing: .25em;
   text-transform: uppercase; color: var(--muted); text-align: center; line-height: 1.4; margin-top: 2px;
 }
 
@@ -1315,10 +1315,10 @@ body::before {
 .guarantee-badge .gb-num {
   font-family: var(--f-italic); font-style: italic; font-weight: 600;
   font-variation-settings: "opsz" 144, "SOFT" 80, "WONK" 1;
-  font-size: 80px; color: var(--gold-bright); line-height: 1;
+  font-size: 82px; color: var(--gold-bright); line-height: 1;
 }
 .guarantee-badge .gb-label {
-  font-family: var(--f-mono); font-size: 10px; letter-spacing: .3em;
+  font-family: var(--f-mono); font-size: 12px; letter-spacing: .3em;
   text-transform: uppercase; color: var(--gold); margin-top: 4px;
 }
 
@@ -1331,11 +1331,11 @@ body::before {
 .rr-main {
   font-family: var(--f-italic); font-style: italic; font-weight: 500;
   font-variation-settings: "opsz" 144, "SOFT" 80, "WONK" 1;
-  font-size: clamp(20px, 1.8vw, 26px); line-height: 1.4;
+  font-size: clamp(22px, 1.8vw, 28px); line-height: 1.4;
   color: var(--gold-bright); margin-bottom: 12px;
 }
 .rr-sub {
-  font-family: var(--f-mono); font-size: 11px; letter-spacing: .25em;
+  font-family: var(--f-mono); font-size: 13px; letter-spacing: .25em;
   text-transform: uppercase; color: var(--muted);
 }
 
@@ -1354,7 +1354,7 @@ body::before {
   margin: 40px 0; padding: 40px 36px; border: 1px solid var(--gold-on-dark);
   background: var(--night); text-align: center; position: relative;
   font-family: var(--f-display); font-weight: 700;
-  font-size: clamp(22px, 2.2vw, 32px); line-height: 1.3; letter-spacing: 0;
+  font-size: clamp(24px, 2.2vw, 34px); line-height: 1.3; letter-spacing: 0;
   text-transform: uppercase; color: var(--ink-rev);
 }
 .dark-callout .corner { background: var(--night-2); border-color: var(--gold-on-dark); }
@@ -1369,7 +1369,7 @@ body::before {
   margin-top: 32px; text-align: center;
   font-family: var(--f-italic); font-style: italic; font-weight: 400;
   font-variation-settings: "opsz" 144, "SOFT" 50;
-  font-size: 20px; line-height: 1.5; color: var(--ink-soft);
+  font-size: 22px; line-height: 1.5; color: var(--ink-soft);
 }
 .cost-reframe .strike { text-decoration: line-through; color: var(--muted); }
 .cost-reframe .primary { color: var(--gold-bright); font-weight: 600; }
@@ -1382,26 +1382,26 @@ body::before {
   background: var(--paper);
 }
 .future-copy {
-  margin-top: 40px; font-size: 18px; line-height: 1.8; color: var(--ink-soft);
+  margin-top: 40px; font-size: 20px; line-height: 1.8; color: var(--ink-soft);
 }
 .future-copy p { margin-bottom: 1.4em; }
 .future-copy .strong-line {
   font-family: var(--f-italic); font-style: italic; font-weight: 500;
   font-variation-settings: "opsz" 144, "SOFT" 80, "WONK" 1;
-  font-size: clamp(20px, 1.8vw, 26px); line-height: 1.4;
+  font-size: clamp(22px, 1.8vw, 28px); line-height: 1.4;
   color: var(--gold-bright);
 }
 .future-copy .italic-reveal {
   font-family: var(--f-italic); font-style: italic; font-weight: 400;
   font-variation-settings: "opsz" 144, "SOFT" 50;
-  font-size: 20px; color: var(--ink); border-left: 2px solid var(--gold);
+  font-size: 22px; color: var(--ink); border-left: 2px solid var(--gold);
   padding-left: 24px; margin: 32px 0;
 }
 .future-copy .strong-line { color: var(--gold); }
 .future-copy .lock-on {
   text-align: center; padding: 32px 24px; border-top: 1px solid var(--gold); border-bottom: 1px solid var(--gold);
   font-family: var(--f-display); font-weight: 700;
-  font-size: clamp(22px, 2.2vw, 30px); line-height: 1.25; letter-spacing: 0;
+  font-size: clamp(24px, 2.2vw, 32px); line-height: 1.25; letter-spacing: 0;
   text-transform: uppercase; color: var(--ink); margin: 40px 0 !important;
 }
 
@@ -1419,19 +1419,19 @@ body::before {
 .faq-question {
   padding: 28px 0;
   font-family: var(--f-display); font-weight: 600;
-  font-size: clamp(17px, 1.6vw, 22px); line-height: 1.3; letter-spacing: 0;
+  font-size: clamp(19px, 1.6vw, 24px); line-height: 1.3; letter-spacing: 0;
   text-transform: uppercase; color: var(--ink);
 }
 .faq-toggle {
   position: absolute; right: 0; top: 28px;
   font-family: var(--f-italic); font-style: italic; font-weight: 600;
   font-variation-settings: "opsz" 144, "SOFT" 80, "WONK" 1;
-  font-size: 26px; color: var(--gold); transition: transform .3s ease;
+  font-size: 28px; color: var(--gold); transition: transform .3s ease;
 }
 .faq-item.open .faq-toggle { transform: rotate(45deg); }
 .faq-answer {
   display: none; padding: 0 0 32px;
-  font-family: var(--f-sans); font-size: 16px; line-height: 1.7; color: var(--ink-soft);
+  font-family: var(--f-sans); font-size: 18px; line-height: 1.7; color: var(--ink-soft);
   max-width: 880px;
 }
 .faq-item.open .faq-answer { display: block; }
@@ -1459,7 +1459,7 @@ body::before {
 }
 .final-cta .cta-heading {
   font-family: var(--f-display); font-weight: 700;
-  font-size: clamp(40px, 5vw, 72px); line-height: 1.05; letter-spacing: 0;
+  font-size: clamp(42px, 5vw, 74px); line-height: 1.05; letter-spacing: 0;
   text-transform: uppercase; color: var(--ink-rev); margin-bottom: 32px; text-wrap: balance;
   position: relative; z-index: 2;
 }
@@ -1478,13 +1478,13 @@ body::before {
 .final-cta .cta-sub {
   font-family: var(--f-italic); font-style: italic; font-weight: 400;
   font-variation-settings: "opsz" 144, "SOFT" 50;
-  font-size: clamp(19px, 1.8vw, 24px); line-height: 1.5; color: var(--ink-soft-rev);
+  font-size: clamp(21px, 1.8vw, 26px); line-height: 1.5; color: var(--ink-soft-rev);
   margin: 0 auto 40px; max-width: 640px; position: relative; z-index: 2;
 }
 .enrollment-badge {
   display: inline-flex; align-items: center; gap: 12px; margin-top: 32px;
   padding: 12px 24px; border: 1px solid var(--gold);
-  font-family: var(--f-mono); font-size: 10.5px; letter-spacing: .3em;
+  font-family: var(--f-mono); font-size: 12.5px; letter-spacing: .3em;
   text-transform: uppercase; color: var(--gold-bright);
   position: relative; z-index: 2;
 }
@@ -1509,39 +1509,39 @@ body::before {
 .footer .references { color: rgba(245,235,208,.45); }
 .footer .references em { color: rgba(245,235,208,.7); }
 .footer-logo {
-  font-family: var(--f-sans); font-weight: 600; font-size: 14px;
+  font-family: var(--f-sans); font-weight: 600; font-size: 16px;
   letter-spacing: .35em; text-transform: uppercase; color: var(--ink);
   margin-bottom: 24px;
 }
 .footer-logo .italic {
   font-family: var(--f-italic); font-style: italic; font-weight: 500;
   font-variation-settings: "opsz" 144, "SOFT" 50;
-  text-transform: none; font-size: 18px; color: var(--gold-bright); letter-spacing: 0;
+  text-transform: none; font-size: 20px; color: var(--gold-bright); letter-spacing: 0;
 }
 .disclaimer {
-  font-family: var(--f-sans); font-size: 12px; line-height: 1.7; color: var(--muted);
+  font-family: var(--f-sans); font-size: 14px; line-height: 1.7; color: var(--muted);
   max-width: 720px; margin: 0 auto 24px;
 }
 .footer-links {
   display: flex; justify-content: center; gap: 40px; flex-wrap: wrap; margin-bottom: 32px;
-  font-family: var(--f-mono); font-size: 10.5px; letter-spacing: .3em;
+  font-family: var(--f-mono); font-size: 12.5px; letter-spacing: .3em;
   text-transform: uppercase;
 }
 .footer-links a { color: var(--gold); transition: color .3s ease; }
 .footer-links a:hover { color: var(--gold-bright); }
 .references {
   max-width: 720px; margin: 0 auto 32px; text-align: left;
-  font-family: var(--f-sans); font-size: 11px; line-height: 1.7; color: var(--muted-2);
+  font-family: var(--f-sans); font-size: 13px; line-height: 1.7; color: var(--muted-2);
 }
 .references h6 {
-  font-family: var(--f-mono); font-weight: 500; font-size: 10.5px;
+  font-family: var(--f-mono); font-weight: 500; font-size: 12.5px;
   letter-spacing: .3em; text-transform: uppercase; color: var(--muted);
   margin-bottom: 12px;
 }
 .references p { margin-bottom: 6px; }
 .references em { font-family: var(--f-italic); font-style: italic; color: var(--ink-mute); }
 .copyright {
-  font-family: var(--f-mono); font-size: 10px; letter-spacing: .3em;
+  font-family: var(--f-mono); font-size: 12px; letter-spacing: .3em;
   text-transform: uppercase; color: var(--muted-2); padding-top: 24px;
   border-top: 1px solid var(--rule-soft);
 }
@@ -1556,8 +1556,8 @@ body { padding-top: 73px; }
    ============================================================ */
 
 /* --- Hero masthead: brighter + larger --- */
-.hero-masthead .hero-logo span { font-size: 14px; color: var(--ink-rev); opacity: .95; }
-.hero-meta { font-size: 13px !important; color: var(--ink-rev) !important; opacity: .85; }
+.hero-masthead .hero-logo span { font-size: 16px; color: var(--ink-rev); opacity: .95; }
+.hero-meta { font-size: 15px !important; color: var(--ink-rev) !important; opacity: .85; }
 .hero-meta strong { color: var(--gold-bright-on-dark) !important; }
 
 /* --- Promote .el-presents to be the LARGE, BOLD, BRIGHT centerpiece of the BEYOND lockup --- */
@@ -1565,7 +1565,7 @@ body { padding-top: 73px; }
 .el-presents {
   font-family: var(--f-display) !important;
   font-weight: 700 !important;
-  font-size: clamp(22px, 2.6vw, 34px) !important;
+  font-size: clamp(24px, 2.6vw, 36px) !important;
   letter-spacing: 0 !important;
   text-transform: none !important;
   color: var(--ink-rev) !important;
@@ -1587,33 +1587,33 @@ body { padding-top: 73px; }
 }
 
 /* --- Eyebrows / mono labels: bump from 11px → 12px+ everywhere --- */
-.eyebrow { font-size: 12px; letter-spacing: .28em; }
-.section-header .eyebrow { font-size: 12.5px; }
+.eyebrow { font-size: 14px; letter-spacing: .28em; }
+.section-header .eyebrow { font-size: 14.5px; }
 
 /* --- Trust row (Tony Robbins Advisor / Jay Abraham Advisor): bigger + brighter --- */
-.trust-row { font-size: 12px; letter-spacing: .22em; color: var(--ink-soft-rev); }
+.trust-row { font-size: 14px; letter-spacing: .22em; color: var(--ink-soft-rev); }
 .hero .trust-row { color: rgba(245,235,208,.85); }
 
 /* --- Btn-subtext (Secure Checkout · BEYOND Price · 30-Day): bigger + brighter --- */
-.btn-subtext { font-size: 12px; letter-spacing: .22em; }
+.btn-subtext { font-size: 14px; letter-spacing: .22em; }
 .hero .btn-subtext, .section-dark .btn-subtext { color: rgba(245,235,208,.85); }
 .cta-banner .btn-subtext, .final-cta .btn-subtext { color: rgba(245,235,208,.85) !important; }
 
 /* --- Fail-card body (Five Approaches dark cards): brighter cream + larger body --- */
-.nothing-worked .fail-card p { color: var(--ink-rev); font-size: 16px; line-height: 1.7; }
-.nothing-worked .fail-card h4 { font-size: 18px; letter-spacing: .12em; }
+.nothing-worked .fail-card p { color: var(--ink-rev); font-size: 18px; line-height: 1.7; }
+.nothing-worked .fail-card h4 { font-size: 20px; letter-spacing: .12em; }
 .nothing-worked .fail-card p strong { color: var(--gold-bright-on-dark); }
 .nothing-worked .fail-card p em { color: var(--gold-bright-on-dark); }
 
 /* --- Final CTA subhead and pricing strip: bigger so older eyes can read --- */
-.final-cta .cta-sub { font-size: clamp(20px, 1.9vw, 26px); color: var(--ink-rev); }
-.final-cta .btn-subtext { font-size: 13px; }
+.final-cta .cta-sub { font-size: clamp(22px, 1.9vw, 28px); color: var(--ink-rev); }
+.final-cta .btn-subtext { font-size: 15px; }
 
 /* --- Enrollment badge (small mono pill at very bottom): bump --- */
-.enrollment-badge { font-size: 12px; letter-spacing: .25em; }
+.enrollment-badge { font-size: 14px; letter-spacing: .25em; }
 
 /* --- Asprey attribution under the quote: brighter --- */
-.asprey-attrib { font-size: 12px !important; }
+.asprey-attrib { font-size: 14px !important; }
 .asprey-attrib strong { color: var(--gold-bright-on-dark); }
 
 /* ============================================================
@@ -1621,40 +1621,40 @@ body { padding-top: 73px; }
    ============================================================ */
 @media (max-width: 880px) {
   /* Body & lead */
-  .body-copy { font-size: 18px; line-height: 1.72; }
-  .lead { font-size: 18px; line-height: 1.55; }
+  .body-copy { font-size: 20px; line-height: 1.72; }
+  .lead { font-size: 20px; line-height: 1.55; }
 
   /* Hero masthead — even larger on mobile so it can breathe */
-  .hero-masthead .hero-logo span { font-size: 15px; }
-  .hero-meta { font-size: 14px !important; }
+  .hero-masthead .hero-logo span { font-size: 17px; }
+  .hero-meta { font-size: 16px !important; }
 
   /* BEYOND lockup centerpiece */
-  .el-presents { font-size: 24px !important; }
+  .el-presents { font-size: 26px !important; }
   .el-left { padding: 32px 24px; }
 
   /* Eyebrows */
-  .eyebrow { font-size: 13px; letter-spacing: .25em; }
-  .section-header .eyebrow { font-size: 13px; }
+  .eyebrow { font-size: 15px; letter-spacing: .25em; }
+  .section-header .eyebrow { font-size: 15px; }
 
   /* Trust row + button subtext */
-  .trust-row { font-size: 13px; gap: 18px; }
-  .btn-subtext { font-size: 13px; gap: 14px; }
+  .trust-row { font-size: 15px; gap: 18px; }
+  .btn-subtext { font-size: 15px; gap: 14px; }
 
   /* Fail-card mobile */
-  .nothing-worked .fail-card p { font-size: 17px; }
-  .nothing-worked .fail-card h4 { font-size: 19px; }
+  .nothing-worked .fail-card p { font-size: 19px; }
+  .nothing-worked .fail-card h4 { font-size: 21px; }
 
   /* Module copy */
-  .mod-num { font-size: 12px; }
-  .mod-desc { font-size: 17px; line-height: 1.65; }
-  .module-bullet { font-size: 16px; }
+  .mod-num { font-size: 14px; }
+  .mod-desc { font-size: 19px; line-height: 1.65; }
+  .module-bullet { font-size: 18px; }
 
   /* Final CTA mobile */
-  .final-cta .cta-sub { font-size: 20px; }
-  .final-cta .btn-subtext { font-size: 13px; }
-  .enrollment-badge { font-size: 12px; }
+  .final-cta .cta-sub { font-size: 22px; }
+  .final-cta .btn-subtext { font-size: 15px; }
+  .enrollment-badge { font-size: 14px; }
 
   /* Asprey lockup attribution */
-  .asprey-attrib { font-size: 13px !important; }
-  .asprey-q-text { font-size: 18px !important; line-height: 1.5 !important; }
+  .asprey-attrib { font-size: 15px !important; }
+  .asprey-q-text { font-size: 20px !important; line-height: 1.5 !important; }
 }
