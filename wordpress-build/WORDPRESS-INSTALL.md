@@ -86,7 +86,7 @@ Once the page works, layer on:
 Two paths:
 
 1. **Quick text edits:** WP page editor → click the Custom HTML block → edit. WP doesn't lint HTML, so be careful with closing tags.
-2. **Visual / structural changes:** edit `index.html` locally, re-paste the body into the Custom HTML block. Source of truth lives in your local file or the GitHub repo (`tonyflo79/energy-of-relationships`).
+2. **Visual / structural changes:** edit `index.html` locally, re-paste the body into the Custom HTML block. Source of truth lives in your local file or the GitHub repo (`tonyflo79/energy-of-relationships-beyond`).
 
 ## Troubleshooting
 
