@@ -104,10 +104,12 @@ section{position:relative}
 
 .hero-vol{
   font-family:var(--mono);font-weight:500;font-size:13px;letter-spacing:.24em;text-transform:uppercase;color:var(--blue);
-  margin-bottom:56px;display:flex;align-items:center;gap:20px;flex-wrap:wrap;
+  margin-bottom:56px;display:flex;flex-direction:column;align-items:flex-start;gap:18px;
 }
+.hero-vol-row{display:flex;align-items:center;gap:20px;flex-wrap:wrap}
 .hero-vol .rule{flex:0 0 56px;height:1px;background:var(--blue)}
 .hero-vol .badge{padding:10px 16px;background:var(--blue);border:1px solid var(--blue);color:#FFFFFF;font-size:12px;letter-spacing:.2em;font-weight:600}
+.hero-vol-sub{color:var(--blue);font-size:13px;letter-spacing:.24em;font-weight:500}
 
 .hero h1{
   font-family:var(--sans);font-weight:300;
@@ -576,10 +578,12 @@ h2.center{margin-left:auto;margin-right:auto;text-align:center}
   <div class="hero-grid">
     <div class="hero-text">
       <div class="hero-vol">
-        <span class="rule"></span>
-        <span class="badge">Exclusive for BEYOND Biohacking Attendees</span>
-        <span>Harvard's 87-Year Study</span>
-        <span class="rule"></span>
+        <div class="hero-vol-row">
+          <span class="rule"></span>
+          <span class="badge">Exclusive for BEYOND Biohacking Attendees</span>
+          <span class="rule"></span>
+        </div>
+        <div class="hero-vol-sub">Harvard's 87-Year Study</div>
       </div>
       <h1>The <em>#1</em> Predictor of Wealth, Health <span class="amp">&amp;</span> <em>Happiness</em>.</h1>
       <p class="hero-deck">It wasn't IQ. It wasn't genes. It was the <span class="accent">Energy</span> of your <strong>Relationships</strong>.</p>
