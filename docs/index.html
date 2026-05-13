@@ -580,10 +580,21 @@ h2.center{margin-left:auto;margin-right:auto;text-align:center}
   .problem-list p{font-size:20px}
   .essay p{font-size:19px}
   .evidence-tag .big{font-size:clamp(56px,16vw,96px)}
-  .mod-meta{white-space:normal}
-  .mod-content h3{font-size:20px;line-height:1.2;overflow-wrap:anywhere}
-  .mod-num strong{font-size:44px}
-  .modules-section.bonus{padding:48px 24px}
+
+  /* Modules: collapse the grid entirely on mobile. Stack vertically. */
+  .mod-row{display:block;padding:32px 0}
+  .mod-num{flex-direction:row;align-items:baseline;gap:14px;margin-bottom:14px;padding-top:0}
+  .mod-num strong{font-size:32px}
+  .mod-content{margin-bottom:16px}
+  .mod-content h3{font-size:22px;text-transform:none;letter-spacing:0;line-height:1.25}
+  .mod-content p{max-width:none}
+  .mod-meta{display:block;text-align:left;padding-top:0;line-height:1.55;white-space:normal}
+  .mod-meta br{display:none}
+
+  /* Bonus section: drop the full-width bleed; stay inside the page padding */
+  .modules-section.bonus{margin-left:0;margin-right:0;padding:48px 20px}
+  .modules-stitle{gap:14px;margin-bottom:32px}
+
   .specimen-trust{grid-template-columns:repeat(2,1fr);gap:24px;padding:32px 28px}
   .specimen-trust .seal-mark{width:56px;height:56px;font-size:18px}
 }
