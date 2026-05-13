@@ -581,19 +581,20 @@ h2.center{margin-left:auto;margin-right:auto;text-align:center}
   .essay p{font-size:19px}
   .evidence-tag .big{font-size:clamp(56px,16vw,96px)}
 
-  /* Modules: collapse the grid entirely on mobile. Stack vertically. */
-  .mod-row{display:block;padding:32px 0}
-  .mod-num{flex-direction:row;align-items:baseline;gap:14px;margin-bottom:14px;padding-top:0}
-  .mod-num strong{font-size:32px}
-  .mod-content{margin-bottom:16px}
-  .mod-content h3{font-size:22px;text-transform:none;letter-spacing:0;line-height:1.25}
-  .mod-content p{max-width:none}
-  .mod-meta{display:block;text-align:left;padding-top:0;line-height:1.55;white-space:normal}
+  /* Modules: nuclear mobile reset — force block stacking, full-width children */
+  .mod-row{display:block !important;grid-template-columns:none !important;padding:32px 0 !important;width:100% !important}
+  .mod-num{display:flex !important;flex-direction:row !important;align-items:baseline !important;gap:14px !important;width:100% !important;margin-bottom:14px !important;padding-top:0 !important;text-align:left !important}
+  .mod-num strong{font-size:32px !important}
+  .mod-content{display:block !important;width:100% !important;margin-bottom:16px !important;grid-column:auto !important}
+  .mod-content h3{font-size:22px !important;text-transform:none !important;letter-spacing:0 !important;line-height:1.25 !important}
+  .mod-content p{max-width:none !important}
+  .mod-meta{display:block !important;width:100% !important;text-align:left !important;padding-top:0 !important;line-height:1.55 !important;white-space:normal !important;grid-column:auto !important}
   .mod-meta br{display:none}
 
-  /* Bonus section: drop the full-width bleed; stay inside the page padding */
-  .modules-section.bonus{margin-left:0;margin-right:0;padding:48px 20px}
-  .modules-stitle{gap:14px;margin-bottom:32px}
+  /* Bonus section: drop bleed, simplify title (no side lines) */
+  .modules-section.bonus{margin:40px 0 0 0 !important;padding:48px 20px !important;width:auto !important}
+  .modules-stitle{display:flex !important;justify-content:center !important;align-items:center !important;grid-template-columns:none !important;gap:14px !important;margin-bottom:32px !important}
+  .modules-stitle::before,.modules-stitle::after{display:none !important}
 
   .specimen-trust{grid-template-columns:repeat(2,1fr);gap:24px;padding:32px 28px}
   .specimen-trust .seal-mark{width:56px;height:56px;font-size:18px}
