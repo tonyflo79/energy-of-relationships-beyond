@@ -2,1002 +2,1279 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>The Energy of Relationships — Dr. Barry Morguelan</title>
-<meta name="description" content="Harvard's 87-year study found relationships are the #1 predictor of wealth, health, and happiness. Dr. Barry Morguelan reveals the Energy system that transforms every relationship in your life.">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Energy of Relationships — Dr. Barry Morguelan · BEYOND Edition</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,400..700,30..100,0..1;1,9..144,400..700,30..100,0..1&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=10">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+/* =========================================================
+   ENERGY OF RELATIONSHIPS — WHITE + BLUE WIREFRAME
+   Light background · Inter sans throughout · Larger type
+   Built for older readers (accessible scale, strong contrast)
+   ========================================================= */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  /* Surface */
+  --bg:#FFFFFF;
+  --bg-2:#F5F7FB;        /* soft off-white panel */
+  --bg-3:#EDF1F8;        /* lifted panel */
+  --panel:#F9FAFC;
+  --ink:#0E1320;         /* near-black, slight blue tilt */
+  --ink-soft:#3D4658;
+  --muted:#6B7689;
+  --rule:#D8DEEA;
+  --rule-soft:#E8EDF5;
+
+  /* Accent — confident blue (BEYOND partner) */
+  --blue:#1E40E6;
+  --blue-deep:#0E2BB8;
+  --blue-soft:#E6EBFE;
+
+  --sans:"Inter",system-ui,-apple-system,sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,monospace;
+}
+html{-webkit-text-size-adjust:100%;background:var(--bg)}
+body{
+  background:var(--bg);
+  color:var(--ink);
+  font-family:var(--sans);
+  font-weight:400;
+  font-size:20px;          /* base bumped for older audience */
+  line-height:1.65;
+  overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+section{position:relative}
+
+/* Hex mark (BEYOND nod) */
+.hex{display:inline-block;width:11px;height:12px;background:var(--blue);
+  clip-path:polygon(50% 0,100% 25%,100% 75%,50% 100%,0 75%,0 25%);vertical-align:1px}
+
+/* Reusable */
+.eyebrow{font-family:var(--mono);font-size:13px;letter-spacing:.24em;text-transform:uppercase;color:var(--blue);font-weight:500}
+.mono-label{font-family:var(--mono);font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);font-weight:500}
+
+/* Striped plate placeholder (for Claude Code → real imagery) */
+.plate{
+  position:relative;
+  background-color:var(--bg-2);
+  background-image:repeating-linear-gradient(45deg,transparent 0,transparent 8px,rgba(30,64,230,.06) 8px,rgba(30,64,230,.06) 9px);
+  border:1px solid var(--rule);
+  display:flex;align-items:center;justify-content:center;
+  overflow:hidden;
+}
+.plate::after{content:"";position:absolute;inset:12px;border:1px solid var(--rule-soft)}
+.plate .cap{
+  position:absolute;left:18px;bottom:18px;
+  font-family:var(--mono);font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);font-weight:500;
+}
+.plate .glyph{
+  font-family:var(--sans);font-weight:200;font-size:120px;line-height:1;
+  color:rgba(14,19,32,.10);letter-spacing:-.04em;
+}
+.plate.blue{background-color:var(--blue-soft)}
+.plate.blue .glyph{color:rgba(30,64,230,.22)}
+
+/* Real-image variant: img fills the .plate container, kill the stripes/inner frame */
+.plate.has-img{background-image:none;background-color:transparent}
+.plate.has-img::after{display:none}
+.plate.has-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;border:0}
+
+/* =========================================================
+   NAV
+   ========================================================= */
+.nav{
+  padding:32px 64px;display:grid;grid-template-columns:1fr auto 1fr;gap:48px;align-items:center;
+  border-bottom:1px solid var(--rule);
+  background:var(--bg);
+}
+.nav-l,.nav-r{font-family:var(--mono);font-weight:500;font-size:13px;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-soft);display:flex;align-items:center;gap:14px}
+.nav-r{justify-content:flex-end}
+.nav-c{font-family:var(--sans);font-weight:600;font-size:18px;letter-spacing:.04em;text-align:center;color:var(--ink);text-transform:uppercase}
+.nav-c .of{color:var(--blue);font-weight:400;text-transform:lowercase;margin:0 6px;font-style:italic}
+
+/* =========================================================
+   HERO
+   ========================================================= */
+.hero{padding:120px 64px 140px;position:relative}
+.hero-grid{max-width:1400px;margin:0 auto;display:grid;grid-template-columns:1fr 460px;gap:96px;align-items:end}
+
+.hero-vol{
+  font-family:var(--mono);font-weight:500;font-size:13px;letter-spacing:.24em;text-transform:uppercase;color:var(--blue);
+  margin-bottom:56px;display:flex;align-items:center;gap:20px;flex-wrap:wrap;
+}
+.hero-vol .rule{flex:0 0 56px;height:1px;background:var(--blue)}
+.hero-vol .badge{padding:10px 16px;background:var(--blue);border:1px solid var(--blue);color:#FFFFFF;font-size:12px;letter-spacing:.2em;font-weight:600}
+
+.hero h1{
+  font-family:var(--sans);font-weight:300;
+  font-size:clamp(56px,6.6vw,108px);
+  line-height:1.02;letter-spacing:-.03em;
+  color:var(--ink);margin-bottom:48px;max-width:14ch;text-wrap:balance;
+}
+.hero h1 em{font-style:normal;font-weight:600;color:var(--blue)}
+.hero h1 .num{font-weight:600;color:var(--blue)}
+.hero h1 .amp{font-weight:300;color:var(--blue);font-style:italic}
+
+.hero-deck{
+  font-family:var(--sans);font-weight:400;
+  font-size:26px;line-height:1.45;color:var(--ink);max-width:620px;margin-bottom:36px;
+}
+.hero-deck strong{font-weight:600;color:var(--ink)}
+.hero-deck .accent{color:var(--blue);font-weight:600}
+
+.hero-body{
+  font-family:var(--sans);font-weight:400;font-size:20px;line-height:1.6;color:var(--ink-soft);
+  max-width:62ch;margin-bottom:64px;
+}
+.hero-body strong{color:var(--ink);font-weight:600}
+.hero-body em{color:var(--blue);font-style:normal;font-weight:600}
+
+.hero-meta{display:grid;grid-template-columns:auto 1fr auto;gap:32px;align-items:center;padding-top:32px;border-top:1px solid var(--rule)}
+.hero-meta-l{font-family:var(--mono);font-weight:500;font-size:13px;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-soft)}
+.hero-meta-c{font-family:var(--mono);font-weight:500;font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);text-align:center}
+.hero-meta-c .now{color:var(--blue);font-weight:600;margin:0 4px}
+.hero-meta-c .was{text-decoration:line-through;margin-left:6px;color:var(--muted)}
+
+.btn-primary{
+  font-family:var(--sans);font-weight:600;font-size:14px;letter-spacing:.18em;text-transform:uppercase;
+  color:#FFFFFF;background:var(--blue);
+  display:inline-flex;align-items:center;gap:16px;
+  padding:22px 32px;border:1px solid var(--blue);
+  transition:background .25s ease,gap .3s ease;
+}
+.btn-primary:hover{background:var(--blue-deep);gap:24px}
+.btn-primary .arr{font-size:20px;font-weight:400}
+
+/* Hero portrait plate */
+.plate.hero-plate{aspect-ratio:3/4}
+.plate.hero-plate .glyph{font-size:180px}
+
+/* Asprey testimonial below portrait */
+.asprey{margin-top:48px;border-top:1px solid var(--rule);padding-top:36px;display:grid;grid-template-columns:72px 1fr;gap:24px;align-items:start}
+.asprey-photo{
+  width:72px;height:72px;border-radius:50%;
+  border:1px solid var(--rule);position:relative;flex:none;overflow:hidden;
+}
+.asprey-photo img{width:100%;height:100%;object-fit:cover;display:block}
+.asprey-q{font-family:var(--sans);font-weight:400;font-size:18px;line-height:1.5;color:var(--ink);text-wrap:pretty}
+.asprey-q .accent{color:var(--blue);font-weight:600}
+.asprey-cite{font-family:var(--mono);font-weight:500;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-top:10px}
+.asprey-cite strong{color:var(--blue);font-weight:600}
+
+/* =========================================================
+   TRUST BAR
+   ========================================================= */
+.trust{
+  padding:40px 64px;
+  border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);
+  background:var(--bg-2);
+}
+.trust-inner{max-width:1400px;margin:0 auto;display:flex;align-items:center;gap:48px;flex-wrap:wrap;justify-content:space-between}
+.trust-label{font-family:var(--mono);font-weight:600;font-size:13px;letter-spacing:.24em;text-transform:uppercase;color:var(--blue)}
+.trust-items{display:flex;gap:36px;flex-wrap:wrap;align-items:center}
+.trust-items span{font-family:var(--sans);font-weight:600;font-size:15px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink)}
+.trust-items .dot{color:var(--blue);font-weight:600}
+
+/* =========================================================
+   SECTION CHROME
+   ========================================================= */
+.section-mark{
+  display:grid;grid-template-columns:auto 1fr;gap:28px;align-items:center;
+  max-width:1280px;margin:0 auto 64px;
+}
+.section-mark-num{
+  font-family:var(--sans);font-weight:300;
+  font-size:56px;line-height:1;color:var(--blue);letter-spacing:-.02em;
+}
+.section-mark-label{font-family:var(--mono);font-weight:500;font-size:13px;letter-spacing:.24em;text-transform:uppercase;color:var(--ink-soft);display:flex;align-items:center;gap:20px}
+.section-mark-label::before{content:"";width:64px;height:1px;background:var(--blue)}
+
+h2.display{
+  font-family:var(--sans);font-weight:300;
+  font-size:clamp(44px,5.2vw,84px);line-height:1.05;letter-spacing:-.025em;
+  color:var(--ink);max-width:20ch;text-wrap:balance;
+}
+h2.display em{font-style:normal;font-weight:600;color:var(--blue)}
+h2.center{margin-left:auto;margin-right:auto;text-align:center}
+
+/* =========================================================
+   I — THE PROBLEM
+   ========================================================= */
+.problem{padding:160px 64px 140px;background:var(--bg)}
+.problem-head{max-width:1280px;margin:0 auto 80px}
+.problem-stat{
+  max-width:1280px;margin:0 auto 64px;
+  display:grid;grid-template-columns:340px 1fr;gap:80px;align-items:start;
+  padding:56px 0;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);
+}
+.stat-big{font-family:var(--sans);font-weight:200;font-size:160px;line-height:.9;color:var(--blue);letter-spacing:-.05em}
+.stat-big sub{font-family:var(--sans);font-weight:400;font-size:.3em;letter-spacing:.02em;color:var(--ink-soft);vertical-align:middle;margin-left:10px}
+.problem-stat-body p{font-family:var(--sans);font-size:22px;font-weight:400;line-height:1.55;color:var(--ink);max-width:60ch}
+.problem-stat-body .src{font-family:var(--mono);font-size:13px;font-weight:500;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-top:24px}
+
+.problem-list{max-width:1000px;margin:0 auto;display:flex;flex-direction:column;gap:28px}
+.problem-list p{font-family:var(--sans);font-weight:400;font-size:23px;line-height:1.5;color:var(--ink);text-wrap:pretty;padding-left:28px;border-left:3px solid var(--blue)}
+.problem-list p strong{color:var(--ink);font-weight:600}
+.problem-tag{max-width:1000px;margin:56px auto 0;font-family:var(--sans);font-weight:600;font-size:18px;letter-spacing:.06em;text-transform:uppercase;color:var(--blue)}
+
+/* Pull-quote — Waldinger */
+.pull{padding:140px 64px;background:var(--bg-2);border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.pull-inner{max-width:1100px;margin:0 auto;text-align:center}
+.pull-mark{font-family:var(--sans);font-weight:200;font-size:120px;color:var(--blue);line-height:.6;margin-bottom:24px}
+.pull-q{font-family:var(--sans);font-weight:300;font-size:clamp(28px,2.8vw,40px);line-height:1.35;color:var(--ink);max-width:24ch;margin:0 auto;text-wrap:balance;letter-spacing:-.015em}
+.pull-q em{color:var(--blue);font-style:normal;font-weight:600}
+.pull-cite{font-family:var(--mono);font-weight:500;font-size:13px;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);margin-top:40px;display:flex;align-items:center;justify-content:center;gap:20px;flex-wrap:wrap}
+.pull-cite::before,.pull-cite::after{content:"";width:40px;height:1px;background:var(--blue)}
+.pull-cite strong{color:var(--ink);font-weight:600}
+
+/* Body essay block */
+.essay{padding:140px 64px;background:var(--bg)}
+.essay-inner{max-width:840px;margin:0 auto}
+.essay p{font-family:var(--sans);font-weight:400;font-size:22px;line-height:1.6;color:var(--ink);margin-bottom:28px;text-wrap:pretty}
+.essay p strong{color:var(--ink);font-weight:600}
+.essay p em{color:var(--blue);font-style:normal;font-weight:600}
+.essay .tag{font-family:var(--sans);font-weight:600;font-size:32px;line-height:1.25;color:var(--ink);margin:56px 0 28px;letter-spacing:-.015em;text-wrap:balance}
+.essay .tag em{color:var(--blue);font-style:normal;font-weight:700}
+
+/* =========================================================
+   II — FOUR SENSORS
+   ========================================================= */
+.sensors{padding:160px 64px;background:var(--bg-2);border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.sensors-grid{max-width:1340px;margin:64px auto 0;display:grid;grid-template-columns:repeat(4,1fr);gap:28px}
+.sensor{padding:36px 28px;background:var(--bg);border:1px solid var(--rule);display:flex;flex-direction:column;gap:20px}
+.sensor .plate{aspect-ratio:1/1;width:100%}
+.sensor-num{font-family:var(--mono);font-weight:500;font-size:13px;letter-spacing:.24em;text-transform:uppercase;color:var(--blue)}
+.sensor-name{font-family:var(--sans);font-weight:600;font-size:28px;letter-spacing:-.01em;color:var(--ink)}
+.sensor-desc{font-family:var(--sans);font-weight:400;font-size:17px;line-height:1.55;color:var(--ink-soft)}
+.sensor-desc strong{color:var(--ink);font-weight:600}
+
+.sensors-tag{max-width:1100px;margin:80px auto 0;font-family:var(--sans);font-weight:400;font-size:24px;line-height:1.5;color:var(--ink);text-align:center;letter-spacing:-.005em}
+.sensors-tag em{color:var(--blue);font-style:normal;font-weight:700}
+
+/* =========================================================
+   III — FIVE APPROACHES
+   ========================================================= */
+.approaches{padding:160px 64px;background:var(--bg)}
+.approaches-grid{max-width:1340px;margin:64px auto 0;display:grid;grid-template-columns:repeat(5,1fr);gap:20px}
+.approach{padding:28px;background:var(--bg-2);border:1px solid var(--rule);display:flex;flex-direction:column;gap:16px}
+.approach .plate{aspect-ratio:4/3}
+.approach h4{font-family:var(--sans);font-weight:600;font-size:18px;letter-spacing:-.005em;color:var(--ink);line-height:1.25}
+.approach p{font-family:var(--sans);font-weight:400;font-size:16px;line-height:1.55;color:var(--ink-soft)}
+.approach p strong{color:var(--ink);font-weight:600}
+.approach p em{color:var(--blue);font-style:normal;font-weight:600}
+
+.approaches-tag{max-width:1100px;margin:80px auto 0;text-align:center}
+.approaches-tag p{font-family:var(--sans);font-weight:400;font-size:22px;color:var(--ink);line-height:1.5}
+.approaches-tag .big{font-family:var(--sans);font-weight:600;font-size:36px;line-height:1.15;color:var(--blue);letter-spacing:-.02em;margin-top:28px}
+
+/* =========================================================
+   IV — EVIDENCE
+   ========================================================= */
+.evidence{padding:160px 64px;background:var(--bg-2);border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.evidence-intro{max-width:960px;margin:0 auto 80px;text-align:center}
+.evidence-intro p{font-family:var(--sans);font-weight:400;font-size:21px;line-height:1.6;color:var(--ink-soft);margin-top:28px}
+.evidence-grid{max-width:1340px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:28px}
+.evidence-cell{padding:44px 32px;border:1px solid var(--rule);background:var(--bg);position:relative;display:flex;flex-direction:column;gap:16px}
+.evidence-cell .num{position:absolute;top:22px;right:22px;font-family:var(--mono);font-weight:500;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+.evidence-stat{font-family:var(--sans);font-weight:200;font-size:76px;line-height:.95;color:var(--blue);letter-spacing:-.04em;margin-top:18px}
+.evidence-cell p{font-family:var(--sans);font-weight:400;font-size:17px;line-height:1.55;color:var(--ink-soft);flex-grow:1}
+.evidence-cell p strong{color:var(--ink);font-weight:600}
+.evidence-cite{font-family:var(--mono);font-weight:500;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);padding-top:16px;border-top:1px solid var(--rule)}
+
+.evidence-tag{max-width:980px;margin:80px auto 0;text-align:center}
+.evidence-tag .big{font-family:var(--sans);font-weight:200;font-size:120px;line-height:.95;color:var(--blue);letter-spacing:-.04em}
+.evidence-tag .big span{display:block;font-size:.16em;letter-spacing:.32em;color:var(--ink-soft);margin-top:18px;font-weight:500;font-family:var(--mono);text-transform:uppercase}
+.evidence-tag p{font-family:var(--sans);font-weight:400;font-size:20px;line-height:1.55;color:var(--ink-soft);margin-top:32px}
+.evidence-tag p strong{color:var(--ink);font-weight:600}
+
+/* =========================================================
+   V — DR. BARRY
+   ========================================================= */
+.barry{padding:160px 64px;background:var(--bg)}
+.barry-grid{max-width:1340px;margin:0 auto;display:grid;grid-template-columns:520px 1fr;gap:88px;align-items:start}
+.barry .plate{aspect-ratio:4/5}
+.barry-meta{font-family:var(--mono);font-weight:500;font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:var(--blue);margin-bottom:28px;line-height:2}
+.barry h3{font-family:var(--sans);font-weight:300;font-size:clamp(40px,4.4vw,64px);line-height:1.08;letter-spacing:-.025em;color:var(--ink);margin-bottom:36px;text-wrap:balance}
+.barry h3 em{font-style:normal;font-weight:600;color:var(--blue)}
+.barry-body p{font-family:var(--sans);font-weight:400;font-size:20px;line-height:1.6;color:var(--ink-soft);margin-bottom:20px}
+.barry-body p strong{color:var(--ink);font-weight:600}
+.barry-body p em{color:var(--blue);font-style:normal;font-weight:600}
+
+.barry-stats{margin-top:56px;display:grid;grid-template-columns:repeat(4,1fr);gap:28px;padding-top:36px;border-top:1px solid var(--rule)}
+.barry-stat .n{font-family:var(--sans);font-weight:200;font-size:48px;color:var(--blue);letter-spacing:-.03em;line-height:1}
+.barry-stat .l{font-family:var(--mono);font-weight:500;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin-top:12px}
+
+/* =========================================================
+   VI — FOUR CATEGORIES
+   ========================================================= */
+.categories{padding:160px 64px;background:var(--bg-2);border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.cat-intro{max-width:960px;margin:0 auto 72px;text-align:center}
+.cat-intro p{font-family:var(--sans);font-weight:400;font-size:21px;line-height:1.6;color:var(--ink-soft);margin-top:28px}
+.cat-grid{max-width:1340px;margin:0 auto;display:grid;grid-template-columns:repeat(2,1fr);gap:28px}
+.cat{padding:44px 36px;background:var(--bg);border:1px solid var(--rule);position:relative}
+.cat-num{font-family:var(--mono);font-weight:500;font-size:13px;letter-spacing:.22em;text-transform:uppercase;color:var(--blue);margin-bottom:20px}
+.cat-num strong{color:var(--ink);font-weight:600}
+.cat h4{font-family:var(--sans);font-weight:600;font-size:36px;letter-spacing:-.02em;color:var(--ink);margin-bottom:20px;line-height:1.1}
+.cat p{font-family:var(--sans);font-weight:400;font-size:18px;line-height:1.6;color:var(--ink-soft)}
+.cat p strong{color:var(--ink);font-weight:600}
+.cat p em{color:var(--blue);font-style:normal;font-weight:600}
+
+.cat-tag{max-width:980px;margin:88px auto 0;text-align:center}
+.cat-tag .big{font-family:var(--sans);font-weight:300;font-size:clamp(36px,4vw,56px);line-height:1.1;color:var(--blue);letter-spacing:-.025em;text-wrap:balance}
+.cat-tag .big em{font-weight:700;font-style:normal}
+.cat-tag p{font-family:var(--sans);font-weight:400;font-size:20px;line-height:1.6;color:var(--ink-soft);margin-top:40px;max-width:60ch;margin-left:auto;margin-right:auto}
+
+/* =========================================================
+   MID CTA
+   ========================================================= */
+.mid-cta{padding:140px 64px;background:var(--bg);text-align:center;border-top:1px solid var(--rule)}
+.mid-cta .eyebrow{margin-bottom:28px}
+.mid-cta h3{font-family:var(--sans);font-weight:300;font-size:clamp(40px,5vw,72px);line-height:1.05;letter-spacing:-.03em;color:var(--ink);margin-bottom:56px;max-width:20ch;margin-left:auto;margin-right:auto;text-wrap:balance}
+.mid-cta h3 em{color:var(--blue);font-style:normal;font-weight:600}
+.mid-cta .price-row{display:flex;align-items:center;justify-content:center;gap:28px;flex-wrap:wrap;margin-top:40px;font-family:var(--mono);font-weight:500;font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
+.mid-cta .price-row .now{color:var(--blue);font-size:17px;letter-spacing:.12em;font-weight:600}
+.mid-cta .price-row .was{text-decoration:line-through}
+
+/* =========================================================
+   VII — TESTIMONIALS
+   ========================================================= */
+.testimonials{padding:160px 64px;background:var(--bg-2);border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.testimonials-grid{max-width:1340px;margin:64px auto 0;display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.test{padding:44px 36px;background:var(--bg);border:1px solid var(--rule);display:flex;flex-direction:column;gap:24px}
+.test-tag{font-family:var(--mono);font-weight:600;font-size:13px;letter-spacing:.22em;text-transform:uppercase;color:var(--blue)}
+.test p{font-family:var(--sans);font-weight:400;font-size:19px;line-height:1.55;color:var(--ink);text-wrap:pretty}
+.test-cite{font-family:var(--mono);font-weight:500;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);padding-top:20px;border-top:1px solid var(--rule);margin-top:auto}
+
+/* =========================================================
+   VIII — MODULES (NEW COPY)
+   ========================================================= */
+.modules{padding:180px 64px 140px;background:var(--bg);position:relative}
+.modules::before{content:"";position:absolute;top:0;left:50%;transform:translateX(-50%);width:1px;height:80px;background:var(--blue)}
+.modules-head{max-width:1340px;margin:0 auto 88px;text-align:center}
+.modules-deck{font-family:var(--sans);font-weight:400;font-size:22px;color:var(--ink-soft);max-width:62ch;margin:36px auto 0;line-height:1.5}
+
+.modules-body{max-width:1140px;margin:0 auto}
+.modules-section{margin-bottom:88px}
+.modules-section:last-child{margin-bottom:0}
+.modules-stitle{display:grid;grid-template-columns:1fr auto 1fr;gap:36px;align-items:center;margin-bottom:56px}
+.modules-stitle::before,.modules-stitle::after{content:"";height:1px;background:var(--blue);opacity:.45}
+.modules-stitle-c{font-family:var(--mono);font-weight:600;font-size:14px;letter-spacing:.28em;text-transform:uppercase;color:var(--blue);text-align:center;display:flex;align-items:center;justify-content:center;gap:14px}
+
+.mod-row{display:grid;grid-template-columns:108px 1fr auto;gap:56px;align-items:start;padding:40px 0;border-bottom:1px solid var(--rule);transition:padding-left .4s ease}
+.mod-row:last-child{border-bottom:none}
+.mod-row:hover{padding-left:14px}
+.mod-num{font-family:var(--mono);font-weight:500;font-size:13px;letter-spacing:.2em;color:var(--blue);text-transform:uppercase;padding-top:14px;display:flex;flex-direction:column;gap:10px}
+.mod-num strong{font-family:var(--sans);font-weight:200;font-size:64px;color:var(--ink);line-height:.8;letter-spacing:-.03em;font-style:italic}
+
+.mod-content h3{font-family:var(--sans);font-weight:600;font-size:26px;line-height:1.2;letter-spacing:.02em;margin-bottom:18px;color:var(--ink);text-transform:uppercase}
+.mod-content h3 em{font-style:normal;color:var(--blue);font-weight:600;text-transform:none;letter-spacing:0}
+.mod-content p{font-family:var(--sans);font-weight:400;font-size:18px;line-height:1.6;color:var(--ink-soft);max-width:62ch}
+.mod-content p strong{color:var(--ink);font-weight:600}
+
+.mod-meta{font-family:var(--mono);font-weight:500;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);text-align:right;padding-top:22px;line-height:1.95;white-space:nowrap}
+.mod-meta strong{color:var(--blue);font-weight:600}
+
+.modules-section.bonus{background:var(--bg-2);margin-left:-64px;margin-right:-64px;padding:80px 64px;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);margin-top:40px}
+.modules-section.bonus .modules-stitle-c{color:var(--blue)}
+.modules-section.bonus .mod-num strong{color:var(--blue)}
+
+/* =========================================================
+   IX — BONUSES
+   ========================================================= */
+.bonuses{padding:160px 64px;background:var(--bg-2);border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.bonuses-grid{max-width:1140px;margin:72px auto 0;display:grid;grid-template-columns:repeat(2,1fr);gap:28px}
+.bonus{padding:44px 36px;background:var(--bg);border:1px solid var(--rule);display:grid;grid-template-columns:auto 1fr;gap:28px;align-items:start}
+.bonus-mark{width:56px;height:56px;border:1.5px solid var(--blue);display:flex;align-items:center;justify-content:center;color:var(--blue);font-family:var(--sans);font-size:24px;font-weight:300;flex:none}
+.bonus-tag{font-family:var(--mono);font-weight:600;font-size:13px;letter-spacing:.24em;text-transform:uppercase;color:var(--blue);margin-bottom:12px}
+.bonus h4{font-family:var(--sans);font-weight:600;font-size:22px;line-height:1.25;color:var(--ink);margin-bottom:16px;letter-spacing:-.005em}
+.bonus p{font-family:var(--sans);font-weight:400;font-size:17px;line-height:1.55;color:var(--ink-soft)}
+.bonus-val{margin-top:18px;font-family:var(--mono);font-weight:500;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+.bonus-val .free{color:var(--blue);font-weight:600}
+
+/* =========================================================
+   X — OFFER / SPECIMEN CARD
+   ========================================================= */
+.offer{padding:180px 64px;background:var(--bg);position:relative}
+.offer-head{max-width:1140px;margin:0 auto 72px;text-align:center}
+.offer-deck{font-family:var(--sans);font-weight:400;font-size:22px;color:var(--ink-soft);max-width:60ch;margin:28px auto 0;line-height:1.5}
+
+.specimen{
+  max-width:1140px;margin:0 auto;
+  background:var(--bg);border:1px solid var(--rule);
+  padding:0;overflow:hidden;
+  box-shadow:0 30px 80px -40px rgba(14,19,32,.18);
+}
+.specimen-strip{
+  padding:22px 56px;border-bottom:1px solid var(--rule);
+  display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:18px;
+  font-family:var(--mono);font-weight:500;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);
+  background:var(--bg-2);
+}
+.specimen-strip .right{color:var(--blue);font-weight:600}
+
+.specimen-body{display:grid;grid-template-columns:1.2fr 1fr;gap:0}
+.specimen-l{padding:64px 56px;border-right:1px solid var(--rule)}
+.specimen-r{padding:64px 56px;background:var(--bg-2);display:flex;flex-direction:column;justify-content:space-between}
+
+.specimen-title{font-family:var(--sans);font-weight:300;font-size:44px;line-height:1.05;letter-spacing:-.02em;color:var(--ink);margin-bottom:12px}
+.specimen-title em{font-style:normal;font-weight:600;color:var(--blue)}
+.specimen-sub{font-family:var(--mono);font-weight:500;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin-bottom:40px}
+
+.specimen-list{display:grid;grid-template-columns:1fr 1fr;gap:0;border-top:1px solid var(--rule)}
+.specimen-row{padding:18px 18px 18px 0;border-bottom:1px solid var(--rule);display:grid;grid-template-columns:42px 1fr;gap:16px;align-items:center}
+.specimen-row .n{font-family:var(--mono);font-weight:500;font-size:13px;letter-spacing:.16em;color:var(--blue)}
+.specimen-row .l{font-family:var(--sans);font-weight:600;font-size:15px;color:var(--ink);letter-spacing:.02em;text-transform:uppercase}
+.specimen-row.bonus-row .n{color:var(--blue)}
+.specimen-row.bonus-row .l{color:var(--blue)}
+
+.specimen-tier{font-family:var(--mono);font-weight:600;font-size:13px;letter-spacing:.28em;text-transform:uppercase;color:var(--blue);margin:28px 0 10px;display:flex;align-items:center;gap:16px}
+.specimen-tier::before{content:"";width:28px;height:1px;background:var(--blue)}
+
+.specimen-price-label{font-family:var(--mono);font-weight:500;font-size:13px;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-soft);margin-bottom:16px}
+.specimen-price{font-family:var(--sans);font-weight:200;font-size:140px;line-height:.95;color:var(--blue);letter-spacing:-.05em;margin-bottom:10px}
+.specimen-price-was{font-family:var(--mono);font-weight:500;font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
+.specimen-price-was .strike{text-decoration:line-through;margin-right:12px}
+.specimen-price-was .save{color:var(--blue);font-weight:600}
+
+.specimen-compare{margin-top:40px;padding-top:28px;border-top:1px solid var(--rule);font-family:var(--sans);font-weight:400;font-size:15px;line-height:1.7;color:var(--ink-soft)}
+.specimen-compare strong{color:var(--ink);font-weight:600}
+.specimen-compare em{color:var(--blue);font-style:normal;font-weight:600}
+
+.specimen-foot{padding:36px 56px;border-top:1px solid var(--rule);display:grid;grid-template-columns:1fr auto 1fr;gap:28px;align-items:center;background:var(--bg-2)}
+.specimen-foot-l{font-family:var(--mono);font-weight:600;font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:var(--blue)}
+.specimen-foot-c{font-family:var(--mono);font-weight:500;font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--blue);text-align:center}
+.specimen-foot-r{text-align:right;font-family:var(--mono);font-weight:500;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+
+/* =========================================================
+   XI — GUARANTEE
+   ========================================================= */
+.guarantee{padding:160px 64px;background:var(--bg-2);border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.guarantee-inner{max-width:1040px;margin:0 auto;display:grid;grid-template-columns:200px 1fr;gap:64px;align-items:start}
+.guarantee-seal{
+  width:200px;height:200px;border:2px solid var(--blue);border-radius:50%;
+  display:flex;align-items:center;justify-content:center;flex-direction:column;
+  font-family:var(--mono);font-weight:500;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--blue);
+  position:relative;flex:none;
+}
+.guarantee-seal::before{content:"";position:absolute;inset:10px;border:1px solid var(--rule);border-radius:50%}
+.guarantee-seal .big{font-family:var(--sans);font-weight:200;font-size:56px;color:var(--blue);letter-spacing:-.03em;line-height:1;margin-bottom:6px}
+
+.guarantee h3{font-family:var(--sans);font-weight:300;font-size:clamp(34px,4vw,56px);line-height:1.05;letter-spacing:-.025em;color:var(--ink);margin-bottom:36px;max-width:18ch;text-wrap:balance}
+.guarantee h3 em{color:var(--blue);font-style:normal;font-weight:600}
+.guarantee p{font-family:var(--sans);font-weight:400;font-size:20px;line-height:1.6;color:var(--ink-soft);margin-bottom:20px}
+.guarantee p strong{color:var(--ink);font-weight:600}
+.guarantee .promise{padding:28px;background:var(--bg);border-left:3px solid var(--blue);margin-top:36px}
+.guarantee .promise p:first-child{margin:0;font-family:var(--sans);font-weight:500;font-size:20px;color:var(--ink);font-style:italic}
+.guarantee .promise-cite{font-family:var(--mono);font-weight:500;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin-top:16px;font-style:normal}
+
+/* =========================================================
+   XII / XIII — COST / NEXT
+   ========================================================= */
+.essay-dark{padding:160px 64px;background:var(--bg);border-top:1px solid var(--rule)}
+.essay-dark .essay-inner{max-width:840px;margin:0 auto}
+.essay-dark .tag{margin:56px 0 28px}
+
+/* =========================================================
+   XIV — FAQ
+   ========================================================= */
+.faq{padding:160px 64px;background:var(--bg-2);border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.faq-grid{max-width:1040px;margin:72px auto 0}
+.faq-item{border-bottom:1px solid var(--rule);padding:28px 0}
+.faq-item:first-child{border-top:1px solid var(--rule)}
+.faq-q{display:grid;grid-template-columns:1fr auto;gap:28px;align-items:start;cursor:pointer;list-style:none}
+.faq-q::-webkit-details-marker{display:none}
+.faq-q h4{font-family:var(--sans);font-weight:500;font-size:22px;line-height:1.35;color:var(--ink);letter-spacing:-.005em}
+.faq-q .plus{font-family:var(--sans);font-weight:200;font-size:36px;color:var(--blue);line-height:1;transition:transform .3s ease;flex:none}
+.faq-item[open] .plus{transform:rotate(45deg)}
+.faq-a{margin-top:22px;font-family:var(--sans);font-weight:400;font-size:18px;line-height:1.6;color:var(--ink-soft);max-width:72ch}
+.faq-a strong{color:var(--ink);font-weight:600}
+
+/* =========================================================
+   FINAL CTA
+   ========================================================= */
+.final{padding:180px 64px;background:var(--bg);text-align:center}
+.final h2{font-family:var(--sans);font-weight:300;font-size:clamp(48px,5.8vw,92px);line-height:1.02;letter-spacing:-.03em;color:var(--ink);max-width:18ch;margin:0 auto 40px;text-wrap:balance}
+.final h2 em{font-style:normal;color:var(--blue);font-weight:600}
+.final p{font-family:var(--sans);font-weight:400;font-size:22px;color:var(--ink-soft);margin-bottom:56px;max-width:48ch;margin-left:auto;margin-right:auto;line-height:1.5}
+.final .price-row{display:flex;align-items:center;justify-content:center;gap:28px;flex-wrap:wrap;margin-top:40px;font-family:var(--mono);font-weight:500;font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
+.final .price-row .now{color:var(--blue);font-size:17px;font-weight:600}
+.final .price-row .was{text-decoration:line-through}
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+.foot{padding:88px 64px 56px;background:var(--bg-2);border-top:1px solid var(--rule)}
+.foot-inner{max-width:1340px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:64px}
+.foot-l{font-family:var(--mono);font-weight:500;font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-soft);line-height:2}
+.foot-l .brand{color:var(--ink);font-weight:600}
+.foot-l .of{color:var(--blue);text-transform:lowercase;font-style:italic;margin:0 4px}
+.foot-r{font-family:var(--sans);font-weight:400;font-size:14px;line-height:1.6;color:var(--muted)}
+.foot-r p{margin-bottom:12px}
+.foot-refs{max-width:1340px;margin:56px auto 0;padding-top:36px;border-top:1px solid var(--rule)}
+.foot-refs h5{font-family:var(--mono);font-weight:600;font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:var(--blue);margin-bottom:24px}
+.foot-refs ol{font-family:var(--sans);font-weight:400;font-size:14px;line-height:1.7;color:var(--muted);padding-left:24px}
+.foot-refs li{margin-bottom:10px}
+.foot-refs li em{font-style:italic;color:var(--ink-soft)}
+.foot-bot{max-width:1340px;margin:56px auto 0;padding-top:28px;border-top:1px solid var(--rule);display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px;font-family:var(--mono);font-weight:500;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+.foot-bot a{color:var(--muted)}
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+@media (max-width:1100px){
+  .hero{padding:64px 32px 88px}
+  .hero-grid{grid-template-columns:1fr;gap:64px}
+  .plate.hero-plate{max-width:420px;margin:0 auto}
+  .nav{padding:24px 32px;grid-template-columns:1fr;gap:16px;text-align:center}
+  .nav-l,.nav-r{justify-content:center}
+  .sensors-grid,.approaches-grid,.evidence-grid{grid-template-columns:repeat(2,1fr)}
+  .cat-grid,.bonuses-grid,.testimonials-grid{grid-template-columns:1fr}
+  .barry-grid{grid-template-columns:1fr;gap:48px}
+  .specimen-body{grid-template-columns:1fr}
+  .specimen-l{border-right:none;border-bottom:1px solid var(--rule)}
+  .mod-row{grid-template-columns:80px 1fr;gap:28px}
+  .mod-meta{grid-column:1/-1;text-align:left;padding-top:8px}
+  .modules-section.bonus{margin-left:-32px;margin-right:-32px;padding:56px 32px}
+  .problem,.pull,.essay,.sensors,.approaches,.evidence,.barry,.categories,.testimonials,.modules,.bonuses,.offer,.guarantee,.essay-dark,.faq,.final,.foot,.mid-cta,.trust{padding-left:32px;padding-right:32px}
+  .problem-stat{grid-template-columns:1fr;gap:32px}
+  .guarantee-inner{grid-template-columns:1fr;gap:32px}
+  .foot-inner{grid-template-columns:1fr}
+}
+@media (max-width:640px){
+  body{font-size:18px}
+  .hero h1{font-size:48px}
+  .hero-deck{font-size:21px}
+  .hero-body{font-size:18px}
+  .hero-meta{grid-template-columns:1fr;gap:20px;text-align:center}
+  .sensors-grid,.approaches-grid,.evidence-grid{grid-template-columns:1fr}
+  h2.display{font-size:40px}
+  .stat-big{font-size:108px}
+  .specimen-list{grid-template-columns:1fr}
+  .specimen-l,.specimen-r{padding:36px 28px}
+  .specimen-price{font-size:96px}
+  .barry-stats{grid-template-columns:repeat(2,1fr)}
+  .problem-list p{font-size:20px}
+  .essay p{font-size:19px}
+}
+</style>
 </head>
 <body>
 
-<!-- Sticky timer removed for this version -->
-<style>body{padding-top:0!important;}@media(max-width:720px){body{padding-top:0!important;}}</style>
+<!-- ===================== NAV ===================== -->
+<nav class="nav">
+  <div class="nav-l"><span class="hex"></span> Vol. I &middot; Dr. Barry Morguelan &middot; MMXXVI</div>
+  <div class="nav-c">Energy <span class="of">of</span> Relationships</div>
+  <div class="nav-r">For BEYOND Attendees <span class="hex"></span></div>
+</nav>
 
-<!-- 1. HERO -->
-<section class="hero" id="top">
-  <div class="mandala" aria-hidden="true">
-    <svg viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg">
-      <g fill="none" stroke="#C9A24B" stroke-width="0.5" opacity="0.6">
-        <circle cx="500" cy="500" r="480"/><circle cx="500" cy="500" r="400"/>
-        <circle cx="500" cy="500" r="320"/><circle cx="500" cy="500" r="240"/>
-        <circle cx="500" cy="500" r="160"/><circle cx="500" cy="500" r="80"/>
-      </g>
-      <g fill="none" stroke="#C9A24B" stroke-width="0.5" opacity="0.45">
-        <g id="petals"><ellipse cx="500" cy="260" rx="60" ry="180"/></g>
-        <use href="#petals" transform="rotate(30 500 500)"/>
-        <use href="#petals" transform="rotate(60 500 500)"/>
-        <use href="#petals" transform="rotate(90 500 500)"/>
-        <use href="#petals" transform="rotate(120 500 500)"/>
-        <use href="#petals" transform="rotate(150 500 500)"/>
-      </g>
-      <g fill="none" stroke="#C9A24B" stroke-width="0.4" opacity="0.4">
-        <polygon points="500,100 770,255 770,565 500,720 230,565 230,255"/>
-        <polygon points="500,150 730,278 730,538 500,665 270,538 270,278"/>
-        <polygon points="500,200 690,300 690,510 500,610 310,510 310,300"/>
-      </g>
-    </svg>
-  </div>
-
-  <header class="hero-masthead">
-    <div class="hero-logo">
-      <div class="mark"></div>
-      <span><span class="italic-tag">Energy</span> of Relationships</span>
-    </div>
-    <div class="hero-meta">Vol. <strong>I</strong> · Dr. Barry Morguelan · MMXXVI</div>
-  </header>
-
-  <!-- Asprey eyebrow lockup -->
-  <div class="eyebrow-lockup">
-    <span class="corner tl"></span><span class="corner tr"></span>
-    <span class="corner bl"></span><span class="corner br"></span>
-    <div class="el-left">
-      <div class="el-presents">Exclusive for <em>BEYOND Biohacking</em> Conference Attendees</div>
-    </div>
-    <div class="eyebrow-lockup-divider"></div>
-    <div class="el-right">
-      <div class="asprey-portrait">
-        <img src="images/asprey-headshot.png" alt="Dave Asprey">
+<!-- ===================== HERO ===================== -->
+<section class="hero">
+  <div class="hero-grid">
+    <div class="hero-text">
+      <div class="hero-vol">
+        <span class="rule"></span>
+        <span class="badge">Exclusive for BEYOND Biohacking Attendees</span>
+        <span>Harvard's 87-Year Study</span>
+        <span class="rule"></span>
       </div>
-      <div class="asprey-q">
-        <span class="asprey-q-mark">"</span>
-        <p class="asprey-q-text">Dr. Barry can shift your ability to make <span class="energy-mark">Energy</span> inside your body in a way that is profound.</p>
-        <div class="asprey-attrib">
-          <strong>Dave Asprey</strong>
-          <span class="sep">/</span>
-          <span>Founder, BEYOND Biohacking Conference · Bestselling Author</span>
+      <h1>The <em>#1</em> Predictor of Wealth, Health <span class="amp">&amp;</span> <em>Happiness</em>.</h1>
+      <p class="hero-deck">It wasn't IQ. It wasn't genes. It was the <span class="accent">Energy</span> of your <strong>Relationships</strong>.</p>
+      <p class="hero-body">An 87-year Harvard study tracking <strong>1,700+ lives</strong> proved that relationship quality predicts your health at 80 better than your cholesterol at 50 — and your income by <em>$141,000 a year</em>. <strong>Dr. Barry Morguelan</strong>, former Head of Gastroenterology at multiple leading hospitals in Los Angeles, advisor to Tony Robbins and Jay Abraham, reveals the Energy system that transforms every relationship in your life.</p>
+      <div class="hero-meta">
+        <span class="hero-meta-l">By Dr. Barry Morguelan</span>
+        <span class="hero-meta-c">BEYOND Price <span class="now">$197</span><span class="was">$397</span> · 30-Day Guarantee</span>
+        <a href="#enroll" class="btn-primary">Transform My Relationships <span class="arr">→</span></a>
+      </div>
+    </div>
+
+    <div>
+      <figure class="plate hero-plate has-img" aria-label="Portrait of Dr. Barry Morguelan">
+        <img src="https://storage.googleapis.com/msgsndr/BtKmsmYIHuCCM0nQc8hq/media/69960498dde40b9b6bf02965.jpeg" alt="Dr. Barry Morguelan" loading="eager">
+      </figure>
+
+      <div class="asprey">
+        <div class="asprey-photo"><img src="images/asprey-headshot.png" alt="Dave Asprey" loading="lazy"></div>
+        <div>
+          <p class="asprey-q">&ldquo;Dr. Barry can shift your ability to make <span class="accent">Energy</span> inside your body in a way that is profound.&rdquo;</p>
+          <p class="asprey-cite"><strong>Dave Asprey</strong> &middot; Founder, BEYOND Biohacking Conference</p>
         </div>
       </div>
     </div>
   </div>
+</section>
 
-  <div class="hero-content">
-    <div class="eyebrow">Harvard's 87-Year Study</div>
-
-    <h1 class="display">
-      The <span class="num">#1</span> Predictor<br>
-      of Wealth, Health<br>
-      <span class="amp">&amp;</span> <em>Happiness</em>
-    </h1>
-
-    <p class="hero-deck">
-      It wasn't IQ. It wasn't genes. It was the <span class="energy">Energy</span> of your <strong>Relationships</strong>.
-    </p>
-
-    <p class="hero-desc">
-      An 87-year Harvard study tracking 1,700+ lives proved that relationship quality predicts your health at 80 better than your cholesterol at 50 — and your income by <strong>$141,000 a year</strong>. <strong>Dr. Barry Morguelan</strong>, former Head of Gastroenterology at multiple leading hospitals in Los Angeles, advisor to <em>Tony Robbins</em> and <em>Jay Abraham</em>, reveals the Energy system that transforms every relationship in your life.
-    </p>
-
-    <div class="seal" aria-hidden="true">
-      <div class="seal-ring"></div>
-      <div class="seal-ring mid"></div>
-      <div class="seal-ring inner"></div>
-      <div class="seal-mono">B</div>
+<!-- ===================== TRUST BAR ===================== -->
+<section class="trust">
+  <div class="trust-inner">
+    <span class="trust-label">Trusted by World-Class Performers &amp; Leaders</span>
+    <div class="trust-items">
+      <span>Tony Robbins</span><span class="dot">·</span>
+      <span>Jay Abraham</span><span class="dot">·</span>
+      <span>HeartMath Institute</span><span class="dot">·</span>
+      <span>Fortune 500 CEOs</span><span class="dot">·</span>
+      <span>Billionaire Clients</span>
     </div>
+  </div>
+</section>
 
-    <div class="cta-pair">
-      <a href="#enroll" class="btn"><span>Transform My Relationships</span><span class="arr">→</span></a>
-      <div class="btn-subtext">
-        <span>Secure Checkout</span><span class="dot"></span>
-        <span>BEYOND Price · <strong>$197</strong> <span style="opacity:.6;text-decoration:line-through;">$397</span></span><span class="dot"></span>
-        <span>30-Day Guarantee</span>
+<!-- ===================== I — THE PROBLEM ===================== -->
+<section class="problem">
+  <div class="section-mark">
+    <div class="section-mark-num">I</div>
+    <div class="section-mark-label">The Problem</div>
+  </div>
+
+  <div class="problem-head">
+    <h2 class="display">Loneliness as deadly as <em>15 cigarettes</em> a day.</h2>
+  </div>
+
+  <div class="problem-stat">
+    <div class="stat-big">1<sub>in 2</sub></div>
+    <div class="problem-stat-body">
+      <p>American adults report experiencing significant loneliness — a condition the U.S. Surgeon General now says is as deadly as smoking 15 cigarettes a day.</p>
+      <p class="src">— U.S. Surgeon General's Advisory, 2023 · Holt-Lunstad Meta-Analysis · N=308,849</p>
+    </div>
+  </div>
+
+  <div class="problem-list">
+    <p>If the relationships around you — <strong>business, family, friendships, partnerships</strong> — feel like they're draining you instead of building you…</p>
+    <p>Or you look at your network and realize none of them are the kind of people who <strong>challenge you to grow</strong>…</p>
+    <p>Or your business partnerships keep going sideways — the <strong>wrong collaborators</strong>, the wrong hires, the wrong alliances…</p>
+    <p>Or your family dynamics are stuck in patterns that haven't changed in <strong>decades</strong>…</p>
+  </div>
+  <p class="problem-tag">— I need to tell you something that might change everything.</p>
+</section>
+
+<!-- ===================== WALDINGER PULL ===================== -->
+<section class="pull">
+  <div class="pull-inner">
+    <div class="pull-mark">&ldquo;</div>
+    <p class="pull-q">Good relationships keep us happier and healthier. Period. It was not their middle-age cholesterol levels that predicted how they were going to grow old — it was how satisfied they were in their <em>relationships</em>.</p>
+    <p class="pull-cite"><strong>Robert Waldinger</strong> &middot; Director, Harvard Study of Adult Development &middot; 87 yrs · 1,700+ participants</p>
+  </div>
+</section>
+
+<!-- ===================== ESSAY ===================== -->
+<section class="essay">
+  <div class="essay-inner">
+    <p>The data is staggering. People with strong relationships earn <strong>$141,000 more per year</strong> at their peak. Married couples accumulate <strong>2–9× the net worth</strong> of their single peers. Having a best friend at work makes you <strong>7× more likely to be engaged</strong>.</p>
+    <p>Relationships aren't a nice-to-have. They are the single most powerful lever for everything you want in life. And most people have no system for building them.</p>
+    <p>Your ability to sense who to trust, who to partner with, who to distance yourself from, and who to invest in — that ability lives in your body. In physical sensors in your <strong>hands, heart, gut, and spine</strong>. And for most adults, those sensors have been shut down by stress, by betrayal, by years of ignoring what your body was trying to tell you.</p>
+
+    <p class="tag">It's not a networking problem. It's an <em>Energy</em> problem.</p>
+
+    <p>Beyond my 40+ year medical career, I've worked one-on-one with entrepreneurs, billionaires, CEOs, world-class performers, and everyday people who share the same struggle: their relationships — business, personal, family — don't match their ambition, intelligence, or heart.</p>
+    <p>The pattern is always the same. Smart, capable people. Surrounded by relationships that drain them instead of build them. And I've identified the reason that <strong>NONE of the traditional solutions</strong> can address. Something physical. Something in the body. Something measurable.</p>
+    <p class="tag"><em>Your relationship sensors are shut down.</em></p>
+    <p>And right now, you're flying blind — choosing business partners, tolerating family dynamics, and building friendships <strong>without the equipment you were born with.</strong></p>
+  </div>
+</section>
+
+<!-- ===================== II — FOUR SENSORS ===================== -->
+<section class="sensors">
+  <div class="section-mark">
+    <div class="section-mark-num">II</div>
+    <div class="section-mark-label">The Mechanism</div>
+  </div>
+  <div style="max-width:1340px;margin:0 auto">
+    <h2 class="display">Four sensors. The equipment you were <em>born</em> with.</h2>
+  </div>
+
+  <div class="sensors-grid">
+    <article class="sensor">
+      <div class="plate has-img"><img src="images/Hands.jpg" alt="Hands — relationship sensor for intention and trustworthiness" loading="lazy"></div>
+      <div class="sensor-num">I &middot; Hands</div>
+      <div class="sensor-name">Hands</div>
+      <p class="sensor-desc">Detect <strong>intention and trustworthiness</strong> on contact.</p>
+    </article>
+    <article class="sensor">
+      <div class="plate has-img"><img src="images/Heartenergy.png" alt="Heart — relationship sensor broadcasting and receiving energy" loading="lazy"></div>
+      <div class="sensor-num">II &middot; Heart</div>
+      <div class="sensor-name">Heart</div>
+      <p class="sensor-desc">Generates a field <strong>100× more powerful than the brain</strong>, broadcasting AND receiving.</p>
+    </article>
+    <article class="sensor">
+      <div class="plate has-img"><img src="images/Gutenergy.png" alt="Gut — the second brain reading energetic safety" loading="lazy"></div>
+      <div class="sensor-num">III &middot; Gut</div>
+      <div class="sensor-name">Gut</div>
+      <p class="sensor-desc">The &ldquo;second brain&rdquo; with <strong>100 million neurons</strong> reading energetic safety.</p>
+    </article>
+    <article class="sensor">
+      <div class="plate has-img"><img src="images/Spineenergy.png" alt="Spine — central conductor integrating all sensor data" loading="lazy"></div>
+      <div class="sensor-num">IV &middot; Spine</div>
+      <div class="sensor-name">Spine</div>
+      <p class="sensor-desc">The central conductor that <strong>integrates all sensor data</strong> into a single signal.</p>
+    </article>
+  </div>
+
+  <p class="sensors-tag">When these sensors are active, you <em>know</em> — who to trust in a deal, who to distance from in your family, who to invest in as a friend, who to build with as a partner. You don't guess. You don't rationalize. You know.</p>
+</section>
+
+<!-- ===================== III — FIVE APPROACHES ===================== -->
+<section class="approaches">
+  <div class="section-mark">
+    <div class="section-mark-num">III</div>
+    <div class="section-mark-label">Why Nothing Else Has Worked</div>
+  </div>
+  <div style="max-width:1340px;margin:0 auto">
+    <h2 class="display">Five approaches. None of them <em>activate the sensors</em>.</h2>
+  </div>
+
+  <div class="approaches-grid">
+    <article class="approach">
+      <div class="plate has-img"><img src="https://images.unsplash.com/photo-1573497620053-ea5300f94f21?w=800&q=80&auto=format" alt="Networking event" loading="lazy"></div>
+      <h4>Networking Events &amp; Conferences</h4>
+      <p>Collected 500 business cards. Connected on LinkedIn. But quantity isn't quality. Stanford: <strong>80% of jobs come through relationships</strong> — and you can't force the right ones at a mixer.</p>
+    </article>
+    <article class="approach">
+      <div class="plate has-img"><img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800&q=80&auto=format" alt="Communication workshop" loading="lazy"></div>
+      <h4>Communication Training</h4>
+      <p>Teaches you scripts and frameworks. But if your sensors are offline, you're communicating beautifully with the <em>wrong people</em>.</p>
+    </article>
+    <article class="approach">
+      <div class="plate has-img"><img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?w=800&q=80&auto=format" alt="Stack of self-help books" loading="lazy"></div>
+      <h4>Self-Help &amp; Personal Development</h4>
+      <p>&ldquo;Set better boundaries.&rdquo; &ldquo;Be more vulnerable.&rdquo; Good advice. But <strong>no protocol</strong> for reactivating the physical sensors that let you <em>feel</em> who belongs in your life.</p>
+    </article>
+    <article class="approach">
+      <div class="plate has-img"><img src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=800&q=80&auto=format" alt="Therapy and coaching session" loading="lazy"></div>
+      <h4>Therapy &amp; Coaching</h4>
+      <p>Helps you understand your patterns intellectually. But perfect insight into <em>why</em> you tolerate Energy vampires doesn't reactivate the sensors.</p>
+    </article>
+    <article class="approach">
+      <div class="plate has-img"><img src="https://images.unsplash.com/photo-1475137979732-b349acb6b7e3?w=800&q=80&auto=format" alt="Person practicing willpower and mindset work" loading="lazy"></div>
+      <h4>Willpower &amp; Mindset Work</h4>
+      <p>&ldquo;Just surround yourself with better people.&rdquo; As if choosing with a deactivated sensor system would produce different results.</p>
+    </article>
+  </div>
+
+  <div class="approaches-tag">
+    <p>None of them addressed the one thing that actually determines who you attract, who you trust, and who you build with:</p>
+    <p class="big">Your body's relationship sensor system.</p>
+  </div>
+</section>
+
+<!-- ===================== IV — EVIDENCE ===================== -->
+<section class="evidence">
+  <div class="section-mark">
+    <div class="section-mark-num">IV</div>
+    <div class="section-mark-label">The Evidence</div>
+  </div>
+  <div class="evidence-intro">
+    <h2 class="display center">87 years of Harvard research. 40 years of <em>real-world results</em>.</h2>
+    <p>This isn't theory. The longest study ever conducted on human life — Harvard's Study of Adult Development, running since 1938 — proved that relationships predict health, wealth, and happiness better than IQ, social class, or even genes.</p>
+  </div>
+
+  <div class="evidence-grid">
+    <article class="evidence-cell">
+      <span class="num">I</span>
+      <div class="evidence-stat">$141K</div>
+      <p>People with the warmest relationships earned <strong>$141,000/year more</strong> at their peak. Financial success depended on warmth of relationships, <strong>not intelligence.</strong></p>
+      <div class="evidence-cite">Harvard Grant Study · Vaillant (2012)</div>
+    </article>
+    <article class="evidence-cell">
+      <span class="num">II</span>
+      <div class="evidence-stat">×15</div>
+      <p>Loneliness increases mortality risk equivalent to <strong>smoking 15 cigarettes a day</strong> — greater than obesity, lack of exercise, or air pollution.</p>
+      <div class="evidence-cite">Holt-Lunstad Meta-Analysis · N=308,849</div>
+    </article>
+    <article class="evidence-cell">
+      <span class="num">III</span>
+      <div class="evidence-stat">7×</div>
+      <p>Employees with a best friend at work are <strong>7× more likely to be engaged</strong>. Moving workplace friendship from 2-in-10 to 6-in-10 increases profits 12%.</p>
+      <div class="evidence-cite">Gallup Q12 Engagement Survey</div>
+    </article>
+    <article class="evidence-cell">
+      <span class="num">IV</span>
+      <div class="evidence-stat">×5</div>
+      <p>In all 5 Blue Zones where people routinely live past 100, <strong>strong social networks</strong> are a defining feature. One Okinawan group: together 97 years; avg age 102.</p>
+      <div class="evidence-cite">Buettner · Blue Zones / Nat Geo</div>
+    </article>
+  </div>
+
+  <div class="evidence-tag">
+    <div class="big">$141,000<span>Income Per Year</span></div>
+    <p>That's the income gap between people with the warmest relationships and everyone else. Not from IQ. Not from education. Not from social class. From <strong>relationship quality.</strong> When your sensors are active, relationship decisions stop being guesswork — they become <strong>recognition.</strong></p>
+  </div>
+</section>
+
+<!-- ===================== V — DR. BARRY ===================== -->
+<section class="barry">
+  <div class="section-mark">
+    <div class="section-mark-num">V</div>
+    <div class="section-mark-label">The Physician-Master</div>
+  </div>
+  <div class="barry-grid">
+    <figure class="plate has-img" aria-label="Portrait of Dr. Barry Morguelan"><img src="https://storage.googleapis.com/msgsndr/BtKmsmYIHuCCM0nQc8hq/media/69960498dde40b9b6bf02965.jpeg" alt="Dr. Barry Morguelan" loading="lazy"></figure>
+    <div>
+      <div class="barry-meta">Former Head of Gastroenterology<br>Multiple Leading LA Hospitals<br>Energy Grand Master</div>
+      <h3>A Western physician. An <em>Eastern</em> tradition.</h3>
+      <div class="barry-body">
+        <p>I'm not only a medical doctor and board-certified surgeon — I'm also one of only <strong>12 remaining grand masters</strong> of a 5,000-year-old Chinese Energy tradition.</p>
+        <p>Western medicine showed me these sensor systems exist in the body. Eastern tradition showed me how to reactivate them.</p>
+        <p>Over four decades, I've worked with hundreds of clients — CEOs, entrepreneurs, athletes, parents, families — helping them turn these sensors back on so every relationship in their life improves: business partnerships, family bonds, friendships, and romantic connections. <strong>I call it the Energy of Relationships System.</strong></p>
+        <p>It uses a specific protocol to reactivate each of the four sensor locations so you can finally <em>sense the truth</em> about every person in your life — who builds you up, who drains you, and who to invest in.</p>
+      </div>
+
+      <div class="barry-stats">
+        <div class="barry-stat"><div class="n">40+</div><div class="l">Years Practice</div></div>
+        <div class="barry-stat"><div class="n">1000s</div><div class="l">Clients Guided</div></div>
+        <div class="barry-stat"><div class="n">4</div><div class="l">Sensor Systems</div></div>
+        <div class="barry-stat"><div class="n">12</div><div class="l">Grand Masters</div></div>
       </div>
     </div>
-
-    <div class="trust-row">
-      <span class="ti">Tony Robbins Advisor</span>
-      <span class="ti">Jay Abraham Advisor</span>
-      <span class="ti">40+ Years Practice</span>
-    </div>
   </div>
 </section>
 
-<!-- 2. SOCIAL PROOF -->
-<section class="social-proof">
-  <div class="container">
-    <div class="label">Trusted by World-Class Performers &amp; Leaders</div>
-    <div class="logo-row">
-      <span class="item">Tony Robbins</span>
-      <span class="item">Jay Abraham</span>
-      <span class="item">HeartMath Institute</span>
-      <span class="item">Fortune 500 CEOs</span>
-      <span class="item">Billionaire Clients</span>
-    </div>
+<!-- ===================== VI — FOUR CATEGORIES ===================== -->
+<section class="categories">
+  <div class="section-mark">
+    <div class="section-mark-num">VI</div>
+    <div class="section-mark-label">The Framework</div>
+  </div>
+  <div class="cat-intro">
+    <h2 class="display center">The four <em>categories</em> of people.</h2>
+    <p>Once your sensors are active, you can feel the difference instantly — in a business meeting, at the family dinner table, with old friends. Every person falls into one of four energetic categories.</p>
+  </div>
+
+  <div class="cat-grid">
+    <article class="cat">
+      <div class="cat-num">Category <strong>01</strong></div>
+      <h4>The Builders</h4>
+      <p>Win-win-win. They give from abundance. Every interaction leaves you with more Energy, not less. The business partner who makes everyone around them better. Wharton research calls them &ldquo;givers&rdquo; — and they earn <strong>50% more revenue</strong> than everyone else.</p>
+    </article>
+    <article class="cat">
+      <div class="cat-num">Category <strong>02</strong></div>
+      <h4>The Conditional</h4>
+      <p>Win-win, with conditions. They can be great colleagues, friends, or partners — but their Energy fluctuates. When business is good, they're generous. When stressed, they withdraw. <strong>Most people live here.</strong></p>
+    </article>
+    <article class="cat">
+      <div class="cat-num">Category <strong>03</strong></div>
+      <h4>The Takers</h4>
+      <p>Win-lose. They take more Energy than they give. Often the most charismatic person in the room. But over time, every relationship with them leaves you <strong>drained, depleted, diminished.</strong></p>
+    </article>
+    <article class="cat">
+      <div class="cat-num">Category <strong>04</strong></div>
+      <h4>The Destroyers</h4>
+      <p>Lose-lose. They don't just take — they diminish everyone around them. The toxic family member, the sabotaging business partner. The most dangerous because they can be the <strong>most compelling.</strong></p>
+    </article>
+  </div>
+
+  <div class="cat-tag">
+    <div class="big">You attract what you <em>ARE</em>,<br>not what you want.</div>
+    <p>The Energy of Relationships System shows you your current Category — honestly — and gives you the protocol to move to Category 1 in every domain of your life. Because when you become Category 1, Category 1 people start showing up.</p>
   </div>
 </section>
 
-<!-- 3. PROBLEM -->
-<section class="problem-section">
-  <div class="container-narrow">
-    <div class="section-header">
-      <div class="eyebrow">I · The Problem</div>
-      <h2 class="h2">Loneliness as deadly as <em>15 cigarettes</em> a day.</h2>
-    </div>
+<!-- ===================== MID CTA ===================== -->
+<section class="mid-cta">
+  <div class="eyebrow">Ready to Transform Every Relationship?</div>
+  <h3>Activate the #1 lever for wealth, health <em>&amp; happiness</em>.</h3>
+  <a href="#enroll" class="btn-primary">Transform My Relationships Now <span class="arr">→</span></a>
+  <div class="price-row"><span class="now">$197</span><span class="was">$397</span><span>BEYOND Attendees Save $200</span><span>30-Day Guarantee</span></div>
+</section>
 
-    <div class="stat-callout">
-      <span class="corner tl"></span><span class="corner tr"></span>
-      <span class="corner bl"></span><span class="corner br"></span>
-      <span class="num">1 in 2</span>
-      <p class="text">American adults report experiencing significant loneliness — a condition the U.S. Surgeon General now says is as deadly as smoking 15 cigarettes a day.</p>
-      <div class="source">— U.S. Surgeon General's Advisory, 2023 · Holt-Lunstad Meta-Analysis, 308,849 participants</div>
-    </div>
+<!-- ===================== VII — TESTIMONIALS ===================== -->
+<section class="testimonials">
+  <div class="section-mark">
+    <div class="section-mark-num">VII</div>
+    <div class="section-mark-label">40+ Years of Results</div>
+  </div>
+  <div style="max-width:1340px;margin:0 auto">
+    <h2 class="display">What happens when the sensors <em>turn back on</em>.</h2>
+  </div>
 
-    <div class="body-copy">
-      <p>If the relationships around you — business, family, friendships, partnerships — feel like they're draining you instead of building you…</p>
-      <p>Or you look at your network and realize none of them are the kind of people who challenge you to grow…</p>
-      <p>Or your business partnerships keep going sideways — the wrong collaborators, the wrong hires, the wrong alliances…</p>
-      <p>Or your family dynamics are stuck in patterns that haven't changed in decades…</p>
-      <p>I need to tell you something that might change everything:</p>
-    </div>
-
-    <div class="quote-block">
-      <span class="big-quote">"</span>
-      <p class="quote-text">Good relationships keep us happier and healthier. Period. It was not their middle-age cholesterol levels that predicted how they were going to grow old — it was how satisfied they were in their <em>relationships</em>.</p>
-    </div>
-    <div class="quote-attrib">— <strong>Robert Waldinger</strong> · Director, Harvard Study of Adult Development (87 yrs · 1,700+ participants)</div>
-
-    <div class="body-copy">
-      <p>The data is staggering. People with strong relationships earn <strong>$141,000 more per year</strong> at their peak. Married couples accumulate <strong>2–9× the net worth</strong> of their single peers. Having a best friend at work makes you <strong>7× more likely to be engaged</strong>.</p>
-      <p class="emphasis-line">Relationships aren't a nice-to-have. They are the single most powerful lever for everything you want in life.</p>
-      <p class="emphasis-line">And most people have no system for building them.</p>
-      <p>Your ability to sense who to trust, who to partner with, who to distance yourself from, and who to invest in — that ability lives in your body. In physical sensors in your hands, heart, gut, and spine. And for most adults, those sensors have been shut down by stress, by betrayal, by years of ignoring what your body was trying to tell you.</p>
-    </div>
+  <div class="testimonials-grid">
+    <article class="test">
+      <div class="test-tag">The Business Owner</div>
+      <p>&ldquo;I kept partnering with the wrong people. Three failed ventures. Within weeks of the sensor activation, I could feel the difference between a Category 1 collaborator and a Category 3 who just looked good on paper. My current business partner — I never would have trusted the signal before.&rdquo;</p>
+      <div class="test-cite">— Tech CEO &middot; San Francisco</div>
+    </article>
+    <article class="test">
+      <div class="test-tag">The Parent</div>
+      <p>&ldquo;My relationship with my teenage daughter was slipping away. The Category system showed me I was being a Category 3 parent without realizing it. I was draining her Energy the same way my boss drains mine. That awareness changed everything.&rdquo;</p>
+      <div class="test-cite">— Single Mother &middot; Austin</div>
+    </article>
+    <article class="test">
+      <div class="test-tag">The Executive</div>
+      <p>&ldquo;I was surrounded by people at work and felt completely alone. The sensor reactivation changed how I show up in every meeting, every call, every dinner. My team performs differently. My marriage is different. Even my friendships.&rdquo;</p>
+      <div class="test-cite">— Fortune 500 Executive</div>
+    </article>
   </div>
 </section>
 
-<!-- 4. BRIDGE -->
-<section class="bridge-section">
-  <div class="container-narrow">
-    <div class="reveal-line">
-      It's not a networking problem.<br>
-      It's an <em>Energy</em> problem.
+<!-- ===================== VIII — MODULES (NEW COPY) ===================== -->
+<section class="modules">
+  <div class="section-mark">
+    <div class="section-mark-num">VIII</div>
+    <div class="section-mark-label">What's Inside</div>
+  </div>
+  <div class="modules-head">
+    <h2 class="display center">Here's <em>everything</em> you get.</h2>
+    <p class="modules-deck">Seven modules covering business, family, friendships, and partnerships. Plus RTVTs, the workbook, the assessment toolkit, and a live group Q&amp;A call with Dr. Barry. Available immediately.</p>
+  </div>
+
+  <div class="modules-body">
+
+    <div class="modules-section">
+      <div class="modules-stitle"><span class="modules-stitle-c"><span class="hex"></span> Core Curriculum <span class="hex"></span></span></div>
+
+      <article class="mod-row">
+        <div class="mod-num"><strong>I</strong>Module 01</div>
+        <div class="mod-content">
+          <h3>Energy <em>Foundations</em></h3>
+          <p>The first principles of the Energy of Relationships System. How your sensors got switched off — and the gentle inputs that bring them back online. Establishes the language, the lens, and the daily ground you'll build everything else on.</p>
+        </div>
+        <div class="mod-meta"><strong>Video · Foundation</strong><br>Open immediately</div>
+      </article>
+
+      <article class="mod-row">
+        <div class="mod-num"><strong>II</strong>Module 02</div>
+        <div class="mod-content">
+          <h3>Four <em>Categories</em> of People</h3>
+          <p>Every connection in your life mapped to its true type — Builders, Conditional, Takers, Destroyers. The taxonomy that makes who you attract, tolerate, and chase suddenly obvious across business, family, and friendship.</p>
+        </div>
+        <div class="mod-meta"><strong>Video · Framework</strong><br>Classification</div>
+      </article>
+
+      <article class="mod-row">
+        <div class="mod-num"><strong>III</strong>Module 03</div>
+        <div class="mod-content">
+          <h3>Your Relationship <em>Sensors</em></h3>
+          <p>Hands, heart, gut, spine. How to reactivate each of the four sensor locations and read the Energy of any person in any room — in real time, on contact, before the rational mind catches up.</p>
+        </div>
+        <div class="mod-meta"><strong>Video · Practice</strong><br>Sensor Activation</div>
+      </article>
+
+      <article class="mod-row">
+        <div class="mod-num"><strong>IV</strong>Module 04</div>
+        <div class="mod-content">
+          <h3>Elevating Your <em>Category</em></h3>
+          <p>The protocol to move yourself — honestly — from wherever you are now into Category 1. Because the people you want around you are already there. You can't fake your way in; you have to become it.</p>
+        </div>
+        <div class="mod-meta"><strong>Video · Practice</strong><br>Self-Elevation</div>
+      </article>
+
+      <article class="mod-row">
+        <div class="mod-num"><strong>V</strong>Module 05</div>
+        <div class="mod-content">
+          <h3>Attracting <em>Higher Relations</em></h3>
+          <p>The energetic broadcast. When your sensors are clean and your category is raised, the right business partners, deeper friendships, and stronger family bonds start finding you. Magnetism as a practice, not a personality.</p>
+        </div>
+        <div class="mod-meta"><strong>Video · Application</strong><br>Magnetism</div>
+      </article>
+
+      <article class="mod-row">
+        <div class="mod-num"><strong>VI</strong>Module 06</div>
+        <div class="mod-content">
+          <h3>Difficult <em>Relationships</em></h3>
+          <p>For the ones you can't simply walk away from — the family member, the co-founder, the long marriage in a tight spot. Repair, recovery, and the clean exit. Knowing the difference is the work.</p>
+        </div>
+        <div class="mod-meta"><strong>Video · Mastery</strong><br>Repair &amp; Release</div>
+      </article>
     </div>
-    <div class="body-copy" style="margin-top: 48px;">
-      <p>Beyond my 40+ year medical career, I've worked one-on-one with entrepreneurs, billionaires, CEOs, world-class performers, and everyday people who share the same struggle: their relationships — business, personal, family — don't match their ambition, intelligence, or heart.</p>
-      <p>The pattern is always the same. Smart, capable people. Surrounded by relationships that drain them instead of build them.</p>
-      <p>And I've identified the reason that NONE of the traditional solutions can address. Something physical. Something in the body. Something measurable.</p>
-      <p class="emphasis-line">Your relationship sensors are shut down.</p>
-      <p>And right now, you're flying blind — choosing business partners, tolerating family dynamics, and building friendships <strong>without the equipment you were born with.</strong></p>
+
+    <div class="modules-section bonus">
+      <div class="modules-stitle"><span class="modules-stitle-c"><span class="hex"></span> Bonus Access <span class="hex"></span></span></div>
+
+      <article class="mod-row">
+        <div class="mod-num"><strong>VII</strong>Module 07</div>
+        <div class="mod-content">
+          <h3>Advanced Relationship <em>Mastery</em></h3>
+          <p>The deeper training reserved for committed practitioners — advanced sensor integration, complex multi-person dynamics, high-stakes situations, and the nuances that separate good from exceptional results. Sustaining Category 1 long term.</p>
+        </div>
+        <div class="mod-meta"><strong>Live + Video</strong><br>Advanced Track<br>Included with Bonus Access</div>
+      </article>
     </div>
+
   </div>
 </section>
 
-<!-- 5. MECHANISM -->
-<section class="mechanism-section">
-  <div class="container">
-    <div class="section-header">
-      <div class="eyebrow">II · The Mechanism</div>
-      <h2 class="h2">Four sensors.<br>The equipment you were <em>born</em> with.</h2>
-    </div>
+<!-- ===================== IX — BONUSES ===================== -->
+<section class="bonuses">
+  <div class="section-mark">
+    <div class="section-mark-num">IX</div>
+    <div class="section-mark-label">Plus, You Also Get</div>
+  </div>
+  <div style="max-width:1140px;margin:0 auto;text-align:center">
+    <h2 class="display center">Plus these <em>bonuses</em>, included.</h2>
+  </div>
 
-    <div class="two-col">
-      <div class="sensor-stack">
-        <div class="sensor-card">
-          <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
-          <img src="images/Hands.jpg" alt="Hands sensor"><div class="label"><span class="num">I</span><span class="name">Hands</span></div>
-        </div>
-        <div class="sensor-card">
-          <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
-          <img src="images/Heartenergy.png" alt="Heart sensor"><div class="label"><span class="num">II</span><span class="name">Heart</span></div>
-        </div>
-        <div class="sensor-card">
-          <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
-          <img src="images/Gutenergy.png" alt="Gut sensor"><div class="label"><span class="num">III</span><span class="name">Gut</span></div>
-        </div>
-        <div class="sensor-card">
-          <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
-          <img src="images/Spineenergy.png" alt="Spine sensor"><div class="label"><span class="num">IV</span><span class="name">Spine</span></div>
-        </div>
-      </div>
-
+  <div class="bonuses-grid">
+    <article class="bonus">
+      <div class="bonus-mark">+</div>
       <div>
-        <div class="body-copy">
-          <p>Your body has four primary sensor systems designed specifically for reading other people's Energy — in every context: business, family, friendship, partnership:</p>
-          <p><strong>Hands</strong> — detect intention and trustworthiness on contact.<br>
-          <strong>Heart</strong> — generates a field 100× more powerful than the brain, broadcasting AND receiving.<br>
-          <strong>Gut</strong> — the "second brain" with 100 million neurons reading energetic safety.<br>
-          <strong>Spine</strong> — the central conductor that integrates all sensor data into a single signal.</p>
-        </div>
+        <div class="bonus-tag">Bonus 01</div>
+        <h4>Rapid Transformational Vibrational Techniques (RTVT)</h4>
+        <p>The signature audio protocol — short, daily sensor-calibration sessions that re-tune your nervous system to the Energy of others. Listen with intention; carry the effect into every encounter.</p>
+        <div class="bonus-val"><span class="free">Included</span></div>
+      </div>
+    </article>
 
-        <div class="callout-box">
-          <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
-          <p>When these sensors are active, you KNOW — who to trust in a deal, who to distance from in your family, who to invest in as a friend, who to build with as a partner. You don't guess. You don't rationalize. You know.</p>
-        </div>
+    <article class="bonus">
+      <div class="bonus-mark">+</div>
+      <div>
+        <div class="bonus-tag">Bonus 02</div>
+        <h4>Relationship Energy Workbook</h4>
+        <p>The day-by-day, week-by-week map of the sensor reactivation journey. Category Classification worksheets, sensor tracking logs, and relationship Energy audits for every domain — business, family, friends, partner.</p>
+        <div class="bonus-val"><span class="free">Included</span></div>
+      </div>
+    </article>
 
-        <div class="body-copy">
-          <p>But for most adults, these sensors shut down — from stress, from betrayal, from years of overriding your own instincts. And without them, you're navigating the most important relationships of your life <strong>on logic alone.</strong></p>
-        </div>
+    <article class="bonus">
+      <div class="bonus-mark">+</div>
+      <div>
+        <div class="bonus-tag">Bonus 03</div>
+        <h4>Sensor Assessment Toolkit</h4>
+        <p>The complete Category Classification self-assessment plus a relationship Energy audit for every significant relationship in your life — business partners, family members, friends, and your partner. Know where you stand. Know where they stand.</p>
+        <div class="bonus-val"><span class="free">Included</span></div>
       </div>
-    </div>
-  </div>
-</section>
+    </article>
 
-<!-- 6. WHY NOTHING WORKED -->
-<section class="nothing-worked">
-  <div class="container">
-    <div class="section-header">
-      <div class="eyebrow">III · The Reason Nothing Has Worked</div>
-      <h2 class="h2">Five approaches.<br>None of them <em>activate the sensors</em>.</h2>
-    </div>
-
-    <div class="fail-grid">
-      <div class="fail-card">
-        <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
-        <div class="icon-wrap"><img src="https://images.unsplash.com/photo-1573497620053-ea5300f94f21?w=600&q=80&auto=format" alt="Networking event with crowd of professionals" loading="lazy"></div>
-        <h4>Networking Events &amp; Conferences</h4>
-        <p>Collected 500 business cards. Connected on LinkedIn. But quantity isn't quality. Stanford research confirmed: <strong>80% of jobs come through relationships</strong> — and you can't force the right ones at a mixer.</p>
-      </div>
-      <div class="fail-card">
-        <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
-        <div class="icon-wrap"><img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600&q=80&auto=format" alt="Communication workshop training session" loading="lazy"></div>
-        <h4>Communication Training</h4>
-        <p>Teaches you scripts and frameworks. But if your sensors are offline, you're communicating beautifully with the <em>wrong people</em> — the wrong business partners, the wrong inner circle, the wrong alliances.</p>
-      </div>
-      <div class="fail-card">
-        <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
-        <div class="icon-wrap"><img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?w=600&q=80&auto=format" alt="Stack of self-help books" loading="lazy"></div>
-        <h4>Self-Help &amp; Personal Development</h4>
-        <p>"Set better boundaries." "Be more vulnerable." "Show up authentically." Good advice. But no protocol for reactivating the physical sensor systems that let you <em>feel</em> who belongs in your life.</p>
-      </div>
-      <div class="fail-card">
-        <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
-        <div class="icon-wrap"><img src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=600&q=80&auto=format" alt="Therapy and coaching session" loading="lazy"></div>
-        <h4>Therapy &amp; Coaching</h4>
-        <p>Helps you understand your patterns intellectually. But perfect insight into <em>why</em> you tolerate Energy vampires doesn't reactivate the sensors that let you feel the difference in real time.</p>
-      </div>
-      <div class="fail-card span-2">
-        <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
-        <div class="icon-wrap"><img src="https://images.unsplash.com/photo-1475137979732-b349acb6b7e3?w=800&q=80&auto=format" alt="Person practicing willpower and mindset work" loading="lazy"></div>
-        <div>
-          <h4>Willpower &amp; Mindset Work</h4>
-          <p>"Just surround yourself with better people." As if choosing with a deactivated sensor system would produce different results. Jim Rohn said you're the average of your five closest people — but no one teaches you how to <em>sense</em> who those five should be.</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="revelation">
-      <p>None of them addressed the one thing that actually determines who you attract, who you trust, and who you build with:</p>
-      <div class="big-reveal">
-        <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
-        Your body's <span class="gold">relationship sensor</span> system.
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- 7. SCIENCE -->
-<section class="science-section">
-  <div class="container">
-    <div class="section-header">
-      <div class="eyebrow">IV · The Evidence</div>
-      <h2 class="h2">87 years of Harvard research.<br>40 years of <em>real-world results</em>.</h2>
-      <p class="lead">This isn't theory. The longest study ever conducted on human life — Harvard's Study of Adult Development, running since 1938 — proved that relationships predict health, wealth, and happiness better than IQ, social class, or even genes.</p>
-    </div>
-
-    <div class="research-cards">
-      <div class="research-card">
-        <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
-        <div class="icon-row"><span class="roman">I</span><span class="stat">$141K</span></div>
-        <p>People with the warmest relationships earned <strong>$141,000/year more</strong> at their peak. Financial success depended on warmth of relationships, <strong>not intelligence.</strong></p>
-        <div class="source">Harvard Grant Study · Vaillant, Triumphs of Experience (2012)</div>
-      </div>
-      <div class="research-card">
-        <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
-        <div class="icon-row"><span class="roman">II</span><span class="stat">×15</span></div>
-        <p>Loneliness increases mortality risk equivalent to <strong>smoking 15 cigarettes a day</strong> — greater than obesity, lack of exercise, or air pollution.</p>
-        <div class="source">Holt-Lunstad Meta-Analysis · 308,849 participants (2010)</div>
-      </div>
-      <div class="research-card">
-        <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
-        <div class="icon-row"><span class="roman">III</span><span class="stat">7×</span></div>
-        <p>Employees with a best friend at work are <strong>7× more likely to be engaged</strong>. Moving workplace friendship from 2-in-10 to 6-in-10 increases profits <strong>12%</strong>.</p>
-        <div class="source">Gallup Q12 · Employee Engagement Survey</div>
-      </div>
-      <div class="research-card">
-        <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
-        <div class="icon-row"><span class="roman">IV</span><span class="stat">×5</span></div>
-        <p>In all 5 Blue Zones where people routinely live past 100, <strong>strong social networks</strong> are a defining feature. One Okinawan group has been together <strong>97 years</strong>; average age: 102.</p>
-        <div class="source">Dan Buettner · Blue Zones / National Geographic</div>
-      </div>
-    </div>
-
-    <div class="million-box">
-      <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
-      <div class="equation">Income<br><small>Per Year</small></div>
-      <div class="explain">That's the income gap between people with the warmest relationships and everyone else. Not from IQ. Not from education. Not from social class. From <strong>relationship quality.</strong> When your sensors are active and calibrated, relationship decisions stop being guesswork. They become <strong>recognition.</strong> And that changes everything — who you partner with in business, who you trust with your family, who you build your life around.</div>
-    </div>
-  </div>
-</section>
-
-<!-- 8. DR. BARRY BIO -->
-<section class="bio-section">
-  <div class="container">
-    <div class="section-header">
-      <div class="eyebrow">V · The Physician-Master</div>
-      <h2 class="h2">Meet Dr. Barry <em>Morguelan</em></h2>
-    </div>
-
-    <article class="bio-card">
-      <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
-      <div class="bio-grid">
-        <figure class="bio-figure">
-          <img src="https://storage.googleapis.com/msgsndr/BtKmsmYIHuCCM0nQc8hq/media/69960498dde40b9b6bf02965.jpeg" alt="Dr. Barry Morguelan">
-        </figure>
-        <div class="bio-content">
-          <div class="bio-credential">Former Head of Gastroenterology · Multiple Leading LA Hospitals · Energy Grand Master</div>
-          <h3 class="bio-name">A Western physician.<br>An <em>Eastern</em> tradition.</h3>
-          <div class="body-copy">
-            <p>I'm not only a medical doctor and board-certified surgeon — I'm also one of only <strong>12 remaining grand masters</strong> of a 5,000-year-old Chinese Energy tradition.</p>
-            <p>Western medicine showed me these sensor systems exist in the body. Eastern tradition showed me how to reactivate them.</p>
-            <p>Over four decades, I've worked with hundreds of clients — CEOs, entrepreneurs, athletes, parents, families — helping them turn these sensors back on so every relationship in their life improves: business partnerships, family bonds, friendships, and romantic connections. <strong>I call it the Energy of Relationships System.</strong></p>
-            <p>It uses a specific protocol to reactivate each of the four sensor locations so you can finally <em>sense the truth</em> about every person in your life — who builds you up, who drains you, and who to invest in.</p>
-          </div>
-        </div>
-      </div>
-      <div class="bio-banner">
-        <div class="stats-row">
-          <div class="stat-item"><div class="num">40+</div><div class="lbl">Years Practice</div></div>
-          <div class="stat-item"><div class="num">1000s</div><div class="lbl">Clients Guided</div></div>
-          <div class="stat-item"><div class="num">4</div><div class="lbl">Sensor Systems</div></div>
-          <div class="stat-item"><div class="num">12</div><div class="lbl">Grand Masters</div></div>
-        </div>
+    <article class="bonus">
+      <div class="bonus-mark">+</div>
+      <div>
+        <div class="bonus-tag">Bonus 04</div>
+        <h4>Live Group Q&amp;A Call with Dr. Barry</h4>
+        <p>An exclusive small-group live call directly with Dr. Barry — live Q&amp;A and a real-time Energy transmission. The closest you can get to working with Dr. Barry personally, at a fraction of the private session cost.</p>
+        <div class="bonus-val"><span class="free">Included</span></div>
       </div>
     </article>
   </div>
+
+  <p style="max-width:1140px;margin:56px auto 0;text-align:center;font-family:var(--mono);font-weight:600;font-size:14px;letter-spacing:.24em;text-transform:uppercase;color:var(--blue)">Instant Access &middot; 30-Day Guarantee</p>
 </section>
 
-<!-- 9. FOUR CATEGORIES -->
-<section class="components-section">
-  <div class="container">
-    <div class="section-header">
-      <div class="eyebrow">VI · The Framework</div>
-      <h2 class="h2">The four <em>categories</em> of people.</h2>
-      <p class="lead">Once your sensors are active, you can feel the difference instantly — in a business meeting, at the family dinner table, with old friends. Every person falls into one of four energetic categories.</p>
-    </div>
-
-    <div class="cat-grid">
-      <article class="cat-card highlight">
-        <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
-        <div class="cat-num">Category 1</div>
-        <h3 class="cat-title">The Builders</h3>
-        <p>Win-win-win. They give from abundance. Every interaction leaves you with more Energy, not less. The business partner who makes everyone around them better. The friend who challenges you to grow. Wharton research calls them "givers" — and they earn <strong>50% more revenue</strong> than everyone else.</p>
-      </article>
-      <article class="cat-card">
-        <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
-        <div class="cat-num">Category 2</div>
-        <h3 class="cat-title">The Conditional</h3>
-        <p>Win-win, with conditions. They can be great colleagues, friends, or partners — but their Energy fluctuates. When business is good, they're generous. When stressed, they withdraw. <strong>Most people live here.</strong></p>
-      </article>
-      <article class="cat-card">
-        <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
-        <div class="cat-num">Category 3</div>
-        <h3 class="cat-title">The Takers</h3>
-        <p>Win-lose. They take more Energy than they give. Often the most charismatic person in the room — the impressive colleague, the exciting new friend. But over time, every relationship with them leaves you <strong>drained, depleted, diminished.</strong></p>
-      </article>
-      <article class="cat-card">
-        <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
-        <div class="cat-num">Category 4</div>
-        <h3 class="cat-title">The Destroyers</h3>
-        <p>Lose-lose. They don't just take — they diminish everyone around them. The toxic family member, the sabotaging business partner, the "friend" who celebrates your failures. The most dangerous because they can be the <strong>most compelling.</strong></p>
-      </article>
-    </div>
-
-    <div class="revelation" style="margin-top: 56px;">
-      <p>Here's the part most people don't want to hear:</p>
-      <div class="big-reveal">
-        <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
-        You attract what you <span class="gold">ARE</span>,<br>not what you <span class="gold">want</span>.
-      </div>
-      <p style="margin-top: 32px;">The Energy of Relationships System shows you your current Category — honestly — and gives you the protocol to move to Category 1 in every domain of your life. Because when you become Category 1, Category 1 people start showing up: better business partners, deeper friendships, stronger family bonds, and yes — the right romantic partner too.</p>
-    </div>
+<!-- ===================== X — OFFER ===================== -->
+<section class="offer" id="enroll">
+  <div class="section-mark">
+    <div class="section-mark-num">X</div>
+    <div class="section-mark-label">The Investment</div>
   </div>
-</section>
-
-<!-- 10. CTA BANNER -->
-<section class="cta-banner">
-  <div class="container-narrow">
-    <div class="subtitle">Ready to Transform Every Relationship?</div>
-    <h2 class="cta-heading">Activate the <span class="accent">#1 lever</span><br>for wealth, health &amp; happiness.</h2>
-    <a href="#enroll" class="btn"><span>Transform My Relationships Now</span><span class="arr">→</span></a>
-    <div class="btn-subtext">
-      <span><strong>$197</strong> <span style="text-decoration:line-through;opacity:.55;">$397</span></span><span class="dot"></span>
-      <span>BEYOND Attendees Save $200</span><span class="dot"></span>
-      <span>30-Day Guarantee</span>
-    </div>
+  <div class="offer-head">
+    <h2 class="display center">One of the most <em>valuable</em> programs I've ever released.</h2>
+    <p class="offer-deck">Everything required to reactivate your relationship sensors and transform every connection.</p>
   </div>
-</section>
 
-<!-- 11. RESULTS -->
-<section class="results-section">
-  <div class="container">
-    <div class="section-header">
-      <div class="eyebrow">VII · 40+ Years of Results</div>
-      <h2 class="h2">What happens when the<br>sensors <em>turn back on</em>.</h2>
+  <div class="specimen">
+    <div class="specimen-strip">
+      <span>Specimen No. EOR–2026 &middot; BEYOND Attendee Edition</span>
+      <span class="right">Certified by Dr. Barry &middot; <span class="hex"></span></span>
     </div>
 
-    <div class="story-grid">
-      <article class="story-card">
-        <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
-        <div class="label">The Business Owner</div>
-        <p class="quote">"I kept partnering with the wrong people. Three failed ventures. Within weeks of the sensor activation, I could feel the difference between a Category 1 collaborator and a Category 3 who just looked good on paper. My current business partner — I never would have trusted the signal before."</p>
-        <div class="attr">— Tech CEO · San Francisco</div>
-      </article>
-      <article class="story-card">
-        <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
-        <div class="label">The Parent</div>
-        <p class="quote">"My relationship with my teenage daughter was slipping away. The Category system showed me I was being a Category 3 parent without realizing it. I was draining her Energy the same way my boss drains mine. That awareness changed everything."</p>
-        <div class="attr">— Single Mother · Austin</div>
-      </article>
-      <article class="story-card">
-        <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
-        <div class="label">The Executive</div>
-        <p class="quote">"I was surrounded by people at work and felt completely alone. The sensor reactivation changed how I show up in every meeting, every call, every dinner. My team performs differently. My marriage is different. Even my friendships."</p>
-        <div class="attr">— Fortune 500 Executive</div>
-      </article>
-    </div>
+    <div class="specimen-body">
+      <div class="specimen-l">
+        <h3 class="specimen-title">Energy <em>of</em> Relationships</h3>
+        <p class="specimen-sub">Complete System &middot; BEYOND Attendee Edition</p>
 
-  </div>
-</section>
-
-<!-- 12. MODULES — ALL 7 -->
-<section class="modules-section">
-  <div class="container">
-    <div class="section-header">
-      <div class="eyebrow">VIII · What's Inside</div>
-      <h2 class="h2">Here's <em>everything</em> you get.</h2>
-      <p class="mod-subtitle">Seven modules covering business, family, friendships, and partnerships. RTVTs. Assessment tools. Workbook. Live group call with Dr. Barry. Created by Dr. Barry Morguelan. Available immediately.</p>
-    </div>
-
-    <div class="module-tabs" role="tablist">
-      <button class="module-tab active" data-tab="1" role="tab">Mod 1</button>
-      <button class="module-tab" data-tab="2" role="tab">Mod 2</button>
-      <button class="module-tab" data-tab="3" role="tab">Mod 3</button>
-      <button class="module-tab" data-tab="4" role="tab">Mod 4</button>
-      <button class="module-tab" data-tab="5" role="tab">Mod 5</button>
-      <button class="module-tab" data-tab="6" role="tab">Mod 6</button>
-      <button class="module-tab" data-tab="7" role="tab">Mod 7 <span class="star">★</span></button>
-    </div>
-
-    <div class="module-panels">
-      <!-- MODULE 1 -->
-      <div class="module-panel active" data-panel="1" id="module-1">
-        <div class="module-jumbotron">
-          <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
-          <div class="mod-icon">
-            <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="32" cy="32" r="28"/><circle cx="32" cy="32" r="18"/><circle cx="32" cy="32" r="8"/><circle cx="32" cy="32" r="2" fill="currentColor"/></svg>
-          </div>
-          <div>
-            <div class="mod-num">Module 1</div>
-            <h3 class="mod-title">Sensor Mapping &amp; Category Classification</h3>
-            <p class="mod-desc">Discover the four sensor locations in your body, understand why they shut down, and take the Category Classification assessment to see — honestly — where you currently stand across every relationship domain: business, family, friendships, and partnerships.</p>
-          </div>
+        <div class="specimen-tier">I &middot; Core Curriculum</div>
+        <div class="specimen-list">
+          <div class="specimen-row"><span class="n">01</span><span class="l">Module 1</span></div>
+          <div class="specimen-row"><span class="n">02</span><span class="l">Module 2</span></div>
+          <div class="specimen-row"><span class="n">03</span><span class="l">Module 3</span></div>
+          <div class="specimen-row"><span class="n">04</span><span class="l">Module 4</span></div>
+          <div class="specimen-row"><span class="n">05</span><span class="l">Module 5</span></div>
+          <div class="specimen-row"><span class="n">06</span><span class="l">Module 6</span></div>
         </div>
-        <div class="module-bullets">
-          <div class="module-bullet"><span class="check">◆</span><span>Map your <strong>4 sensor locations</strong>: hands, heart, gut, spine</span></div>
-          <div class="module-bullet"><span class="check">◆</span><span>Take the <strong>Category 1–4 Classification</strong> assessment</span></div>
-          <div class="module-bullet"><span class="check">◆</span><span>Audit every major relationship: business, family, friends, partner</span></div>
-          <div class="module-bullet"><span class="check">◆</span><span>Identify where you're <em>Category 3 to yourself</em> (the hidden pattern)</span></div>
+
+        <div class="specimen-tier" style="margin-top:36px">II &middot; Bonus Access <span class="hex"></span></div>
+        <div class="specimen-list">
+          <div class="specimen-row bonus-row"><span class="n">07</span><span class="l">Module 7 · Advanced Mastery</span></div>
+          <div class="specimen-row bonus-row"><span class="n">08</span><span class="l">RTVT Audio Series</span></div>
+          <div class="specimen-row bonus-row"><span class="n">09</span><span class="l">Relationship Energy Workbook</span></div>
+          <div class="specimen-row bonus-row"><span class="n">10</span><span class="l">Sensor Assessment Toolkit</span></div>
+          <div class="specimen-row bonus-row"><span class="n">11</span><span class="l">Live Group Q&amp;A with Dr. Barry</span></div>
+          <div class="specimen-row bonus-row"><span class="n">12</span><span class="l">Live Energy Transmission</span></div>
         </div>
       </div>
 
-      <!-- MODULE 2 -->
-      <div class="module-panel" data-panel="2" id="module-2">
-        <div class="module-jumbotron">
-          <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
-          <div class="mod-icon">
-            <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="32,8 56,32 32,56 8,32"/><polygon points="32,18 46,32 32,46 18,32"/><circle cx="32" cy="32" r="3" fill="currentColor"/></svg>
-          </div>
-          <div>
-            <div class="mod-num">Module 2</div>
-            <h3 class="mod-title">Sensor Reactivation Protocol</h3>
-            <p class="mod-desc">The physical practices — demonstrated on camera by Dr. Barry — that reactivate each of the four sensor systems. These aren't meditations or affirmations. They're specific, body-based activation exercises. 5 minutes morning. 5 minutes evening. Plus the Quadruple-A method for real-time sensor calibration.</p>
-          </div>
-        </div>
-        <div class="module-bullets">
-          <div class="module-bullet"><span class="check">◆</span><span>Hand activation exercises for reading intention</span></div>
-          <div class="module-bullet"><span class="check">◆</span><span>Heart field amplification protocol</span></div>
-          <div class="module-bullet"><span class="check">◆</span><span>Gut-brain reconnection technique</span></div>
-          <div class="module-bullet"><span class="check">◆</span><span>Spinal integration — the "conductor" calibration</span></div>
-          <div class="module-bullet"><span class="check">◆</span><span><strong>The Quadruple-A Method:</strong> Aware → Assess → Adjust → Act</span></div>
-          <div class="module-bullet"><span class="check">◆</span><span>Physical warmth and confidence markers to track progress</span></div>
-        </div>
-      </div>
-
-      <!-- MODULE 3 -->
-      <div class="module-panel" data-panel="3" id="module-3">
-        <div class="module-jumbotron">
-          <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
-          <div class="mod-icon">
-            <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="22" cy="32" r="14"/><circle cx="42" cy="32" r="14"/></svg>
-          </div>
-          <div>
-            <div class="mod-num">Module 3</div>
-            <h3 class="mod-title">Reading People &amp; Protecting Your Energy</h3>
-            <p class="mod-desc">Now your sensors are active. This module teaches you how to USE them — in business meetings, family gatherings, social settings, everywhere. How to read the Category of every person you interact with. How to protect yourself from draining dynamics. And the critical skill: sensing who to invest in.</p>
-          </div>
-        </div>
-        <div class="module-bullets">
-          <div class="module-bullet"><span class="check">◆</span><span><strong>Real-time Category reading</strong> — identify anyone's energetic pattern</span></div>
-          <div class="module-bullet"><span class="check">◆</span><span>The <strong>Energy Vampire Shield</strong> — protect without withdrawing</span></div>
-          <div class="module-bullet"><span class="check">◆</span><span>Business sensor skills — read partners, clients, and collaborators</span></div>
-          <div class="module-bullet"><span class="check">◆</span><span>Raising your Category to attract Category 1 people in every domain</span></div>
-        </div>
-      </div>
-
-      <!-- MODULE 4 -->
-      <div class="module-panel" data-panel="4" id="module-4">
-        <div class="module-jumbotron">
-          <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
-          <div class="mod-icon">
-            <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="32" cy="32" r="28"/><path d="M14 32 Q 32 14, 50 32 T 14 32"/><path d="M14 32 Q 32 50, 50 32"/></svg>
-          </div>
-          <div>
-            <div class="mod-num">Module 4</div>
-            <h3 class="mod-title">Building &amp; Sustaining Category 1 Relationships</h3>
-            <p class="mod-desc">The complete system for building relationships that AMPLIFY instead of drain — across every domain. Business partnerships. Family dynamics. Deep friendships. Romantic bonds. The RTVT (Rapid Transformation Vibrational Technique) for ongoing sensor maintenance. This is where the transformation becomes permanent.</p>
-          </div>
-        </div>
-        <div class="module-bullets">
-          <div class="module-bullet"><span class="check">◆</span><span>The <strong>RTVT</strong> — 11-minute daily sensor calibration audio</span></div>
-          <div class="module-bullet"><span class="check">◆</span><span>Business relationships — sense the right partners, clients, hires</span></div>
-          <div class="module-bullet"><span class="check">◆</span><span>Family dynamics — reading and elevating the Energy in your home</span></div>
-          <div class="module-bullet"><span class="check">◆</span><span>Friendships &amp; partnership — deepening the bonds that matter most</span></div>
-          <div class="module-bullet"><span class="check">◆</span><span>The <strong>Third Solution</strong> conflict method — transform any difficult dynamic</span></div>
-          <div class="module-bullet"><span class="check">◆</span><span>Category 1 maintenance — sensors as a lifelong navigation system</span></div>
-        </div>
-      </div>
-
-      <!-- MODULE 5 -->
-      <div class="module-panel" data-panel="5" id="module-5">
-        <div class="module-jumbotron">
-          <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
-          <div class="mod-icon">
-            <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="32" cy="32" r="24"/><path d="M22 32l6 6 14-14" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </div>
-          <div>
-            <div class="mod-num">Module 5</div>
-            <h3 class="mod-title">Relationship Repair &amp; Recovery</h3>
-            <p class="mod-desc">What happens when sensors reactivate and you see your existing relationships clearly — sometimes for the first time? This module covers the repair protocols: how to elevate strained business relationships, restore family bonds that have degraded, and recover friendships you've neglected. Not all relationships survive clarity — this module teaches you which ones are worth the Energy and which ones aren't.</p>
-          </div>
-        </div>
-        <div class="module-bullets">
-          <div class="module-bullet"><span class="check">◆</span><span>The <strong>Energy Audit conversation</strong> — address draining dynamics directly</span></div>
-          <div class="module-bullet"><span class="check">◆</span><span>Repair vs. release — the sensor-based decision framework</span></div>
-          <div class="module-bullet"><span class="check">◆</span><span>Business relationship triage — partnerships, clients, team members</span></div>
-          <div class="module-bullet"><span class="check">◆</span><span>Family recovery protocol — working with inherited Energy patterns</span></div>
-          <div class="module-bullet"><span class="check">◆</span><span>The <strong>clean exit</strong> — ending relationships without creating enemies</span></div>
-        </div>
-      </div>
-
-      <!-- MODULE 6 -->
-      <div class="module-panel" data-panel="6" id="module-6">
-        <div class="module-jumbotron">
-          <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
-          <div class="mod-icon">
-            <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M32 8l7.5 15.2 16.8 2.4-12.1 11.8 2.9 16.6L32 46l-15.1 8 2.9-16.6L7.7 25.6l16.8-2.4z" stroke-linejoin="round"/></svg>
-          </div>
-          <div>
-            <div class="mod-num">Module 6</div>
-            <h3 class="mod-title">Attraction &amp; Magnetism — Becoming Category 1</h3>
-            <p class="mod-desc">The final Core module flips the lens: instead of reading others, you become the person that Category 1 people are drawn to. This module covers the energetic broadcast — what you're putting out into every room, every meeting, every family dinner. When your broadcast is strong, the right people find YOU. Business opportunities, deep friendships, and true partnerships start coming to you instead of you chasing them.</p>
-          </div>
-        </div>
-        <div class="module-bullets">
-          <div class="module-bullet"><span class="check">◆</span><span>The <strong>broadcast shift</strong> — what changes when you become Category 1</span></div>
-          <div class="module-bullet"><span class="check">◆</span><span>Energetic magnetism in business — attracting the right deals, clients, collaborators</span></div>
-          <div class="module-bullet"><span class="check">◆</span><span>Social magnetism — becoming the person people want in their inner circle</span></div>
-          <div class="module-bullet"><span class="check">◆</span><span>Family leadership — elevating the Energy of your entire household</span></div>
-          <div class="module-bullet"><span class="check">◆</span><span>The <strong>compounding effect</strong> — how Category 1 relationships multiply</span></div>
-        </div>
-      </div>
-
-      <!-- MODULE 7 — ELITE -->
-      <div class="module-panel" data-panel="7" id="module-7">
-        <div class="module-jumbotron elite">
-          <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
-          <div class="mod-icon">
-            <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="32" cy="32" r="28"/><circle cx="32" cy="32" r="20"/><circle cx="32" cy="32" r="12"/><circle cx="32" cy="32" r="4" fill="currentColor"/><line x1="32" y1="4" x2="32" y2="60"/><line x1="4" y1="32" x2="60" y2="32"/></svg>
-          </div>
-          <div>
-            <div class="mod-num">Module 7 ★ Advanced In-Depth</div>
-            <h3 class="mod-title">Advanced In-Depth Module + Live Group Call with Dr. Barry</h3>
-            <p class="mod-desc">The advanced module goes deeper than the Core program — advanced sensor techniques, complex relationship dynamics, and the nuances that separate good from exceptional results. Plus: an exclusive small-group live call directly with Dr. Barry that includes live Q&amp;A and a real-time Energy transmission. This is the closest you can get to working with Dr. Barry personally at a fraction of the private session cost.</p>
-          </div>
-        </div>
-        <div class="module-bullets">
-          <div class="module-bullet"><span class="check">◆</span><span>Advanced sensor integration — techniques beyond the Core program</span></div>
-          <div class="module-bullet"><span class="check">◆</span><span>Complex dynamics — multi-person environments, high-stakes situations</span></div>
-          <div class="module-bullet"><span class="check">◆</span><span><strong>Live small-group call with Dr. Barry</strong> — ask your questions directly</span></div>
-          <div class="module-bullet"><span class="check">◆</span><span><strong>Live Energy transmission</strong> — experience Dr. Barry's Energy work in real time</span></div>
-          <div class="module-bullet"><span class="check">◆</span><span>Advanced Category 1 mastery — sustaining the highest level long-term</span></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- 13. BONUSES -->
-<section class="bonuses-section">
-  <div class="container">
-    <div class="section-header">
-      <div class="eyebrow">IX · Special Bonuses</div>
-      <h2 class="h2">Plus you get these bonuses, <em>FREE</em>.</h2>
-    </div>
-    <div class="bonus-grid">
-      <article class="bonus-card">
-        <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
-        <div class="icon-wrap">◆</div>
-        <div class="b-label">Bonus 1</div>
-        <h3 class="b-title">Energy of Relationships Workbook</h3>
-        <p class="b-desc">Day-by-day, week-by-week map of the sensor reactivation journey. Category Classification worksheets, sensor tracking logs, and relationship Energy audits for every domain — business, family, friends, partner — all condensed into an actionable PDF.</p>
-        <div class="b-price"><span class="strike">$49 Value</span><span class="free-badge">FREE</span></div>
-      </article>
-      <article class="bonus-card">
-        <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
-        <div class="icon-wrap">◇</div>
-        <div class="b-label">Bonus 2</div>
-        <h3 class="b-title">Sensor Assessment Toolkit</h3>
-        <p class="b-desc">The complete Category Classification self-assessment plus a relationship Energy audit for every significant relationship in your life — business partners, family members, friends, and your partner. Know where you stand. Know where they stand.</p>
-        <div class="b-price"><span class="strike">$49 Value</span><span class="free-badge">FREE</span></div>
-      </article>
-    </div>
-  </div>
-</section>
-
-<!-- 14. PRICING — SPEC SHEET -->
-<section class="pricing-section" id="enroll">
-  <div class="container">
-    <div class="section-header">
-      <div class="eyebrow">X · The Investment</div>
-      <h2 class="h2">One of the most <em>valuable</em><br>programs I've ever released.</h2>
-      <p class="lead">Everything required to reactivate your relationship sensors and transform every connection.</p>
-    </div>
-
-    <article class="eor-spec">
-      <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
-
-      <header class="spec-header">
+      <div class="specimen-r">
         <div>
-          <div class="spec-meta-line">Specimen No. EOR–2026 · BEYOND Attendee Edition</div>
-          <div class="spec-title">Energy of Relationships</div>
-        </div>
-        <div class="spec-cert">
-          <div>
-            <div class="spec-cert-label">Certified by<br>Dr. Barry</div>
-          </div>
-          <div class="spec-cert-mark">B</div>
-        </div>
-      </header>
+          <div class="specimen-price-label">BEYOND Attendee Investment</div>
+          <div class="specimen-price">$197</div>
+          <div class="specimen-price-was"><span class="strike">Normally $397</span><span class="save">Save $200</span></div>
 
-      <div class="spec-price-row">
-        <div>
-          <div class="spec-price-label">BEYOND Attendee Investment</div>
-          <div class="spec-price"><span class="dollar">$</span>197</div>
-          <div class="spec-price-sub" style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;"><span style="text-decoration:line-through;opacity:.55;">Normally $397</span><span style="color:var(--gold);letter-spacing:.12em;text-transform:uppercase;font-size:13px;font-weight:600;">Save $200</span></div>
-        </div>
-        <div class="spec-divider"></div>
-        <div>
-          <div class="spec-price-label" style="text-align: right;">Comparison</div>
-          <p class="spec-compare">
-            Executive coaching: <strong>$300–$500/session</strong><br>
-            Private with Dr. Barry: <strong>$2,000+</strong><br>
-            <em>10× private value · included</em>
-          </p>
-        </div>
-      </div>
+          <a href="#" class="btn-primary" style="margin-top:40px">Enroll Now <span class="arr">→</span></a>
 
-      <div class="spec-body">
-        <div class="spec-group">
-          <div class="spec-group-head"><span>I · Core Curriculum</span><span class="spec-group-rule"></span></div>
-          <div class="spec-items">
-            <div class="spec-item"><span class="spec-item-num">01</span><div><div class="spec-item-label">Modules 1–6</div><div class="spec-item-sub">Complete core program</div></div></div>
-            <div class="spec-item"><span class="spec-item-num">02</span><div><div class="spec-item-label">RTVT Audio</div><div class="spec-item-sub">Sensor calibration series</div></div></div>
-            <div class="spec-item"><span class="spec-item-num">03</span><div><div class="spec-item-label">Workbook</div><div class="spec-item-sub">Energy of Relationships</div></div></div>
-            <div class="spec-item"><span class="spec-item-num">04</span><div><div class="spec-item-label">Toolkit</div><div class="spec-item-sub">Sensor assessment system</div></div></div>
-            <div class="spec-item"><span class="spec-item-num">05</span><div><div class="spec-item-label">Quadruple-A</div><div class="spec-item-sub">Real-time method</div></div></div>
-            <div class="spec-item"><span class="spec-item-num">06</span><div><div class="spec-item-label">Classification</div><div class="spec-item-sub">Category framework</div></div></div>
-          </div>
-        </div>
-
-        <div class="spec-group elite">
-          <div class="spec-group-head"><span>II · Elite Access ★</span><span class="spec-group-rule"></span></div>
-          <div class="spec-items">
-            <div class="spec-item"><span class="spec-item-num">07</span><div><div class="spec-item-label">Module 7</div><div class="spec-item-sub">Advanced in-depth training</div></div></div>
-            <div class="spec-item"><span class="spec-item-num">08</span><div><div class="spec-item-label">Elite RTVT</div><div class="spec-item-sub">Activation audio series</div></div></div>
-            <div class="spec-item"><span class="spec-item-num">09</span><div><div class="spec-item-label">Live Group</div><div class="spec-item-sub">Small-cohort call with Dr. Barry</div></div></div>
-            <div class="spec-item"><span class="spec-item-num">10</span><div><div class="spec-item-label">Live Q&amp;A</div><div class="spec-item-sub">Direct ask</div></div></div>
-            <div class="spec-item"><span class="spec-item-num">11</span><div><div class="spec-item-label">Live Transmission</div><div class="spec-item-sub">Energy session</div></div></div>
+          <div class="specimen-compare">
+            <p><strong>Comparison</strong></p>
+            <p>Executive coaching: <strong>$300–$500/session</strong></p>
+            <p>Private with Dr. Barry: <strong>$2,000+</strong></p>
+            <p><em>10× private value · included</em></p>
           </div>
         </div>
       </div>
+    </div>
 
-      <footer class="spec-footer">
-        <div class="spec-footer-row">
-          <div class="spec-seal">
-            <span class="spec-seal-num">30</span>
-            <span class="spec-seal-label">Day · Promise</span>
-          </div>
-          <div style="text-align: left;">
-            <div class="spec-cert-label" style="margin-bottom: 6px;">Risk Reversal</div>
-            <div style="font-family: var(--f-italic); font-style: italic; color: var(--ink); font-size:20px;">Backed by the 30-Day Guarantee</div>
-          </div>
-        </div>
-        <a href="[CHECKOUT_URL]" class="btn" style="min-width: 320px;"><span>Enroll Now</span><span class="arr">→</span></a>
-      </footer>
-    </article>
+    <div class="specimen-foot">
+      <div class="specimen-foot-l">Instant Access</div>
+      <div class="specimen-foot-c">30 Day Guarantee</div>
+      <div class="specimen-foot-r">Risk-Reversal Backed</div>
+    </div>
   </div>
 </section>
 
-<!-- 15. GUARANTEE -->
-<section class="guarantee-section">
-  <div class="container-narrow text-center">
-    <div class="guarantee-badge">
-      <span class="gb-num">30</span>
-      <span class="gb-label">Day Guarantee</span>
-    </div>
-    <div class="section-header" style="margin-bottom: 32px;">
-      <div class="eyebrow">XI · The 30-Day Promise</div>
-      <h2 class="h2">The <em>Relationship</em><br>Transformation Guarantee.</h2>
-    </div>
-    <div class="body-copy">
+<!-- ===================== XI — GUARANTEE ===================== -->
+<section class="guarantee">
+  <div class="section-mark">
+    <div class="section-mark-num">XI</div>
+    <div class="section-mark-label">The 30-Day Promise</div>
+  </div>
+  <div class="guarantee-inner">
+    <div class="guarantee-seal"><span class="big">30</span><span>Day Promise</span></div>
+    <div>
+      <h3>The <em>Relationship Transformation</em> Guarantee.</h3>
       <p>Follow the Energy of Relationships System for 30 days. Do the morning and evening sensor activation practices. Complete the Category Classification across every relationship domain. Use the Quadruple-A method. Listen to the RTVT daily.</p>
-      <p>If after 30 days of consistent participation, you haven't experienced the activation signs — the warmth in your hands during practice, the gut clarity when reading people, a shift in how you show up in business meetings, family conversations, and friendships — contact our team and we'll refund your entire investment.</p>
-      <p class="emphasis-line">In 40+ years, I have never had a single completer who didn't experience sensor activation. Not one.</p>
-    </div>
+      <p>If after 30 days of consistent participation, you haven't experienced the activation signs — the warmth in your hands during practice, the gut clarity when reading people, a shift in how you show up in business meetings, family conversations, and friendships — contact our team and we'll refund <strong>your entire investment</strong>.</p>
+      <p>In 40+ years, I have never had a single completer who didn't experience sensor activation. Not one.</p>
 
-    <div class="risk-reversal">
-      <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
-      <div class="rr-main">"You risk nothing. The 30-Day Guarantee covers every penny."</div>
-      <div class="rr-sub">— Dr. Barry Morguelan · No questions beyond confirming your participation</div>
-    </div>
-  </div>
-</section>
-
-<!-- 16. CTA BANNER -->
-<section class="cta-banner">
-  <div class="container-narrow">
-    <div class="subtitle">Zero Risk · Every Relationship Transformed</div>
-    <h2 class="cta-heading">Your <span class="accent">relationships</span><br>are ready to change.</h2>
-    <a href="#enroll" class="btn"><span>Transform My Relationships Now</span><span class="arr">→</span></a>
-    <div class="btn-subtext">
-      <span><strong>$197</strong> <span style="text-decoration:line-through;opacity:.55;">$397</span></span><span class="dot"></span>
-      <span>30-Day Guarantee</span><span class="dot"></span>
-      <span>Instant Access</span>
-    </div>
-  </div>
-</section>
-
-<!-- 17. URGENCY -->
-<section class="urgency-section">
-  <div class="container-narrow">
-    <div class="section-header">
-      <div class="eyebrow">XII · The Cost of Waiting</div>
-      <h2 class="h2">Every day you don't<br>address <em>this</em>…</h2>
-    </div>
-
-    <div class="body-copy text-center">
-      <p>Every day you navigate relationships with deactivated sensors is another day you're leaving money, health, and happiness on the table.</p>
-      <p>Another day with a business partner who drains more than they build. Another family dinner that leaves you depleted. Another friendship you tolerate instead of one that transforms you.</p>
-      <p>Harvard proved that warm relationships predict <strong>$141,000 more per year</strong>. That relationship quality at 50 predicts health at 80 <strong>better than cholesterol</strong>. That loneliness kills at the rate of <strong>15 cigarettes a day</strong>.</p>
-    </div>
-
-    <div class="dark-callout">
-      <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
-      The cost of bad relationships isn't just emotional.<br>
-      It's financial. It's physical. It's <span class="glow">everything</span>.
-    </div>
-
-    <div class="cost-reframe">
-      <p>That's the real cost of doing nothing.</p>
-      <p><span class="strike">Not $197.</span> <span class="primary">Another year surrounded by the wrong people.</span></p>
-    </div>
-  </div>
-</section>
-
-<!-- 18. FUTURE -->
-<section class="future-section">
-  <div class="container-narrow">
-    <div class="section-header">
-      <div class="eyebrow">XIII · What Happens Next</div>
-      <h2 class="h2">What happens when the<br><em>Energy</em> shifts…</h2>
-    </div>
-
-    <div class="future-copy">
-      <p>Start Module 1 tonight. Within the first session, you'll know your Category across every domain — business, family, friendships, partnership. Most people are surprised — not by the answer, but by how much it explains.</p>
-      <p>Within the first week of the activation practices, you'll feel it. A warmth in your hands during the exercises. A clarity in your gut that wasn't there before. A quiet confidence that changes how people respond to you.</p>
-      <p>Within days, you'll start noticing things about the people around you. Things you couldn't see before. Which business relationships are building you and which are draining you. Which friendships challenge you to grow and which keep you stuck. Which family dynamics need to shift.</p>
-      <p class="strong-line">The relationships that drain you will become obvious. The ones that build your wealth, health, and happiness will too.</p>
-      <p>And somewhere in the first few weeks, something shifts. A business conversation goes differently. A family pattern breaks. A new collaborator shows up. An old friendship deepens.</p>
-      <p class="italic-reveal">Not because you learned a networking technique. Because your sensors came back online. And you can finally feel the truth about every person in your life.</p>
-      <p class="lock-on">Your sensors activate.<br>Your relationships transform.<br>Everything changes.</p>
-    </div>
-
-    <div class="text-center" style="margin-top: 40px;">
-      <a href="#enroll" class="btn"><span>Transform My Relationships Now</span><span class="arr">→</span></a>
-      <div class="btn-subtext">
-        <span>Backed by the 30-Day Guarantee</span><span class="dot"></span>
-        <span><strong>$197</strong> <span style="text-decoration:line-through;opacity:.55;">$397</span> · BEYOND Price</span>
+      <div class="promise">
+        <p>&ldquo;You risk nothing. The 30-Day Guarantee covers every penny.&rdquo;</p>
+        <p class="promise-cite">— Dr. Barry Morguelan · No questions beyond confirming your participation</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- 19. FAQ -->
-<section class="faq-section">
-  <div class="container-narrow">
-    <div class="section-header">
-      <div class="eyebrow">XIV · Frequently Asked</div>
-      <h2 class="h2">Frequently <em>asked</em>.</h2>
-    </div>
-
-    <div class="faq-list">
-      <div class="faq-item open">
-        <h3 class="faq-question">What exactly are "relationship sensors"?</h3>
-        <span class="faq-toggle">+</span>
-        <div class="faq-answer">
-          <p>Physical sensor systems in four locations of your body — hands, heart, gut, and spine — that evolved to read other people's Energy and intentions. Research from the HeartMath Institute and neurogastroenterology confirms these systems exist and are measurable. Dr. Barry's protocol reactivates them so you can sense who to trust, partner with, and invest in across every area of life.</p>
-        </div>
-      </div>
-      <div class="faq-item">
-        <h3 class="faq-question">Is this just about romantic relationships?</h3>
-        <span class="faq-toggle">+</span>
-        <div class="faq-answer">
-          <p>No. This system covers every relationship in your life: business partnerships, family dynamics, friendships, and romantic relationships. Harvard's 87-year study proved that ALL relationship quality — not just romantic — predicts your health, wealth, and happiness. Module 4 specifically covers business sensor skills, family Energy dynamics, friendship deepening, and partnership bonds.</p>
-        </div>
-      </div>
-      <div class="faq-item">
-        <h3 class="faq-question">Is this based on real science or is it spiritual?</h3>
-        <span class="faq-toggle">+</span>
-        <div class="faq-answer">
-          <p>Both. The research on this page comes from Harvard, Gallup, the National Geographic Blue Zones project, and peer-reviewed medical journals. The heart's electromagnetic field, gut neurons, and spinal conductivity are documented science. Dr. Barry combines this Western scientific foundation with practices from a 5,000-year-old Eastern Energy tradition he is one of only 12 living grand masters of.</p>
-        </div>
-      </div>
-      <div class="faq-item">
-        <h3 class="faq-question">How much time does the daily practice take?</h3>
-        <span class="faq-toggle">+</span>
-        <div class="faq-answer">
-          <p>The morning and evening activation practices take 5 minutes each. The RTVT guided audio is 11 minutes. Total daily commitment: approximately 21 minutes. Most practitioners report it quickly becomes the most grounding part of their day.</p>
-        </div>
-      </div>
-      <div class="faq-item">
-        <h3 class="faq-question">Will this help my business relationships?</h3>
-        <span class="faq-toggle">+</span>
-        <div class="faq-answer">
-          <p>Yes. Many of Dr. Barry's clients are CEOs, entrepreneurs, and executives who initially came for business performance. The Category system helps you identify which collaborators, partners, hires, and clients are Category 1 (Builders) vs. Category 3 (Takers). Fortune 500 data shows mentoring relationships increase profits 110% — but only if you're partnering with the right people.</p>
-        </div>
-      </div>
-      <div class="faq-item">
-        <h3 class="faq-question">What if I'm skeptical about Energy work?</h3>
-        <span class="faq-toggle">+</span>
-        <div class="faq-answer">
-          <p>Dr. Barry was a skeptic himself — he's a UCLA-trained surgeon. The sensor systems are real, physical, measurable parts of your body. The heart's field, the gut's neurons, the spine's conductivity — these exist whether you believe in them or not. Just do the practices.</p>
-        </div>
-      </div>
-      <div class="faq-item">
-        <h3 class="faq-question">What's the Four Categories system?</h3>
-        <span class="faq-toggle">+</span>
-        <div class="faq-answer">
-          <p>A framework Dr. Barry developed over 40+ years that classifies people by their energetic pattern: Category 1 (Builders), Category 2 (Conditional), Category 3 (Takers), and Category 4 (Destroyers). Wharton research shows "givers" (Category 1) earn 50% more revenue. The system teaches you to identify each category in business partners, family, friends, and your own patterns.</p>
-        </div>
-      </div>
-      <div class="faq-item">
-        <h3 class="faq-question">When will I start seeing results?</h3>
-        <span class="faq-toggle">+</span>
-        <div class="faq-answer">
-          <p>Most practitioners report physical sensations (warmth, tingling) within the first week. Shifts in perception — noticing people's Energy differently — typically begin within 7–14 days. Relationship changes follow as you start making different choices from activated sensors.</p>
-        </div>
-      </div>
-      <div class="faq-item">
-        <h3 class="faq-question">What's the guarantee?</h3>
-        <span class="faq-toggle">+</span>
-        <div class="faq-answer">
-          <p>Full 30-day guarantee. Follow the system for 30 days. Do the practices. Use the tools. If you haven't experienced sensor activation signs, contact our team for a complete refund. In 40+ years, Dr. Barry has never had a completer who didn't experience activation.</p>
-        </div>
-      </div>
-    </div>
+<!-- ===================== XII — COST OF WAITING ===================== -->
+<section class="essay-dark">
+  <div class="section-mark">
+    <div class="section-mark-num">XII</div>
+    <div class="section-mark-label">The Cost of Waiting</div>
+  </div>
+  <div class="essay-inner">
+    <h2 class="display" style="margin-bottom:56px">Every day you don't address <em>this</em>…</h2>
+    <p>Every day you navigate relationships with deactivated sensors is another day you're leaving <strong>money, health, and happiness</strong> on the table.</p>
+    <p>Another day with a business partner who drains more than they build. Another family dinner that leaves you depleted. Another friendship you tolerate instead of one that transforms you.</p>
+    <p>Harvard proved that warm relationships predict <strong>$141,000 more per year</strong>. That relationship quality at 50 predicts health at 80 <strong>better than cholesterol</strong>. That loneliness kills at the rate of <strong>15 cigarettes a day</strong>.</p>
+    <p class="tag">The cost of bad relationships isn't just emotional.<br>It's financial. It's physical. It's <em>everything</em>.</p>
+    <p>That's the real cost of doing nothing. Not $197. Another year surrounded by the wrong people.</p>
   </div>
 </section>
 
-<!-- 20. FINAL CTA -->
-<section class="final-cta">
-  <div class="mandala" aria-hidden="true">
-    <svg viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg">
-      <g fill="none" stroke="#C9A24B" stroke-width="0.5" opacity="0.7">
-        <circle cx="500" cy="500" r="480"/><circle cx="500" cy="500" r="380"/>
-        <circle cx="500" cy="500" r="280"/><circle cx="500" cy="500" r="180"/>
-        <circle cx="500" cy="500" r="80"/>
-      </g>
-    </svg>
+<!-- ===================== XIII — WHAT HAPPENS NEXT ===================== -->
+<section class="essay-dark">
+  <div class="section-mark">
+    <div class="section-mark-num">XIII</div>
+    <div class="section-mark-label">What Happens Next</div>
   </div>
-  <div class="container-narrow">
-    <h2 class="cta-heading">Your <span class="accent">relationships</span><br>are ready to transform.</h2>
-    <p class="cta-sub">Start Module 1 tonight. Transform every relationship in your life.</p>
-    <a href="#enroll" class="btn"><span>Transform My Relationships Now</span><span class="arr">→</span></a>
-    <div class="btn-subtext">
-      <span><strong>$197</strong> <span style="text-decoration:line-through;opacity:.55;">$397</span></span><span class="dot"></span>
-      <span>BEYOND Attendees Save $200</span><span class="dot"></span>
-      <span>30-Day Guarantee</span>
-    </div>
-    <div class="enrollment-badge">
-      <span class="pulse"></span>
-      <span>Limited Enrollment — Transform Your Relationships Today</span>
-    </div>
+  <div class="essay-inner">
+    <h2 class="display" style="margin-bottom:56px">What happens when the <em>Energy</em> shifts…</h2>
+    <p>Start Module 1 tonight. Within the first session, you'll know your Category across every domain — business, family, friendships, partnership. Most people are surprised — not by the answer, but by how much it explains.</p>
+    <p>Within the first week of the activation practices, you'll feel it. A warmth in your hands during the exercises. A clarity in your gut that wasn't there before. A quiet confidence that changes how people respond to you.</p>
+    <p>Within days, you'll start noticing things about the people around you. Things you couldn't see before. Which business relationships are building you and which are draining you. Which friendships challenge you to grow and which keep you stuck. Which family dynamics need to shift.</p>
+    <p>The relationships that drain you will become obvious. The ones that build your wealth, health, and happiness will too.</p>
+    <p>And somewhere in the first few weeks, something shifts. A business conversation goes differently. A family pattern breaks. A new collaborator shows up. An old friendship deepens.</p>
+    <p>Not because you learned a networking technique. Because your sensors came back online. And you can finally feel the truth about every person in your life.</p>
+    <p class="tag">Your sensors activate. Your relationships transform. <em>Everything changes.</em></p>
   </div>
 </section>
 
-<!-- 21. FOOTER -->
-<footer class="footer">
-  <div class="container">
-    <div class="footer-logo"><span class="italic">Energy</span> of Relationships</div>
+<!-- ===================== XIV — FAQ ===================== -->
+<section class="faq">
+  <div class="section-mark">
+    <div class="section-mark-num">XIV</div>
+    <div class="section-mark-label">Frequently Asked</div>
+  </div>
+  <div style="max-width:1040px;margin:0 auto">
+    <h2 class="display">Frequently <em>asked</em>.</h2>
+  </div>
 
-    <p class="disclaimer">Results may vary. The testimonials and examples used are representative of individual experiences and are not intended to represent or guarantee that anyone will achieve the same or similar results. Every individual's success depends on their background, dedication, desire, and effort. Dr. Barry Morguelan's track record and the research cited are real and verifiable, but individual results are not guaranteed.</p>
+  <div class="faq-grid">
+    <details class="faq-item">
+      <summary class="faq-q"><h4>What exactly are &ldquo;relationship sensors&rdquo;?</h4><span class="plus">+</span></summary>
+      <div class="faq-a">Physical sensor systems in four locations of your body — hands, heart, gut, and spine — that evolved to read other people's Energy and intentions. Research from the HeartMath Institute and neurogastroenterology confirms these systems exist and are measurable. Dr. Barry's protocol reactivates them so you can sense who to trust, partner with, and invest in across every area of life.</div>
+    </details>
 
-    <ul class="footer-links">
-      <li><a href="#">Privacy Policy</a></li>
-      <li><a href="#">Terms of Use</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
+    <details class="faq-item">
+      <summary class="faq-q"><h4>Is this just about romantic relationships?</h4><span class="plus">+</span></summary>
+      <div class="faq-a">No. This system covers every relationship in your life: business partnerships, family dynamics, friendships, and romantic relationships. Harvard's 87-year study proved that ALL relationship quality — not just romantic — predicts your health, wealth, and happiness. Module 4 specifically covers business sensor skills, family Energy dynamics, friendship deepening, and partnership bonds.</div>
+    </details>
 
-    <div class="references">
-      <h6>References</h6>
-      <p>Waldinger, R. &amp; Schulz, M. (2023). <em>The Good Life: Lessons from the World's Longest Scientific Study of Happiness.</em> Simon &amp; Schuster.</p>
-      <p>Vaillant, G. (2012). <em>Triumphs of Experience: The Men of the Harvard Grant Study.</em> Harvard University Press.</p>
-      <p>Holt-Lunstad, J., Smith, T. B., &amp; Layton, J. B. (2010). Social Relationships and Mortality Risk: A Meta-analytic Review. <em>PLoS Medicine</em>, 7(7). N=308,849.</p>
-      <p>Murthy, V. (2023). Our Epidemic of Loneliness and Isolation. U.S. Surgeon General's Advisory.</p>
-      <p>Buettner, D. (2008). <em>The Blue Zones.</em> National Geographic.</p>
-      <p>Grant, A. (2013). <em>Give and Take: Why Helping Others Drives Our Success.</em> Viking.</p>
-      <p>Gallup (2025). State of the Global Workplace Report. Q12 Employee Engagement Survey.</p>
-      <p>McCraty, R. (2015). Science of the Heart, Volume 2. HeartMath Institute.</p>
+    <details class="faq-item">
+      <summary class="faq-q"><h4>Is this based on real science or is it spiritual?</h4><span class="plus">+</span></summary>
+      <div class="faq-a">Both. The research on this page comes from Harvard, Gallup, the National Geographic Blue Zones project, and peer-reviewed medical journals. The heart's electromagnetic field, gut neurons, and spinal conductivity are documented science. Dr. Barry combines this Western scientific foundation with practices from a 5,000-year-old Eastern Energy tradition he is one of only 12 living grand masters of.</div>
+    </details>
+
+    <details class="faq-item">
+      <summary class="faq-q"><h4>How much time does the daily practice take?</h4><span class="plus">+</span></summary>
+      <div class="faq-a">The morning and evening activation practices take 5 minutes each. The RTVT guided audio is 11 minutes. Total daily commitment: approximately <strong>21 minutes</strong>. Most practitioners report it quickly becomes the most grounding part of their day.</div>
+    </details>
+
+    <details class="faq-item">
+      <summary class="faq-q"><h4>Will this help my business relationships?</h4><span class="plus">+</span></summary>
+      <div class="faq-a">Yes. Many of Dr. Barry's clients are CEOs, entrepreneurs, and executives who initially came for business performance. The Category system helps you identify which collaborators, partners, hires, and clients are Category 1 (Builders) vs. Category 3 (Takers). Fortune 500 data shows mentoring relationships increase profits 110% — but only if you're partnering with the right people.</div>
+    </details>
+
+    <details class="faq-item">
+      <summary class="faq-q"><h4>What if I'm skeptical about Energy work?</h4><span class="plus">+</span></summary>
+      <div class="faq-a">Dr. Barry was a skeptic himself — he's a UCLA-trained surgeon. The sensor systems are real, physical, measurable parts of your body. The heart's field, the gut's neurons, the spine's conductivity — these exist whether you believe in them or not. Just do the practices.</div>
+    </details>
+
+    <details class="faq-item">
+      <summary class="faq-q"><h4>What's the Four Categories system?</h4><span class="plus">+</span></summary>
+      <div class="faq-a">A framework Dr. Barry developed over 40+ years that classifies people by their energetic pattern: Category 1 (Builders), Category 2 (Conditional), Category 3 (Takers), and Category 4 (Destroyers). Wharton research shows &ldquo;givers&rdquo; (Category 1) earn 50% more revenue. The system teaches you to identify each category in business partners, family, friends, and your own patterns.</div>
+    </details>
+
+    <details class="faq-item">
+      <summary class="faq-q"><h4>When will I start seeing results?</h4><span class="plus">+</span></summary>
+      <div class="faq-a">Most practitioners report physical sensations (warmth, tingling) within the first week. Shifts in perception — noticing people's Energy differently — typically begin within 7–14 days. Relationship changes follow as you start making different choices from activated sensors.</div>
+    </details>
+
+    <details class="faq-item">
+      <summary class="faq-q"><h4>What's the guarantee?</h4><span class="plus">+</span></summary>
+      <div class="faq-a">Full 30-day guarantee. Follow the system for 30 days. Do the practices. Use the tools. If you haven't experienced sensor activation signs, contact our team for a complete refund. In 40+ years, Dr. Barry has never had a completer who didn't experience activation.</div>
+    </details>
+  </div>
+</section>
+
+<!-- ===================== FINAL CTA ===================== -->
+<section class="final">
+  <h2>Your relationships are ready to <em>transform</em>.</h2>
+  <p>Start Module 1 tonight. Transform every relationship in your life.</p>
+  <a href="#enroll" class="btn-primary">Transform My Relationships Now <span class="arr">→</span></a>
+  <div class="price-row">
+    <span class="now">$197</span><span class="was">$397</span><span>BEYOND Attendees Save $200</span><span>Instant Access</span><span>30-Day Guarantee</span>
+  </div>
+  <p style="margin-top:56px;font-family:var(--mono);font-weight:600;font-size:13px;letter-spacing:.28em;text-transform:uppercase;color:var(--blue)">Limited Enrollment &middot; Transform Your Relationships Today</p>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="foot">
+  <div class="foot-inner">
+    <div class="foot-l">
+      <span class="brand">Energy <span class="of">of</span> Relationships</span><br>
+      Dr. Barry Morguelan &middot; MMXXVI<br>
+      <span class="hex"></span> For BEYOND Biohacking Attendees
     </div>
+    <div class="foot-r">
+      <p>Results may vary. The testimonials and examples used are representative of individual experiences and are not intended to represent or guarantee that anyone will achieve the same or similar results. Every individual's success depends on their background, dedication, desire, and effort. Dr. Barry Morguelan's track record and the research cited are real and verifiable, but individual results are not guaranteed.</p>
+    </div>
+  </div>
 
-    <div class="copyright">© MMXXVI · Energy for Success · All Rights Reserved</div>
+  <div class="foot-refs">
+    <h5>References</h5>
+    <ol>
+      <li>Waldinger, R. &amp; Schulz, M. (2023). <em>The Good Life: Lessons from the World's Longest Scientific Study of Happiness.</em> Simon &amp; Schuster.</li>
+      <li>Vaillant, G. (2012). <em>Triumphs of Experience: The Men of the Harvard Grant Study.</em> Harvard University Press.</li>
+      <li>Holt-Lunstad, J., Smith, T. B., &amp; Layton, J. B. (2010). Social Relationships and Mortality Risk: A Meta-analytic Review. <em>PLoS Medicine</em>, 7(7). N=308,849.</li>
+      <li>Murthy, V. (2023). Our Epidemic of Loneliness and Isolation. U.S. Surgeon General's Advisory.</li>
+      <li>Buettner, D. (2008). <em>The Blue Zones.</em> National Geographic.</li>
+      <li>Grant, A. (2013). <em>Give and Take: Why Helping Others Drives Our Success.</em> Viking.</li>
+      <li>Gallup (2025). State of the Global Workplace Report. Q12 Employee Engagement Survey.</li>
+      <li>McCraty, R. (2015). Science of the Heart, Volume 2. HeartMath Institute.</li>
+    </ol>
+  </div>
+
+  <div class="foot-bot">
+    <span>© MMXXVI · Energy for Success · All Rights Reserved</span>
+    <span><a href="#">Privacy</a> &middot; <a href="#">Terms</a> &middot; <a href="#">Contact</a></span>
   </div>
 </footer>
-
-<script>
-  /* MODULE TABS — all panels visible; tab click highlights + scrolls */
-  document.querySelectorAll('.module-tab').forEach(function(tab) {
-    tab.addEventListener('click', function() {
-      var id = tab.getAttribute('data-tab');
-      document.querySelectorAll('.module-tab').forEach(function(t){ t.classList.remove('active'); });
-      document.querySelectorAll('.module-panel').forEach(function(p){ p.classList.remove('active'); });
-      tab.classList.add('active');
-      var panel = document.getElementById('module-' + id);
-      if (panel) {
-        panel.classList.add('active');
-        var rect = panel.getBoundingClientRect();
-        var tabsHeight = (document.querySelector('.module-tabs') || {}).offsetHeight || 0;
-        window.scrollTo({ top: window.scrollY + rect.top - tabsHeight - 16, behavior: 'smooth' });
-      }
-    });
-  });
-
-  /* FAQ ACCORDION */
-  document.querySelectorAll('.faq-item').forEach(function(item) {
-    item.addEventListener('click', function() { item.classList.toggle('open'); });
-  });
-</script>
 
 </body>
 </html>
